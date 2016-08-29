@@ -1,0 +1,154 @@
+#topshow .suptab{height:219px;padding-top:10px;overflow:hidden;}
+#topshow .suptab dl{height:52px;padding:3px 10px;}
+#topshow .suptab dl dt{ width:36px; font:normal 12px/18px Arial, Helvetica, sans-serif; color:#ff5a00;}
+#topshow .suptab dl dd{ width:130px; padding-left:10px; background:url("../images/ico.png")/*tpa=/images/ico.png*/ no-repeat -317px -628px; overflow:hidden;}
+#topshow .sup-more{ width:200px; height:28px; line-height:28px; background-color:#009237; text-align:center;margin:-1px; position: relative;}
+#topshow .sup-more a{color:#fff;}
+#topshow .sup-more a:hover{color:#ffddc3;}
+#topshow .special{border:0 none; height: 232px;}
+#topshow .special .top{height:85px; border-bottom:1px dashed #dfdfdf; margin:10px 10px 0; overflow:hidden;}
+#topshow .special ul{padding:8px 0 9px 12px;}
+#topshow .special li{ background:url("../images/ico.png")/*tpa=/images/ico.png*/ no-repeat -317px -628px; padding-left:8px;width:170px;height:24px;line-height:24px;margin:0;overflow:hidden;}
+#topshow .news-list{padding:15px 15px 10px;overflow:hidden;}
+#topshow .news-list .top{padding-bottom:13px;border-bottom:1px dashed #dfdfdf;}
+#topshow .news-list dt{ width:150px; height:105px;margin-right:15px;overflow:hidden;}
+#topshow .news-list dd{width:530px;height:105px;line-height:20px;overflow:hidden;}
+#topshow .news-list dd strong{display:block;height:20px;font-size:16px;margin-bottom:5px;}
+#topshow .news-list  ul{padding-top:10px;}
+#topshow .news-list  ul li{float:left;width:340px;line-height:26px; background:url("../images/ico.png")/*tpa=/images/ico.png*/ no-repeat -317px -628px; padding-left:8px;}
+#topshow .recomment{height:182px;overflow:hidden;}
+#topshow .recomment ul{padding:10px 12px;}
+#topshow .recomment ul li{width:100%;height:24px;line-height:24px;overflow:hidden;}
+#topshow .ex-search{width:240px;height:250px;padding-top:10px;overflow:hidden;}
+#topshow .ex-search dl{padding:7px 0 7px 10px;line-height:30px;}
+#topshow .ex-search dt{width:65px;height:30px;}
+#topshow .ex-search dd{width:148px;}
+#topshow .ex-search .ex-input,#topshow .ex-search .select-txt{display:block;width:148px;height:30px;line-height:30px;border:1px solid #c9c9c9;border-radius:2px;padding-left:10px;}
+#topshow .ex-search .select-txt{background:url("../images/purico.png")/*tpa=/images/purico.png*/ no-repeat right -390px;}
+#topshow .ex-search .option{background-color:#fff;border:1px solid #c9c9c9;position: absolute;margin-1px;}
+#topshow .ex-search .option a{display:block;width:146px;padding-left:20px;line-height:25px;}
+#topshow .ex-search .option a:hover{ background-color:#f5f5f5;}
+#txt_fromtime,#txt_totime{background:url("../images/purico.png")/*tpa=/images/purico.png*/ no-repeat right -441px;}
+#topshow .orange-btn{ width:148px; height:30px;text-align:center; background-color:#009237;color:#fff;font-size:14px; border:none; cursor:pointer;}
+
+.you-exhibition{height:290px;overflow:hidden;} 
+.you-exhibition li{margin:12px 0 0 12px;height:80px;}
+.you-exhibition li img{width:214px;height:80px;}
+.rightbar{ width:240px;}
+.rightbar .high-quality{ width:190px; height:75px; padding:10px 8px;}
+.rightbar .high-quality li{ height:20px; background:url("../images/ico.png")/*tpa=/images/ico.png*/ no-repeat -317px -626px; padding-left:8px; margin:5px 0; overflow:hidden;}
+
+
+.cooperation{ height:528px; overflow:hidden;}
+.cooperation li{ padding:13px 0 0 10px; padding:17px 0 0 10px\9; *padding:14px 0 0 10px;}
+
+
+
+/*推荐展会*/
+.rightbox .recomment{ width:240px; border:1px solid #dfdfdf; float:right; }
+.rightbox .recomment ul{ width:218px; height:182px; padding:10px; line-height:24px; }
+
+/*展会查询*/
+.rightbox .query{ width:240px; border:1px solid #dfdfdf; border-top:0; line-height:30px; }
+.rightbox .query-tit{ height:38px; line-height:38px; background-color:#f5f5f5; border-bottom:1px solid #dfdfdf; padding-left:10px; }
+.rightbox .query ul{ height:200px; padding:20px 0 10px 13px; }
+.rightbox .query ul li{ padding:4px 0; }
+.rightbox .ex-input{ width:148px; height:26px; line-height:26px; border:1px solid #c9c9c9; border-radius:2px; padding-left:2px; }
+.rightbox .orange-btn{ width:148px; height:30px; line-height:30px; margin-right:15px; text-align:center; background-color:#ff6200; border:none; cursor:pointer; }
+
+/*重点展会*/
+.focus-exhibition{ width:941px; height:334px; float:left; border:1px solid #dfdfdf; }
+.focus-exhibition .ftit,.leftbar .exhi .etit{ height:38px; line-height:38px; background-color:#f5f5f5; border-bottom:1px solid #dfdfdf; padding-left:15px; }
+.focus-exhibition li{ -width:213px; float:left; padding:15px 4px 5px 15px; }
+.focus-exhibition li dt{ -width:209px; height:90px; padding:1px; border:1px solid #d8d8d8; overflow:hidden; }
+.focus-exhibition li dd{ height:20px; width:213px; padding-top:6px; text-align:center; overflow:hidden; }
+
+/*优质展会*/
+.comment-tit{ height:38px; line-height:38px; background-color:#f5f5f5; border-bottom:1px solid #dfdfdf; padding-left:10px; }
+.comment-ico{ border-left: 4px solid #006a28; padding-left:13px; }
+.rightbar{ width:240px; border:1px solid #dfdfdf; float:right; }
+.rightbar .high-quality{ width:190px; height:75px; padding:10px 8px; }
+.rightbar .high-quality li{ height:20px; background:url("../images/ico.png")/*tpa=/images/ico.png*/ no-repeat -317px -626px; padding-left:8px; margin:5px 0; overflow:hidden; }
+
+/*展会指南 国内展会 国际展会 展会报道*/
+.leftbar{ width:950px; float:left; overflow:hidden; }
+.leftbar .exhi{ width:462px; height:285px; border:1px solid #e2e2e2; float:left; margin-bottom:15px; overflow:hidden; }
+.leftbar .exhi .etit b{ background:url("../images/ico.png")/*tpa=/images/ico.png*/ no-repeat -74px -502px; padding-left:15px; }
+.leftbar .exhi dl{ height:110px; margin:3px; border-bottom:1px dotted #e7e7e7; padding:10px 5px 6px 10px; }
+.leftbar .exhi dt{ width:134px; height:80px; float:left; margin-right:10px; overflow:hidden; }
+.leftbar .exhi dd{ width:290px; float:left; }
+
+.leftbar .exhi ul{ width:430px; margin:5px 10px 15px 10px; line-height:26px; float:left; }
+.leftbar .exhi li{ width:430px;height:26px;line-height:26px; background:url("../images/ico.png")/*tpa=/images/ico.png*/ no-repeat -317px -626px; padding-left:8px; float:left;overflow:hidden; }
+
+/*展会行业*/
+.rightbar .trade{ width:240px; float:left; }
+.rightbar .trade ul{ width:240px; padding:10px 0 13px 0; float:left; overflow:hidden; }
+.rightbar .trade ul li{  height:36px; line-height:36px; padding-left:10px;float:left;overflow:hidden; }
+.rightbar .trade ul a:hover{  background-color:#F7600e; padding:3px; color:#fff; float:left; text-decoration:none;overflow:hidden; }
+
+/*会展服务*/
+.exhibition-service{width:941px;border:1px solid #dfdfdf;float:left;}
+.exhibition-service .part{width:450px;height:250px;float:left;padding-left:14px;overflow:hidden;}
+.exhibition-service .part .stit{width:450px;height:30px;line-height:30px;border-bottom:1px dotted #d6d6d6;}
+.exhibition-service .part dl{height:110px;border-bottom:1px dotted #d6d6d6;padding:10px 0;}
+.exhibition-service .part dt{width:150px;height:90px;float:left;margin-right:15px;overflow:hidden;}
+.exhibition-service .part dd{width:240px;float:left;}
+
+.exhibition-service .part ul{width:430px;margin:5px 10px 10px 0;line-height:26px;float:left;}
+.exhibition-service .part li{width:420px;height:26px;line-height:26px;background:url("../images/ico.png")/*tpa=/images/ico.png*/ no-repeat -317px -626px;padding-left:8px;float:left;overflow:hidden;}
+
+/*合作伙伴*/
+.cooperation{ overflow:hidden; }
+.cooperation li{ padding:13px 0 0 10px; padding:17px 0 0 10px\9; *padding:14px 0 0 10px; }
+
+/*展馆博览*/
+.exhpar{ height:245px; border:1px solid #e2e2e2; overflow:hidden; zoom:1; }
+.exhpar ul li{ padding:15px 0 0 16px; float:left; -width:220px; height:175px; overflow:hidden; }
+.exhpar ul li p{ width:220px; text-align:center; font-size:14px; margin-top:8px; }
+
+/*友情链接*/
+.friendlink li{ padding:8px 10px 0 10px; word-break:keep-all; float:left; }
+.friendlink .ftitle{ height:40px; border-bottom:2px solid #dfdfdf; font:18px/2.5 "Microsoft YaHei"; }
+
+/*展会列表样式---面包屑*/
+
+.left_box .titlex { height: 22px; line-height: 22px; padding:5px 0; font-size: 14px; font-weight: bold; margin: 8px 10px 9px 10px; border-bottom: 1px solid #dbdbdb; }
+.left_box .titlex .title-ico {;border-left: 4px solid #e56e14;
+  padding-left: 10px;
+}
+
+
+.list-left{ width:943px; float:left;border: 1px solid #dfdfdf;}
+.list-left .list{ width:941px; padding-bottom:15px; border:1px solid #dfdfdf; float:left; line-height:24px; overflow:hidden;}
+.list-left .list .w960{ width:960px; }
+.list-left .list .list-part{ width:900px; padding-bottom:15px; margin:20px 35px 0 20px; border-bottom:1px dotted #dfdfdf; float:left; }
+
+.list-right{ width:242px; float:right; }
+.list-right .ad{ -width:242px; padding:10px; border:1px solid #dfdfdf; }
+
+/*内容页*/
+.detailtit{ width:940px; height:100px; background-color:#f8f8f8; border-bottom:1px solid #e1e1e1; text-align:center; float:left; }
+.detailtit dt{ height:60px; line-height:60px; font-size:20px; font-family:"微软雅黑","宋体"; padding-left:36px; }
+.detailtit dd { width:920px; height:26px; line-height:26px;}
+.detailtit dd span{ margin-left:15px;}
+.detailtit dd p{ width:380px; margin-left:140px; display:inline; }
+
+.detail{ border-top:3px solid #f0f0f0; -padding:20px; line-height:24px;}
+.detail .f14{ font-size:14px; font-weight:normal; line-height:26px;}
+.w940{ width:940px;overflow:hidden; }
+
+.detit{ border-bottom:1px dotted #e2e2e2; width:910px; height:80px; float:left; margin-bottom:20px; padding:0 10px 0 15px; }
+.detit li{ width:250px; height:36px; line-height:36px; float:left;overflow:hidden; }
+
+/*免责声明*/
+.state {width: 96%;border:1px solid #ffd980; background:#fffbd8; float: left; margin-left: 20px;margin-top: 20px; color: #666; padding: 10px 10px 10px 10px; display:inline; overflow: hidden;margin-bottom: 20px;}
+
+
+
+.time {float: right;_display: inline;margin-top: 0px;}
+
+
+
+
+

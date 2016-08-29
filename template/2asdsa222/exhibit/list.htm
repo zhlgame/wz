@@ -1,0 +1,84 @@
+{template 'header'}
+<script type="text/javascript">var sh = '{$MOD[linkurl]}search.php?catid={$catid}';</script>
+ 
+<form method="post" action="" id="form1">
+ 
+    <!--面包屑-->
+    <div class="wrapper">
+        <div class="crumbs mt-10">
+            <span class="fr mr10">共找到 <b class="red">
+                {$items}</b> 条信息</span> 您所在的位置：<a href="{$MODULE[1][linkurl]}">首页</a> &raquo; <a href="{$MOD[linkurl]}">{$MOD[name]}</a> &raquo; {cat_pos($CAT, ' &raquo; ')} <span class="orange">
+                {$title}</span>
+        </div>
+    </div>
+    <!--展会列表-->
+    <div class="wrapper">
+        <div class="list-left mt-5">
+            <div class="list">
+ 
+                <p class="comment-tit f-14">
+                    <span class="comment-ico">展会列表</span></p>
+                
+                        {if $page == 1}{ad($moduleid,$catid,$kw,6)}{/if}
+{if $tags}{template 'xiaohei-fairlist', 'tag'}{/if}
+                    
+                <div class="clear">
+                </div>
+                
+{if $showpage && $pages}<div class="pages">{$pages}</div>{/if}
+ 
+ 
+            </div>
+        </div>
+        <div class="list-right">
+            <div class="ad mt-5">
+                <p><img src="{DT_SKIN}ad/zh/exad3.jpg" alt=""></p>
+            </div>
+            <!--优质展会-->
+            <div class="rightbar mt-15">
+                <p class="comment-tit f-14">
+                    优质展会</p>
+                
+                <p class="mt-15 ml10">
+                    <a target="_blank" rel="nofollow" href="#">
+                        <img src="{DT_SKIN}ad/zh/exad3.jpg" alt=""></a></p>
+<p class="mt-15 ml10">
+                    <a target="_blank" rel="nofollow" href="#">
+                        <img src="{DT_SKIN}ad/zh/exad3.jpg" alt=""></a></p>
+<ul class="high-quality" style="height: auto;">
+    
+<!--{tag("moduleid=$moduleid&length=36&condition=status=3&pagesize=8&order=addtime desc&target=_blank&template=mls-list")}--> 
+        
+</ul>
+ 
+            </div>
+            <!--推荐展会-->
+            <div class="rightbar mt-15">
+                <p class="comment-tit f-14">
+                    推荐展会</p>
+                
+<ul class="high-quality" style="height: auto;">
+    
+        <!--{tag("moduleid=$moduleid&length=36&condition=status=3&pagesize=8&order=addtime desc&target=_blank&template=mls-list")}--> 
+        
+</ul>
+ 
+            </div>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    </form>
+ 
+<script> 
+$('.sellWindow').find('.small').find('li').each(function(){
+	$(this).on("mouseenter", function(e) {
+		var a = $(this),b=a.find('img').attr('src').replace('.thumb.','.middle.'),c=a.parents('dl').find("dt img"),t;
+		e.preventDefault();
+		
+		clearTimeout(t);
+		t = setTimeout(function() {c.attr("src", b)},2e2)
+	})
+})
+</script>
+{template 'footer'}

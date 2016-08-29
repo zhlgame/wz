@@ -1,0 +1,70 @@
+{template 'header'}
+<script type="text/javascript">var sh = '{$MOD[linkurl]}search.php?catid={$catid}';</script>
+    <!--面包屑-->
+    <div class="wrapper">
+        <div class="crumbs mt-10">
+            <span class="fr mr-10">共找到 <b class="red">
+                {$items}</b> 条信息</span> 您所在的位置：<a href="{$MODULE[1][linkurl]}">首页</a> » <a href="{$MOD[linkurl]}">{$MOD[name]}</a> » {cat_pos($CAT, ' » ')} <span class="orange">
+                {$title}</span>
+        </div>
+    </div>
+    <!--展会列表-->
+    <div class="wrapper">
+        <div class="list-left mt-10">
+            <div class="list">
+ 
+                <p class="comment-tit f-14">
+                    <span class="comment-ico">展会列表</span></p>
+                
+                        {if $page == 1}{ad($moduleid,$catid,$kw,6)}{/if}
+{if $tags}{template 'xiaohei-fairlist', 'tag'}{else}
+		{template 'noresult', 'message'}{/if}
+                    
+                <div class="clear">
+                </div>
+                
+{if $showpage && $pages}<div class="pages">{$pages}</div>{/if}
+ 
+ 
+            </div>
+        </div>
+        <div class="list-right">
+            <div class="ad mt-10">
+                <p>
+            </div>
+            <!--优质展会-->
+            <div class="rightbar mt-15">
+                <p class="comment-tit f-14">
+                    优质展会</p>
+                
+                <p class="mt-15 ml10">
+                    <a target="_blank" rel="nofollow" href="#">
+                    </p>
+<p class="mt-15 ml10">
+                    <a target="_blank" rel="nofollow" href="#">
+             </p>
+<ul class="high-quality" style="height: auto;">
+    
+<!--{tag("moduleid=$moduleid&length=36&condition=status=3&pagesize=8&order=addtime desc&target=_blank&template=mls-list")}--> 
+        
+</ul>
+ 
+            </div>
+            <!--推荐展会-->
+            <div class="rightbar mt-15">
+                <p class="comment-tit f-14">
+                    推荐展会</p>
+                
+<ul class="high-quality" style="height: auto;">
+    
+        <!--{tag("moduleid=$moduleid&length=36&condition=status=3&pagesize=8&order=addtime desc&target=_blank&template=mls-list")}--> 
+        
+</ul>
+ 
+            </div>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+ 
+{template 'footer'}

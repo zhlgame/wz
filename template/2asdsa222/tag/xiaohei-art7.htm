@@ -1,0 +1,6 @@
+{loop $tags $i $t} 
+<li><span><a href="{$t[caturl]}">[{$t[catname]}]</a></span> 
+<a href="{$t[linkurl]}"> {dsubstr($t[title], 26)}</a>
+                            </li>
+ 
+{/loop}

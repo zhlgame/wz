@@ -1,0 +1,307 @@
+/* CSS Document */
+
+.iuser {height:35px;overflow:hidden;line-height:100px;}
+a.iuser_l:link,a.iuser_l:visited,a.iuser_l:active {float:left;display:block;width:100px;height:70px;background:url("image/iuser.png")/*tpa=http://www.cbssww.com/skin/default/image/iuser.png*/ no-repeat;}
+a.iuser_l:hover {background-position:0 -35px;}
+a.iuser_r:link,a.iuser_r:visited,a.iuser_r:active {float:left;display:block;width:80px;height:70px;background:url("image/iuser.png")/*tpa=http://www.cbssww.com/skin/default/image/iuser.png*/ no-repeat;background-position:-100px 0;}
+a.iuser_r:hover {background-position:-100px -35px;}
+a.iuser_m:link,a.iuser_m:visited,a.iuser_m:active {float:left;display:block;width:120px;height:70px;background:url("image/iuser.png")/*tpa=http://www.cbssww.com/skin/default/image/iuser.png*/ no-repeat;background-position:-180px 0;}
+a.iuser_m:hover {background-position:-180px -35px;}
+a.iuser_u:link,a.iuser_u:visited,a.iuser_u:active {float:left;display:block;width:120px;height:70px;background:url("image/iuser.png")/*tpa=http://www.cbssww.com/skin/default/image/iuser.png*/ no-repeat;background-position:0 -70px;}
+a.iuser_u:hover {background-position:0 -105px;}
+a.iuser_e:link,a.iuser_e:visited,a.iuser_e:active {float:left;display:block;width:60px;height:70px;background:url("image/iuser.png")/*tpa=http://www.cbssww.com/skin/default/image/iuser.png*/ no-repeat;background-position:-120px -70px;}
+a.iuser_e:hover {background-position:-120px -105px;}
+
+.icatalog_head {border:#DDDDDD 1px solid;border-bottom:none;height:31px;line-height:31px;overflow:hidden;padding:0 10px 0 10px;background:#EEEEEE url("image/box_head_bg.gif")/*tpa=http://www.cbssww.com/skin/default/image/box_head_bg.gif*/ repeat-x;}
+.icatalog_head div {background:url("image/ico_open.gif")/*tpa=http://www.cbssww.com/skin/default/image/ico_open.gif*/ no-repeat 175px 8px;}
+.icatalog_head strong {font-size:14px;}
+.icatalog_body {border:#DDDDDD 1px solid;border-top:none;padding:6px 8px 6px 8px;}
+
+.icatalog {height:390px;overflow:hidden;}
+.icatalog ul {height:32px;overflow:hidden;border-bottom:#EEEEEE 1px solid;}
+.icatalog li {float:left;height:32px;line-height:32px;padding:0 6px 0 2px;}
+.icatalog strong {color:#225588;font-size:14px;}
+
+#site_stats {float:right;height:22px;overflow:hidden;margin:3px 0 0 0;width:200px;}
+#site_stats li {height:22px;line-height:22px;overflow:hidden;text-align:right;color:#666666;background:url("image/ico_arrow_up.gif")/*tpa=http://www.cbssww.com/skin/default/image/ico_arrow_up.gif*/ no-repeat right center;padding-right:12px;}
+#site_stats span {color:#38970E;}
+.announce {height:70px;overflow:hidden;}
+
+.isell_head {height:30px;overflow:hidden;background:url("image/line.gif")/*tpa=http://www.cbssww.com/skin/default/image/line.gif*/ repeat-x 0 29px;margin:5px 15px 0 5px;padding:0 0 0 15px;}
+.isell_1,.isell_2{width:80px;text-align:center;float:left;font-size:14px;}
+.isell_2 {height:30px;line-height:26px;font-weight:bold;border-top:#258CFF 2px solid;border-right:#DDDDDD 1px solid;border-left:#DDDDDD 1px solid;background:#FFFFFF;}
+.isell_1 {height:30px;line-height:30px;}
+.isell_s {padding:5px;margin:0 5px 0 0;}
+.isell_s img {margin:10px 0 10px 0;}
+.isell_s li {line-height:30px;height:30px;width:110px;overflow:hidden;}
+.isell_s ul {margin-bottom:10px;}
+.isell_m {padding:5px;margin:0 5px 0 0;}
+.isell_m img {margin:10px 0 10px 0;}
+.isell_m li {line-height:22px;height:22px;width:110px;overflow:hidden;}
+.isell_m ul {margin-bottom:5px;}
+
+.loading {width:100%;height:220px;background:url("image/loading.gif")/*tpa=http://www.cbssww.com/skin/default/image/loading.gif*/ no-repeat center center;}
+
+.headline h2 {text-align:center;font-size:16px;margin:0;height:40px;line-height:40px;overflow:hidden;}
+.headline span {color:#225588;}
+
+.w290 {width:290px;}
+.ibox_head {height:31px;line-height:31px;background:url("image/ibox_head.png")/*tpa=http://www.cbssww.com/skin/default/image/ibox_head.png*/ no-repeat 0 15px;padding:0 0 0 15px;}
+.ibox_head strong {background:#FFFFFF;font-size:14px;padding:0 5px 0 5px;}
+.ibox_body {padding:0 10px 0 15px;}
+.ibox_body li {height:28px;line-height:28px;background:url("image/li_dot.gif")/*tpa=http://www.cbssww.com/skin/default/image/li_dot.gif*/ no-repeat 5px 13px;padding:0 10px 0 12px;}
+.ibox_body a {font-size:14px;}
+.ibox_body_s {background:url("image/dot.gif")/*tpa=http://www.cbssww.com/skin/default/image/dot.gif*/ repeat-x 0 center;margin:0 20px 0 25px;}
+
+.ispecial {background:#EEEEEE url("image/ispecial_bg.png")/*tpa=http://www.cbssww.com/skin/default/image/ispecial_bg.png*/ no-repeat;height:23px;line-height:23px;overflow:hidden;padding:0 10px 0 6px;}
+
+.job_head {border-bottom:#258CFF 1px solid;background:#FAFAFA;height:22px;line-height:22px;margin:0 10px 0 10px;overflow:hidden;}
+.job_head li {float:left;height:22px;line-height:22px;padding:0 10px 0 10px;}
+.job_1 {}
+.job_2 {background:#258CFF;}
+.job_2 span {color:#FFFFFF;}
+
+/* know */
+.know_credit {background:url("image/ico_reward.gif")/*tpa=http://www.cbssww.com/skin/default/image/ico_reward.gif*/ no-repeat;font-size:11px;color:#666666;padding:0 0 0 14px;}
+.video li {background:url("image/ico_video.gif")/*tpa=http://www.cbssww.com/skin/default/image/ico_video.gif*/ no-repeat 2px 6px;padding:0 10px 0 21px;}
+
+.topr {width:400px;float:right;}
+.topl {width:260px;}
+
+#ipad_tips {width:720px;border:#697078 1px solid;margin:0 auto 10px auto;background:#FAFAFA;padding:10px 0 10px 0;}
+.ipad_tips_logo {width:60px;float:left;padding:0 10px 0 10px;}
+.ipad_tips_text {width:610px;float:left;line-height:24px;font-size:14px;}
+.ipad_tips_ico1 {background:url("image/ipad_tips.gif")/*tpa=http://www.cbssww.com/skin/default/image/ipad_tips.gif*/ no-repeat 5px -34px;padding:4px 15px 4px 15px;}
+.ipad_tips_ico2 {background:url("image/ipad_tips.gif")/*tpa=http://www.cbssww.com/skin/default/image/ipad_tips.gif*/ no-repeat 5px -56px;padding:4px 15px 4px 15px;}
+.ipad_tips_hide {width:28px;float:left;padding-top:15px;}
+a.ipad_tip_close:link,a.ipad_tip_close:visited,a.ipad_tip_close:active{display:block;width:16px;height:16px;background:url("image/ipad_tips.gif")/*tpa=http://www.cbssww.com/skin/default/image/ipad_tips.gif*/ no-repeat;text-decoration:none;}
+a.ipad_tip_close:hover {display:block;width:16px;height:16px;background:url("image/ipad_tips.gif")/*tpa=http://www.cbssww.com/skin/default/image/ipad_tips.gif*/ no-repeat 0 -18px;text-decoration:none;}
+
+/*add by nara:index*/
+
+#indexAn2{display:block; position:absolute; width:118px; height:32px; line-height:32px;background:#ff3f43;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px #DDDDDD;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    overflow: hidden;
+    text-align: center;}
+#indexAn3{display:block; position:absolute; margin-left:125px; width:120px; height:32px; line-height:32px;background:#ff3f43;border-radius: 2px;box-shadow: 0 1px 1px #DDDDDD;color: #FFFFFF;display: block;float: right;overflow: hidden;text-align: center;}
+
+
+
+.Skin2Tools,.Skin2NewsTop,.AntSkin2NewsTab .Tab,.AntSkin2NewsTab .Tab li{background-image:url("image/Bg_Skin2.gif")/*tpa=http://www.cbssww.com/skin/default/image/Bg_Skin2.gif*/; background-repeat:no-repeat; background-position:left top;}
+
+.Skin2Tools2,.Skin2NewsTop,.AntSkin2NewsTab .Tab,.AntSkin2NewsTab .Tab li{background-repeat:no-repeat; background-position:left top;}
+
+.newsleft{float: left;height: 300px;width: 355px;}
+.newsTop{float: left;height: 300px;width: 355px;margin: 0 0 7px 10px;}
+.newsRight{float: right;width:250px;}
+.Skin2NewsTop { width:355px; height:118px; background-position:-365px top; margin-bottom:7px;}
+.Skin2NewsTop h1 { width:300px; height:30px; line-height:30px; overflow:hidden; margin:0 auto; text-align:center;font-family:"Î¢ÈíÑÅºÚ"; font-size:16px; font-weight:bold; padding-top:7px;}
+.Skin2NewsTop h1 a,.Skin2NewsTop h1 a:link,.Skin2NewsTop h1 a:visited { color:#c94700;}
+.Skin2NewsTop ul { font-family:"ËÎÌå"; width:330px; margin: 0 auto; padding:5px 0 0 0;}
+.Skin2NewsTop ul li a { font-family:"ËÎÌå";}
+.Skin2NewsTop ul li { width:160px; height:23px; line-height:23px; overflow:hidden; float:left; margin-right:5px;}
+.AntSkin2NewsTab { width:355px;}
+.AntSkin2NewsTab .Tab { height:27px; border-right:solid 1px #dddddd; background-position:left -101px; line-height:27px; position:relative; z-index:1;}
+.AntSkin2NewsTab .Tab li {float:left; width:88px; height:27px; text-align:center; position:relative; background-position:left -131px;}
+.AntSkin2NewsTab .Tab li a { color:#4e609a;text-decoration:none;}.AntSkin2NewsTab .Tab li a:hover { color:#ba2636;}
+.AntSkin2NewsTab .Tab .Current { background-position:-176px -131px; font-weight:bold;}
+.AntSkin2NewsTab .Content { width:353px; border:solid 1px #dddddd; height:147px; overflow:hidden; position:relative; top:-1px;}
+.AntSkin2NewsTab .NewsInfo { padding:13px 0 0 13px;}
+.AntSkin2NewsTab .NewsInfo .L { float:left; width:126px;}.AntSkin2NewsTab .NewsInfo .L .AntImgCenter { margin-top:3px;}
+.AntSkin2NewsTab .NewsInfo .Title { width:126px; text-align:center; height:25px; line-height:25px; overflow:hidden;}
+.AntSkin2NewsTab .NewsInfo .R { font-family:"ËÎÌå"; font-size:14px; line-height:1.8em; float:left; padding-left:7px;}
+.AntSkin2NewsTab .NewsInfo .R li { height:25px; width:200px; line-height:25px; overflow:hidden; }
+.AntSkin2NewsTab .NewsInfo .R li a{font-family:"ËÎÌå";}
+.AntImgCenter,.AntImgCenter a{width:120px;height:90px; overflow:hidden;}
+.AntImgCenter {border:solid 1px #e0e0e0; padding:2px;}
+.AntImgCenter a{display:table-cell;vertical-align:middle;text-align:center;outline:none;*display:block;*font-family:Arial;*font-size:80px;}
+.AntImgCenter img{vertical-align:middle;width:120px;height:90px;}
+.ImgCenter { float:left; padding-left:4px;overflow:hidden;width:120px;margin-bottom: 4px;}
+.AntImg,.AntImg a{width:114px;height:95px; overflow:hidden; margin-bottom:4px;}
+.AntImg {border:solid 1px #e0e0e0; padding:2px;}
+.AntImg a{display:table-cell;vertical-align:middle;text-align:center;outline:none;*display:block;*font-family:Arial;*font-size:45px;}
+.AntImg img{vertical-align:middle;
+max-width:114px; max-height:95px;
+width: expression(this.width > 114 && this.width > this.height ? 114 : true);
+height: expression(this.height > 95 ? 95 : true);}
+.AntTit { width:120px; text-align:center;}
+.AntTit a { display:block; width:120px; height:16px;line-height:16px;overflow:hidden;}
+.HouseInfo { width:240px; height:50px; margin: 0 auto; padding:10px 0 0 0;}
+.HouseInfo li {height:24px; line-height:24px; width:200px; overflow:hidden; font-family:"ËÎÌå";}
+.HouseInfo li a:link,.HouseInfo li a:visited{color:#666666;}
+.Skin2Tools { width:355px; height:75px; background-position:left -24px;}
+.Skin2Tools ul { width:310px; height:65px; float:right; padding:6px 0 0 5px;}
+.Skin2Tools ul li { width:52px; margin-right:10px; height:21px; float:left; line-height:21px; overflow:hidden;}
+
+.Skin2Tools2 { width:250px; height:300px; border:thin #CCCCCC;}
+.Skin2Tools2 ul { width:210px; height:80px; float:right; padding:6px 0 0 0px;}
+.Skin2Tools2 ul li { width:90px; margin-left:10px; height:21px; float:left; line-height:21px; overflow:hidden;}
+
+
+.ImgCenter_bt { margin-left: 24px; margin-right: 24px;float:left; padding-left:4px;overflow:hidden;width:110px;margin-bottom: 4px;}
+.AntImg_bt,.AntImg_bt a{width:104px;height:104px; overflow:hidden; margin-bottom:4px;}
+.AntImg_bt {border:solid 1px #e0e0e0; padding:2px;}
+.AntImg_bt a{display:table-cell;vertical-align:middle;text-align:center;outline:none;*display:block;*font-family:Arial;*font-size:45px;}
+.AntImg_bt img{vertical-align:middle;
+max-width:104px; max-height:104px;
+width: expression(this.width > 104 && this.width > this.height ? 104 : true);
+height: expression(this.height > 104 ? 104 : true);}
+.AntTit_bt { width:110px; text-align:center;}
+.AntTit_bt a { display:block; width:110px; height:16px;line-height:16px;overflow:hidden;}
+
+
+
+.service_top { width:550px; float:right;}
+.service_top .kf { position:relative; width:330px; height:54px; background:url("image/qq-1_07.gif")/*tpa=http://www.cbssww.com/skin/default/image/qq-1_07.gif*/ no-repeat;}
+.service_top .kf a { position:absolute; bottom:0;}
+.service_top .kf .xy { left:65px;}
+.service_top .kf .wh { left:245px;}
+.service_top ul { background:url("image/-1_07.gif")/*tpa=http://www.cbssww.com/skin/default/image/-1_07.gif*/ no-repeat;}
+.service_top ul { font-size:14px; line-height:2.2em; background-position:40px 3px; text-indent:5.5em;}
+
+
+
+		.comm_tit1{height:40px; width:100%; line-height:40px; overflow:hidden;}
+		.comm_tit1 h3{ margin: 0px;float:left; color:#176FB9; font-size:18px; font-family:microsoft YaHei; position:relative; width:80px;}
+.comm_tit1 h3.Ant6orange{ height:30px; padding-bottom:5px; background:url("../../../demo.xiaomayi.co/Template/Ant/index/index7/images/arrlabred.jpg")/*tpa=http://demo.xiaomayi.co/Template/Ant/index/index7/images/arrlabred.jpg*/ no-repeat center bottom; font-size:16px;}
+.comm_tit1 h3.Ant6orange b{ font-weight:100; background:#F96C36; display:block; height:30px;  line-height:30px; text-align:center; padding:0 5px; color:#fff; border-radius: 4px/* 0 0 4px*/;}
+.comm_tit1 div.more{ float:left; color:#9C9C9C; font-size:14px;margin-left: 100px;width: 220px;}
+.comm_tit1 div.more a{ color:#9C9C9C; font-weight:bold;}
+.comm_tit1 div.more a.f12px{ font-size:12px; display:block; float:right; height:18px; line-height:18px; background:url("../images/cut.jpg")/*tpa=http://www.cbssww.com/skin/images/cut.jpg*/ no-repeat 0px 0px; padding:0 15px; padding-right:5px; color:#fff;}
+.border_bm{border-bottom:2px solid #9C9C9C;width:570px;float:right;height: 26px;}
+
+
+
+.com-trading-list,.list-content,.com-trading-list ul{background:url("image/bg-com-index.png")/*tpa=http://www.cbssww.com/skin/default/image/bg-com-index.png*/ no-repeat -999px -999px; overflow:hidden;}
+.com-trading-list{float:left;padding:6px 0 10px 20px;margin-right:14px;width:210px;background-position:0 -728px;}
+.com-trading-list h3{margin:0;color:#666;font-size:12px;line-height:32px;font-weight:700;}
+.com-trading-list h3 span{color:#fe9b4a;}
+.com-trading-list ul{background-position:0 8px;padding-left:24px;line-height:30px;}
+.com-trading-list ul li{height:30px;overflow:hidden;}
+.com-trading-list ul li i.dot{display:none;}
+.infoDiv{border:#D8D8D8 solid 1px; border-top:#FF7300 solid 2px;}
+.infoDiv_title{height:28px; background:url("image/indexbk.png")/*tpa=http://www.cbssww.com/skin/default/image/indexbk.png*/ repeat-x 0px -220px; line-height:28px; padding-left:5px; border-bottom:#D8D8D8 solid 1px; font-size:14px; font-weight:bold;
+color: #FE9B4A;font-size: 16px;font-weight: 700;}
+
+
+.flinks ul li{background:url("image/topbar.png")/*tpa=http://www.cbssww.com/skin/default/image/topbar.png*/ no-repeat -999px -999px;}
+.flinks .fl_header,.flinks .fl_header h3, .flinks .fl_content{float:left;}
+.flinks{width:978px;border:1px solid #e8e8e8;display: block;overflow:hidden;}
+.flinks .fl_header{background:#fafafa;position:relative;width:85px; height:100%;}
+.flinks .fl_header h3{padding:15px 10px 0 10px;font-size:14px;font-weight:bold;margin: 0px;}
+.flinks .fl_header i{position:absolute; top:15px; right:-2px; _right:-3px; +right:-2px; z-index:9999; display:block; width:8px; height:20px; background:url("image/ico_arrowsct.gif")/*tpa=http://www.cbssww.com/skin/default/image/ico_arrowsct.gif*/ no-repeat 0 -15px;}
+.flinks .fl_content{border-left:1px solid #e8e8e8;min-height:40px; _height:auto!important; _height:40px; _min-height:40px; width:892px;}
+.flinks ul{margin:12px 10px 10px;overflow:hidden;}
+.flinks ul li{background-position:-77PX -40px;color:#ccc;line-height:24px;padding:0 10px 0 9px;white-space:nowrap;margin-left:-1px;}
+
+
+.user-do, .user-do li, .user-do li a {
+    background: url("image/sprite-index.png")/*tpa=http://www.cbssww.com/skin/default/image/sprite-index.png*/ no-repeat scroll -999px -999px transparent;
+    display: block;
+    overflow: hidden;
+}
+.user-do {
+    background-position: 0 -920px;
+    background-repeat: repeat-x;
+    height: 60px;
+    overflow: hidden;
+    width: 100%;
+}
+.user-do li {
+    background-position: 0 -542px;
+    margin: 4px 0 0;
+}
+.user-do li a {
+    color: #9C9C9C;
+    display: block;
+    height: 23px;
+    padding: 33px 0 0;
+    text-align: center;
+    width: 80px;
+}
+.user-do li a:hover {
+    color: #DC081C;
+    text-decoration: none;
+}
+
+
+.user-do .a1 {
+    background-position: 25px -609px;
+}
+.user-do .a2 {
+    background-position: 25px -709px;
+}
+.user-do .a3 {
+    background-position: 25px -806px;
+}
+.login-box .user-do .a1 {
+    background-position: 25px -658px;
+}
+.login-box .user-do .a2 {
+    background-position: 25px -758px;
+}
+.login-box .user-do .a3 {
+    background-position: 25px -855px;
+}
+.user-do .a1:hover {
+    background-position: 25px -658px;
+}
+.user-do .a2:hover {
+    background-position: 25px -758px;
+}
+.user-do .a3:hover {
+    background-position: 25px -855px;
+}
+
+.xt555_sermain{width:980px;height:auto;margin:0 auto;margin-top:10px; overflow:hidden;}
+.xt555_sermain_one{width:319px;height:auto;border:1px solid #d7d7d7;float:left;margin-right:9px;}
+.xt555_sermain_ser{margin-right:8px;}
+.xt555_sermain_thr{margin:0px;}
+.xt555_ad_thr{width:980px;margin:0 auto;overflow:hidden;}
+.xt555_sermain_one_title{ width:319px; height:28px; line-height:28px; float:left; background-position:0px -300px;}
+.xt555_sermain_one_title span{ float:left;background:url("image/wh_59.gif")/*tpa=http://www.cbssww.com/skin/default/image/wh_59.gif*/ no-repeat 10px; padding-left:30px;color:#3e3e3e;font-size:14px;font-weight:bold;}
+.xt555_sermain_one_title em{ float:right;color:#838383;font-style:normal;}
+.xt555_sermain_one_title em a{color:#838383; padding-right:10px;font-style:normal;padding:0px 5px;}
+.xt555_sermain_one_title em a:hover{color:#008000;padding-right:10px;font-style:normal;padding:0px 5px;}
+.xt555_sermain_one_txt{width:319px; height:auto;float:left;padding-bottom:7px;}
+.xt555_sermain_one_ad{width:319px; height:auto; text-align:center;margin-top:10px;padding-bottom:10px;margin-bottom:7px;border-bottom:1px dashed #d7d7d7;}
+.xt555_sermain_one_ad a{font-size:20px;color:#2b7f1d;font-weight:bold;font-family: "Microsoft YaHei" bold !important;width:297px;height:auto;line-height:20px;display:block;overflow:hidden;text-align:center;margin:0 auto; white-space:nowrap; text-overflow:clip;}
+.xt555_sermain_one_ad a:hover{ color:#f00;}
+.xt555_sermain_one_txt li{float:left;width:295px; padding-left:10px;height:24px; line-height:24px;}
+.xt555_sermain_one_txt li a{color:#5c5c5c;float:left; width:250x; height:24px; line-height:24px;overflow:hidden; display:block;}
+.xt555_sermain_one_txt li a:hover{color:#008000;}
+.xt555_sermain_one_txt li span{color:#5c5c5c;float:right;}
+.xt555_sermain_one_txt li a.lanse{color:#184b9e;}
+.xt555_sermain_one_txt li a.red{color:#f00;}
+.xt555_sermain_one_txt li.dianji{float:left;width:295px;height:24px; line-height:24px;overflow:hidden;padding-top:7px;}
+.xt555_sermain_one_txt li.dianji a{float:left;width:180px; color:#2b861b;}
+.xt555_sermain_one_txt li.dianji span a{ float:right;width:100px;color:#717171;text-align:right; padding-right:15px;cursor:pointer;}
+.xt555_sermain_one_txt li.dianji span a:hover{float:right;width:100px;color:#008000;text-align:right; padding-right:15px;cursor:pointer;}
+.xt555_sermain_one_title,.xt555_link_title,.xt555_link_title span{background:url("image/box_head.gif")/*tpa=http://www.cbssww.com/skin/default/image/box_head.gif*/ repeat-x;}
+.quick_nav { margin-top:10px; height:35px; font:bold 14px/35px simsun; background-position:0 -84px; overflow:hidden; padding-left:120px;}
+.quick_nav a { white-space:nowrap; color:#36c; display:block; float:left; _display:inline; padding:0 18px;}
+.quick_nav {background:url("image/index6_bg.gif")/*tpa=http://www.cbssww.com/skin/default/image/index6_bg.gif*/ no-repeat 0 0;}
+
+.mar10 { margin-top:10px;}
+.module_01 { position:relative; z-index:1; *zoom:1; border:1px solid #d8d8d8; text-align:left;}
+.module_01 .hd { height:31px; font:bold 14px/31px simsun; padding-left:8px; font-weight:bold; color:#444; background-position:0 -52px;}
+.module_01 .red { color:#c00;}
+.module_01 .green { color:#407600;}
+.news_list { padding:5px 8px;}
+
+.bianmin_foot { text-align:left; padding:5px 0 8px 6px;}
+.bianmin_foot li { text-align:center; padding:7px; border:1px solid #ccc; width:99px; height:34px; float:left; line-height:18px; overflow:hidden; display:inline; margin:3px;}
+.bianmintext { color:#036; position:absolute; top:5px; right:80px;}
+.bianmin_foot a { color:#404040;}.bianmin a:hover { color:#f50;}
+.clearfix:after { content: ".";  display: block;  height: 0;  clear: both; visibility: hidden; }
+.news_list { padding:5px 8px;}
+.module_01 .ft { position:absolute; top:7px; right:6px; font-family:simsun;}
+.module_01 .ft a { color:#36c;}.module_01 .ft a:hover { color:#c00;}
+.grid_04 { margin-top:10px;}
+.grid_04 .main_wrap { margin:0 0 0 254px;}
+.grid_04 .col_sub { width:244px; margin-left:-100%;}
+.module_anc .hd,.module_01 .hd { background:url("image/box_head.gif")/*tpa=http://www.cbssww.com/skin/default/image/box_head.gif*/ repeat-x 0 0;}

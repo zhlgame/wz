@@ -1,0 +1,1 @@
+var DTPath = "http://www.wz71888.com/";var SKPath = "http://www.wz71888.com/skin/default/";var MEPath = "http://www.wz71888.com/member/";var DTEditor = "fckeditor";var CKDomain = "";var CKPath = "/";var CKPrex = "caw_";

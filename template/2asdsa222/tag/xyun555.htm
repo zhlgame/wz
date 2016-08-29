@@ -1,0 +1,9 @@
+<ul class="clearfix">
+{loop $tags $i $t}
+<li><dl><dt class="vertical-img"><a title="{$t[alt]}" class="box-img" href="{$t[linkurl]}"{if $target} target="{$target}"{/if}><img src="{$t[thumb]}" width="{$width}" height="{$height}" alt="{$t[alt]}"/></a></dt>
+<dd><a href="{$t[linkurl]}" title="{$t[alt]}"{if $target} target="{$target}"{/if}>{$t[title]}</a></dd>
+</dl>
+</li>
+{/loop}
+</table>
+{if $showpage && $pages}<div class="pages">{$pages}</div>{/if}

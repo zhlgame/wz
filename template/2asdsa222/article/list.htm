@@ -1,0 +1,119 @@
+{template 'header'}
+<link rel="stylesheet" type="text/css" href="{DT_SKIN}css/infonews.css"/>
+<script type="text/javascript">var sh = '{$MOD[linkurl]}search.php?catid={$catid}';</script>
+<!--头行-->
+ 
+    <div class="wrapper mt10">
+        <div class="crumbs">
+<span class="fr mr10"> 共为您找到 <b class="red"> ( {$items} ) </b> 条相关资讯信息</span> 
+ 您所在的位置：<a href="{$MODULE[1][linkurl]}">首页</a> » <span class="orange"> <a href="{$MOD[linkurl]}">{$MOD[name]}</a> </span> » <span class="iblue">{cat_pos($CAT, ' » ')}</span>   
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div class="wrapper mt15">
+        <!--左侧列表-->
+        <div class="inf_htm_left">
+            <div class="title">
+                <b class="title-ico">
+               <a href="{$MOD[linkurl]}">{$MOD[name]}</a> » {cat_pos($CAT, ' » ')}</b> » 列表中心</div>
+{if $tags}{template 'list-catnews', 'tag'}{/if}
+        </div>
+        <!--右侧列表-->
+        <div class="inf_htm_right">
+            <!--排行榜-->
+            <div class="seniority">
+                <div class="tab_nav">
+                    <div class="title">
+                        排行榜</div>
+                    <ul>
+                        <li class="selected">本月</li>
+                        <li>本周</li>
+                        <div class="clear">
+                        </div>
+                    </ul>
+                    <div class="clear">
+                    </div>
+                </div>
+                <div class="tab_box">
+                    <ul class="tab1">
+                        
+                              <!--{php $tags=tag("moduleid=21&length=26&condition=status=3&pagesize=7&areaid=$cityid&order=hits desc&template=null");}-->
+                  {loop $tags $i $t}
+{if  $i<3}
+			<li class='on'><span>0{$i+1}</span><a href="{$t[linkurl]}" target="_blank" title="{$t[alt]}">{$t[title]}</a></li>
+			{else}
+			<li><span>0{$i+1}</span><a href="{$t[linkurl]}" target="_blank" title="{$t[alt]}">{$t[title]}</a>
+</li>
+{/if}
+					{/loop} 
+                    </ul>
+                    <ul class="tab2" style="display: none">
+                               <!--{php $tags=tag("moduleid=21&length=26&condition=status=3&pagesize=7&areaid=$cityid&order=".$MOD[order]."&template=null");}-->
+                  {loop $tags $i $t}
+{if  $i<3}
+			<li class='on'><span>0{$i+1}</span><a href="{$t[linkurl]}" target="_blank" title="{$t[alt]}">{$t[title]}</a></li>
+			{else}
+			<li><span>0{$i+1}</span><a href="{$t[linkurl]}" target="_blank" title="{$t[alt]}">{$t[title]}</a>
+</li>
+{/if}
+					{/loop}     
+ 
+                    </ul>
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+            <div class="baidu mt15">
+            <!-- 广告位：资讯列表页右1 -->
+        
+           
+            </div>
+ 
+            <!--热点聚焦-->
+            <div class="hot mt15">
+                <div class="title">
+                    热点聚焦</div>
+                <ul>
+                    
+                          <!--{tag("moduleid=$moduleid&condition=status=3&catid=$catid&areaid=$cityid&order=".$MOD[order]."&pagesize=".$MOD[page_srec])}-->
+                    
+                </ul>
+            </div>
+            <!--图片新闻-->
+            <div class="inf_img mt15">
+                <div class="title">
+                    图片新闻</div>
+                <ul>
+                    
+                           <!--{php $tags=tag("moduleid=$moduleid&length=14&condition=status=3 and thumb<>''&areaid=$cityid&pagesize=8&order=addtime desc&template=null");}-->
+                         {loop $tags $i $t}  
+                            <li><a target="_blank" href="{$t[linkurl]}">
+                                <img src="{$t[thumb]}">
+                                <p>{$t[title]}</p>
+                            </a></li>
+                             {/loop}
+ 
+                </ul>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+ 
+    <script type="text/javascript">
+        $("#nav").slide({
+            type: "menu",
+            titCell: ".mod_cate",
+            targetCell: ".mod_subcate",
+            delayTime: 0,
+            triggerTime: 10,
+            defaultPlay: false,
+            returnDefault: true
+        });
+    </script>
+ 
+ 
+{template 'footer'}

@@ -1,0 +1,77 @@
+/*! taomodi.com | by xiaohei | QQ:290948585  | 2015-01-14 */
+#topshow .center .supply{ width:737px; height:34px; line-height:32px; border:1px solid #dfdfdf; margin-top:15px; overflow:hidden;}
+#topshow .center .supply dt{ width:84px; border-right:1px solid #dfdfdf; text-align:center; background-color:#f8f8f8;}
+#topshow .center .supply dd{width:640px;}
+#topshow .center .supply li{width:100%;height:34px; overflow:hidden;} 
+#topshow .center .supply li span{ width:190px; text-align:center; float:left; margin:0 8px;}
+
+#topshow .center .comtab{ width:738px;overflow:hidden;}
+#topshow .center .comtab .header{ height:26px; line-height:26px; position:relative;}
+#topshow .center .comtab .header h3{ border-bottom:2px solid #e56e14; position:absolute;}
+#topshow .center .comtab ul{height:70px; padding:11px 0 0 15px; border:1px solid #dfdfdf; border-top:2px solid #dfdfdf;}
+#topshow .center .comtab ul li{float:left;display:inline;width:210px; margin:0 8px; padding-left:10px;height:24px;line-height:24px;background:url("../images/ico.png")/*tpa=/images/ico.png*/ no-repeat -316px -628px;overflow:hidden;}
+
+
+#topshow .help-tab{ padding:15px 10px; border:1px solid #dfdfdf; border-top:0 none;overflow:hidden;}
+#topshow .help-tab .hd{ height:30px; line-height:30px; color:#747474; border-bottom:1px solid #dfdfdf;}
+#topshow .help-tab .hd ul{width:110%;}
+#topshow .help-tab .hd li{margin-right:22px;cursor:pointer}
+#topshow .help-tab .hd .on{ color:#444; border-bottom:1px solid #ff7300;}
+#topshow .help-tab .bd{ margin-top:10px; float:left;}
+#topshow .help-tab .bd ul{ width:216px; line-height:24px; display:none;}
+#topshow .help-tab .bd a{ text-decoration:none;}
+
+#topshow .new-num{ height:100%;  padding-top:12px;border:1px solid #dfdfdf; border-top:0; overflow:hidden;}
+#topshow .new-num .bgimg{display:block;width:73px;height:73px;background:url("../images/ico.png")/*tpa=/images/ico.png*/ no-repeat -208px -84px; position:absolute;top:22px;left:20px;}
+#topshow .new-num .content{ margin-left:110px;}
+#topshow .new-num .content li{ width:120px; height:40px;line-height:18px;margin-bottom:12px; border-left:4px solid #dedede; padding-left:10px;}
+#topshow .new-num .content strong{font-size:15px;display:block;color:#ea1e00;}
+#topshow .price{background-color:#dfdfdf;width:241px;height:146px;overflow:hidden;}
+#topshow .price .ptit{margin:1px 1px 0;height:33px; line-height:33px; background-color:#f5f5f5;padding-left:15px;}
+#topshow .price li{width:59px;height:36px;margin:1px 0 0 1px;overflow:hidden;}
+#topshow .price li a{display:block;background-color:#fff;width:59px;height:36px;line-height:36px;text-align:center;}
+#topshow .price li a:hover{background-color:#f3f3f3;}
+.floor{ margin-top:15px;}
+.floor .header{padding-bottom:10px;}
+.floor .header h3{  font-size:18px;line-height:1.23;padding-left:10px; background:url("../images/ico2.jpg") no-repeat;}
+.floor .header h3 em{color:#006a28;}
+.floor .header .more a{margin:0 8px;}
+.floor .content{padding-left:220px;height:502px;border:1px solid #dfdfdf;overflow:hidden;position:relative;}
+.floor .adimg{background-color:#fdfdfd;width:220px; padding:1px; border-right:1px solid #dfdfdf; position:absolute;left:0;top:0;}
+.floor-cate{ width:480px; height:315px;border-right:1px solid #dfdfdf;}
+.floor-cate ul{padding-left:20px;}
+.floor-cate li{width:460px;height:26px;line-height:26px;overflow:hidden;}
+.floor-cate li a{ padding:0 13px; float:left;}
+.floor-cate li.first{ margin-top:16px;}
+.floor-company{width:484px;}
+.floor-company h4{ height:44px; border-bottom:1px solid #dfdfdf; padding-left:20px; font:16px/44px "Microsoft YaHei";}
+.floor-company-vip{width:244px;height:235px;margin:18px 0 18px 18px;border-right:1px dotted #dfdfdf;}
+.floor-company-vip  ul{margin-left:-15px;}
+.floor-company-vip li{ width:240px;height:92px;margin:2px 0 0 18px;overflow:hidden;}
+.floor-company-vip li.top{ width:220px;height:auto;margin:0 0 10px 10px;}
+.floor-company-vip dt a{color:#006a28;}
+.floor-company-vip dd a{color:red;}
+.floor-company-vip dd{margin-top:3px;}
+.floor-company-vip dd.ddvip{padding:5px 0;}
+.floor-company-list{ margin:18px 0 0 18px; width:200px; overflow:hidden;}
+.floor-company-list li{background:url("../images/ico.png")/*tpa=/images/ico.png*/ no-repeat -316px -628px;padding-left:10px;line-height:26px;height:26px; overflow:hidden;}
+.floor .proshow{width:988px;height:183px;border-top:1px solid #dfdfdf; overflow:hidden;clear:both;}
+.floor .proshow li{ width:132px; height:170px; margin:15px 0 0 25px;}
+.floor .proshow .a-img{display:block;width:132px; height:132px; border:1px solid #efefef;margin-bottom:7px;}
+.floor .proshow .a-img:hover{border-color:#006a28;}
+.floor .proshow .te{display:block;height:20px;width:130px;text-align:center;}
+.ibox .adimg{width:200px;height:220px;margin-top:5px;overflow:hidden;position:relative;}
+.ibox .adimg .te{ width:200px; height:30px; line-height:30px; padding:0 10px; bottom:0; left:0; background-color:#000; filter:alpha(opacity=70);-moz-opacity:0.7;-khtml-opacity: 0.7;opacity: 0.7; position:absolute; z-index:1; }
+.ibox .adimg .te a{ color:#fff;overflow:hidden;}
+.ibox .rank-list{width:195px;height:225px;}
+.ibox .rank-list ul{background:url("../images/ico.png")/*tpa=/images/ico.png*/ no-repeat -290px -332px; padding-left:35px;}
+.ibox .rank-list li{width:158px; height:33px; line-height:33px; overflow:hidden;}
+.dynamic{ width:360px;margin-left:35px;}
+.dynamic h4{ font-size:16px}
+.dynamic dl{ width:360px;padding:8px 0 10px;}
+.dynamic dt{ width:70px;margin-right:10px;}
+.dynamic dd{ width:280px;height:62px;line-height:20px;color:#999;overflow:hidden;}
+.dynamic dd strong{display:block;margin-bottom:2px;}
+.dynamic ul{border-top:1px dashed #dfdfdf;width:360px;padding-top:6px;}
+.dynamic ul li{width:100%;line-height:24px;height:24px; overflow:hidden;}
+.dynamic ul li .time{float:right;margin-left:10px;color:#999;}

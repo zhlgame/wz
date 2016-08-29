@@ -1,0 +1,8 @@
+<ul class="clearfix">
+<li class="first">
+{loop $tags $i $t}
+<span><a href="{$MODULE[$moduleid][linkurl]}search.php?kw={urlencode($t[word])}"{if $target} target="{$target}"{/if} class="b" rel="nofollow">{$t[word]}</a></span>
+{if $i>0 && $i%2==1}</li><li>{/if}
+ 
+{/loop}
+</li></ul>

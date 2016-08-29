@@ -1,0 +1,6 @@
+<ul class="clearfix">
+{loop $tags $i $t}
+<li><a class="a-img" href="{$t[linkurl]}"{if $target} target="{$target}"{/if}><img src="{if $t[thumb]}{str_replace('thumb', 'middle', $t[thumb])}{else}{DT_SKIN}image/nopic.gif{/if}" width="{$width}" height="{$height}" alt="{$t[alt]}"/></a>
+{if $length}<strong class="te"><a href="{$t[linkurl]}" title="{$t[alt]}"{if $target} target="{$target}"{/if}>{$t[title]}</a></strong>{/if}</li>
+{/loop}
+</ul>

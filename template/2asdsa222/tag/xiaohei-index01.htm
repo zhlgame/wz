@@ -1,0 +1,8 @@
+ <ul style="margin-top: -41px;" class="clearfix fl" id="marqueebox">
+<li> 
+{loop $tags $i $t}
+<span class="fl te"><a href="{$t[linkurl]}"{if $target} target="{$target}"{/if} title="{$t[alt]}">{$t[title]}</a></span>
+{if $i<($pagesize-1) && $i%3==2}</li><li>{/if}
+{/loop}
+</li>
+                      </ul>

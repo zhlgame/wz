@@ -1,0 +1,10 @@
+<ul class="clearfix cldl">
+    {loop $tags $t}
+    <li>
+        <dl>
+            <dt><a href="{$t[linkurl]}" target="_blank"><img src="{imgurl($t[thumb])}" width="80" height="80" alt=""/></a></dt>
+            <dd> <strong class="te"><a href="{$t[linkurl]}" target="_blank">{$t[company]}</a></strong> <span class="te"> 主营项目：{$t[business]} </span> <span class="te"> 公司地址：{$t[address]}}</span> </dd>
+        </dl>
+    </li>
+    {/loop}
+</ul>

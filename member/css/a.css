@@ -1,0 +1,275 @@
+@charset "utf-8";
+/* CSS Document */
+.main-logo{padding-right: 10px; float:left}
+.main-logo-img {
+height:70px;
+padding-right: 10px;
+width:160px;display: table-cell;
+margin: 7px 0 2px 4px;border-right: 1px solid #dfdfdf;text-align: center;
+vertical-align: middle;
+}
+.nav_f13 {
+color: #006bea;
+font-size: 14px;
+}
+.con3_con3_col3_title1{color:#0082F0; border-bottom:2px solid #0082F0;}
+.con3_con3_col3_title2{color:#909898;font-size:14px;}
+.soso{background:#0082F0;}
+.main-logo-img img{ max-height:100%; max-width:100%;}
+.main-logo1{ width:120px; float:left;}
+.main-logo1 h3{color: #222;font-size: 22px;line-height:40px;height: 40px; font-weight:normal; margin-top:5px;}
+.main-logo1 span{color: #222;font-size: 14px;
+line-height: 12px;font-family: Arial,sans-serif;}
+.main-logo1 a:hover{color:#ff7300 !important;}
+.head_02 {
+width: 100%;
+height: 44px;
+background: #0082F0;
+}
+.search{position: relative; margin-top: 32px; width:510px; float: left}
+.search_panel input{border-bottom: medium none; border-left: medium none; padding-bottom: 0px; line-height:30px; margin: 0px; padding-left: 5px; padding-right: 0px; float: left; height:30px; border-top: medium none; border-right: medium none; padding-top: 0px}
+.search_panel input.search_tab{border-bottom: #3F8CD2 3px solid; border-left: #3F8CD2 3px solid; width:53px; background: url("img/xl_bj.jpg")/*tpa=/member/css/img/xl_bj.jpg*/ no-repeat 0px -6px; color: #666; border-top: #3F8CD2 3px solid; padding-left:8px; height:30px; overflow:hidden; font-size:14px; cursor: pointer; border-right: medium none}
+.search_panel input.search_text{border-bottom: #3F8CD2 3px solid; width:280px; color: #999; border-top: #3F8CD2 3px solid}
+.alisearch-action {
+float: left;
+overflow: hidden;
+height: 36px;
+}
+.alisearch-action button {
+display: inline-block;
+float: left;
+overflow: visible;
+border: 0 none;
+cursor: pointer;
+color: #FFF;
+font-size: 16px;
+font-weight: 400;
+padding: 0 12px;
+height: 36px;
+line-height: 36px;
+}
+button.market {
+background-color: #006CE2;
+}
+button.global {
+background-color: #FF7900;
+}
+
+.search .stdiv{border-bottom: #3F8CD2 3px solid; position: absolute; border-left: #3F8CD2 3px solid; width:60px; background: #fff; border-top: medium none; top:36px; border-right: #3F8CD2 3px solid; left: 0px; font-size:14px;}
+.search .stdiv ul li{color: #999; text-align:center; cursor: pointer;line-height: 24px;}
+.search .stdiv ul li:hover{background: #e1e1e1}
+.daohang {width:1190px;height:44px; margin:0 auto; position: relative}
+.daohang li,.daohang li a:hover,.daohang .ljbj{height:44px;line-height:44px;}
+.daohang li {float:left; cursor:pointer;text-align:center;}
+.daohang li a:hover{color:#FFF}
+.daohang li a{ display:block;width:125px;height:44px;}
+.daohang li:hover{ background:#1365D5;}
+.daohang li.cur{ background:#f93740;}
+.daohang li a{color:#FFF;font-size: 16px;}
+.daohang .ljbj { width:190px;background:#4594FD;float:left;color:#FFF;font-size:16px; text-align:left;}
+.daohang .ljbj .fl{ width:25px; height:16px; float:left; background:url("img/index_pic2.png")/*tpa=/member/css/img/index_pic2.png*/ no-repeat 0 -160px; margin:13px 22px; overflow:hidden; display:inline;}
+.daohang .fr{ float:right;}
+.shouping_left {width:190px;height:490px;}
+.shouping_left ul li {float:left;border-top: 1px solid #5AA1FE;
+border-bottom: 1px solid #3487F2;height:31px;line-height:31px;background:#4594FD;width:94px;text-align:center;color:#fff;}
+.shouping_left ul li a {color:#fff;}
+.shouping_left ul li.zonglei {background:#2474E3;width:190px;font-size:14px;color:#FFF;border:none;}
+.shouping_left ul li.b_right  {border-right: 1px solid #5AA1FE;}
+.shouping_left ul li.b_left {border-left: 1px solid #3487F2;}
+.shouping_left ul li.duanli {width:62px;}
+.shouping_center {width:700px;border-bottom:1px solid #CCCCCC;height:463px;}
+.keyService ul { width:100% !important; overflow:hidden; height:140px !important;}
+.keyServicebox { height:137px !important; width:220px !important;}
+.keyService ul li{ width:72px !important;}
+.remen {
+width: 100%;
+float: left;
+height: 43px; line-height:43px;
+}
+.remen a {
+color: #006bea!important; font-size:16px; padding-left:14px;
+}
+.zixun .th {
+line-height: 19px;
+padding: 0 19px;
+}
+.gray {
+color: #888;
+}
+
+.zixun .table{margin:0 4px;width:245px;height:182px;overflow:hidden}
+.zixun .table table{width:245px;table-layout:fixed;border-collapse:separate;border-spacing:2px}
+.zixun .table .col-1{width:132px;}
+.zixun .table .inline{width:132px;overflow:hidden;height:34px}
+.zixun .table .col-2{text-align:left;white-space:nowrap;padding-left:5px;overflow:hidden; padding-right:10px; text-indent:1em;}
+.zixun .table .icon-num{display:inline-block;vertical-align:middle;margin-right:5px;width:12px;height:12px;text-decoration:none;font-style:normal;background-color:#00afef;color:#fff}
+.zixun .table .icon-num.bg-gray{background-color:#999}
+.zixun .odd td{height:34px;background-color:#eee}
+.zixun .even td{height:34px}
+.zixun .table .col-1 a{vertical-align:middle; line-height:34px;}
+.blue {color: #006ce2;}
+.zixun .table .number{ width:12px; height:13px;margin:0 5px; float:left; margin-top:12px; text-align:center; line-height:13px;}
+.zixun .table .stress {color: #fff; background:#006bea}
+.zixun .table .grey {color: #fff; background:#aaa}
+.mrtj{border:1px solid #ddd; width:1188px; border-bottom:none; margin-bottom:10px;}
+.mrtj .header {height: 50px;
+border-bottom: 2px solid #006f9a;
+line-height: 50px;
+overflow: hidden;
+}
+.header .title {
+float: left;
+width: 217px;
+margin-left: 22px;
+display: inline;
+_margin-top: 15px;
+}
+.header .txt {
+font-size: 18px;
+color: #006f9a;
+vertical-align: middle;
+}
+.header .tabcon {
+float: left; margin-top:10px;
+}
+.tab ul{ width:500px;}
+.header .bg02 {
+width: 150px;
+float: left;
+text-align: center;
+font-size: 14px;
+cursor: pointer;
+height: 40px;
+line-height: 40px;
+}
+.header .bg01 {width: 150px;
+float: left;
+text-align: center;
+font-size: 14px;
+cursor: pointer;
+height: 40px;
+line-height: 40px;
+background-color: #006f9a;color: #fff;border-radius: 2px 2px 0 0;
+}
+.header .tab-t:hover{background-color: #006f9a;color: #fff;border-radius: 2px 2px 0 0;}
+.mrtj .content {
+padding: 0 2px;
+overflow: hidden;
+}
+.fd-clear {
+clear: both;
+}
+.ggindex{ width:100%; margin-bottom:10px;}
+.ggindex ul{ overflow:hidden;}
+.ggindex li {
+width: 195px;
+height: 60px;
+float: left;
+}
+.ggindex .lol {
+width: 195px;
+height: 60px;
+float: left;
+margin-left:4px;
+}
+.ggindex li img{ width:195px; height:60px;}
+.hqlist{ margin-bottom:10px; overflow:hidden;}
+.qiug{width:925px;height:auto;overflow:hidden;float:left;margin-top:5px}
+.qg{height:260px; margin-right:5px;}
+.qg,.qg01{float:left;overflow:hidden;width:455px}
+.w150{display:inline;margin-left:5px}
+.mz5{margin-left:5px}
+.ql01{float:left;overflow:hidden;width:920px}
+.qg01,.ql01,.ql02{border-bottom:1px solid #d2d2d2}
+.qw{height:260px;float:left;overflow:hidden;width:300px}
+.qw01{border-bottom:1px solid #d2d2d2;height:30px;line-height:30px;float:left;overflow:hidden;width:300px;margin:5px 0}
+.qg01,.w150,.gd,.jiaodian,.gdd{height:30px;line-height:30px}
+.ql01,.ql02{height:40px;line-height:40px}
+.w150{float:left;width:100px}
+.w150 a:link,.w150 a:visited,.w150 a:active{font-size:14px;font-weight:100}
+.w100{float:left;width:100px;display:inline;margin-left:5px;height:30px;line-height:30px}
+.w100 a:link,.w100 a:visited{font-weight:bold;font-size:16px}
+.gd a:link,.gd a:visited,.gdd a:link,.gdd a:visited,.tuku .gddd a:link,.tuku .gddd a:visited{font-size:12px;color:#999}
+.qiep{width:250px;float:left}
+.qiep li{width:60px;float:left;height:29px;text-align:center;margin:0 2px;padding:0 5px;line-height:29px}
+.qiep2{width:310px;float:left}
+.qiep2 li{float:left;height:29px;line-height:29px;text-align:center;padding:0 5px; font-size:14px; margin-right:5px;}
+.qiep1{width:415px;float:left}
+.qiep1 li{width:75px;float:left;height:29px;text-align:center;margin:0 5px;padding:0 5px;line-height:29px;font-size:14px}
+.qieq{width:920px;float:left}
+.qieq li{width:120px;float:left;height:39px;text-align:center;line-height:39px}
+.qieq li a{ font-size:14px;}
+.qie{width:1185px;float:left;height:40px}
+.qie li{width:145px;float:left;height:40px;text-align:center;line-height:40px}
+.maya li{width:1188px;height:145px;float:left}
+.dongtai_nr{width:918px;height:270px;float:left}
+.qie_list{ float:left;}
+.qie_list li{width:450px;float:left;height:32px;line-height:32px}
+.qie_list li .qie_le{width:340px;float:left;height:30px;line-height:30px;overflow:hidden;padding-left:20px;display:inline;background:url("img/steelindex_icon.png")/*tpa=/member/css/img/steelindex_icon.png*/ 0 -70px no-repeat}
+.qie_list li .qie_ri{float:right;height:30px;line-height:30px;overflow:hidden;color:#999; margin-right:3px;}
+.qie_list1 li{width:290px;float:left;height:31px;line-height:31px;border-bottom:1px #ccc dashed}
+.qie_list1 li .qie_le{width:200px;float:left;height:30px;line-height:30px;overflow:hidden;padding-left:20px;display:inline;background:url("img/steelindex_icon.png")/*tpa=/member/css/img/steelindex_icon.png*/ 0 -70px no-repeat}
+.qie_le a{font-size:14px!important}
+.qie_list1 li .qie_ri{width:40px;float:right;height:30px;line-height:30px;overflow:hidden;color:#999}
+.con1{background:url("img/jiantou.png")/*tpa=/member/css/img/jiantou.png*/ no-repeat center;cursor:pointer;color:#3186ff;font-weight:bold;border-bottom:1px solid #3186ff;!important}
+.con3{background:url("img/jiantou.png")/*tpa=/member/css/img/jiantou.png*/ no-repeat center;cursor:pointer;color:#3186ff;font-weight:bold;border-bottom:1px solid #3186ff;!important}
+.con4{background:url("img/jiantou.png")/*tpa=/member/css/img/jiantou.png*/ no-repeat center 9px;cursor:pointer;color:#3186ff;font-weight:bold;border-bottom:1px solid #3186ff;!important}
+
+.con3 a,.con3 a:link,.con3 a:visited,.con3 a:active,.con4 a,.con4 a:link,.con4 a:visited,.con4 a:active,.con1 a,.con1 a:link,.con1 a:visited,.con1 a:active{color:#3186ff;font-size:14px;font-weight:bold}
+.yssj{ float:right; width:258px; border:1px solid #ddd; height:242px; margin-top:5px;}
+.yssj .title{ background:#e6e6e6; height:30px;}
+.yssj .title h3{ font-size:17px; padding-left:8px; font-weight:normal; line-height:30px; width:120px; float:left;}
+.yssj .title a{font-size: 12px; float:right;line-height:30px; padding-right:10px;
+color: #999;}
+.yssj ul{ width:240px; margin:0 auto; overflow:hidden;}
+.yssj_name{ font-size:14px; line-height:30px; padding:5px 0; overflow:hidden}
+.yssj_name a{float:left; display:block; width:150px; overflow:hidden; white-space:nowrap;text-overflow:ellipsis; color:#333}
+.yssj_name a:hover {color:#fe8434;}
+.yssj_name span{ float:right; color:#333;}
+.yssj ul li{ float:left; border-bottom:1px solid #ddd; padding-bottom:10px;}
+.yssj ul li p{ font-size:14px; width:240px; overflow:hidden; white-space:nowrap;text-overflow:ellipsis; color:#999}
+.newindex{margin-bottom: 10px;
+overflow: hidden;}
+.mainb {
+width: 918px;
+height: 310px;
+float: left;
+margin-bottom: 10px;
+margin-top: 10px;
+overflow: hidden;border: 1px #ddd solid;
+}
+.gupiao {
+height: 245px;
+width: 635px;
+float: left;
+margin-top: 10px;
+}
+.gupiao .xuqiu{width:640px;height:auto;float:left;}
+.gupiao .xuqiu li{width:315px;height:30px;line-height:30px;float:left;overflow:hidden;font-size:12px}
+.fgjiage{width:920px;float:left}
+.xuqiu .rong{width:240px;float:left;height:30px;line-height:30px;font-size:14px;padding-left:20px;display:inline;background:url("img/steelindex_icon.png")/*tpa=/member/css/img/steelindex_icon.png*/ 0 -70px no-repeat}
+.xuqiu .rong a{font-size:14px}
+.xuqiu .rrr{width:50px;float:left;height:30px;line-height:30px;text-align:center;font-size:12px}
+.changjia {
+height: 245px;
+margin: 10px;
+display: inline;
+width: 245px;
+float: left;
+}
+.changjia img{ width:245px; height:245px;}
+.maina{ border:1px solid #ddd; width:258px; height:310px; float:right; margin-top:10px;}
+.maina .title {font-size:17px;border-bottom:1px solid #ddd;
+height: 39px;color: #3186ff; line-height:39px; padding-left:8px;
+}
+.maina ul {
+width: 240px; padding-top:12px;
+margin: 0 auto;
+overflow: hidden;
+}
+.maina ul li{ width:100%; float:left; line-height:30px;}
+.maina li font {
+color: #3186ff; margin-right:5px;
+font-size: 13px;float:left
+}
+.maina li a{ font-size:14px; width:145px; overflow:hidden; white-space:nowrap; display:block; float:left}

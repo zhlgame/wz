@@ -1,0 +1,19 @@
+<ul>
+{loop $tags $i $t}
+<li>
+                            <div class="left">
+                                <h1>
+                                   <a  href="{$t[linkurl]}" target="_blank">{$t[title]}</a></h1>
+                                <p class="con">{$t[introduce]}<a href="{$t[linkurl]}" target="_blank">[阅读全文]</a>
+                            </div>
+                           <div class="time">[{timetodate($t[addtime], $datetype)}]</div>
+                            <div class="clear">
+                            </div>
+                        </li>
+{/loop}
+</ul>
+<div>
+{if $showpage && $pages}<div class="pages">{$pages}</div>{/if}
+          </div>
+ 
+ 

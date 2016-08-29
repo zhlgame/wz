@@ -1,0 +1,8 @@
+{loop $tags $t}
+<dl>
+    <dt class="te">[{area_pos($t[areaid], '','1')}] <a href="{userurl($t[username])}" target="_blank"><b>{$t[company]}</b></a></dt>
+    <dd class="te">主营项目<span class="gray_bg">{dsubstr($t[business], 22, '')}</span></dd>
+    <dd class="clearfix img"> {php $product=tag("moduleid=5&length=14&condition=status=3 and username='".$t[username]."' &areaid=$cityid&pagesize=2&order=addtime desc&template=null");}        
+        {loop $product $v} <span class="fl"><a class="box-img" href="{$v[linkurl]}" target="_blank"><img src="{imgurl($v[thumb])}" width="90" height="90" alt="{$v[alt]}"/><b>{$v[title]}</b></a></span> {/loop} </dd>
+</dl>
+{/loop} 

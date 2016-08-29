@@ -1,0 +1,14 @@
+{php $child = get_maincat($catid, 4, $level);}
+{loop $child $i $c}
+{if $i < $cols}
+<dl>
+	<dt><a href="{$MODULE[4][linkurl]}{$c[linkurl]}">{$c[catname]}</a></dt>
+    <dd>
+	{if $c[child]}
+	{php $sub = get_maincat($c[catid], 4);}
+	{loop $sub $j $s}<a href="{$MODULE[4][linkurl]}{$s[linkurl]}">{set_style($s[catname], $s[style])}</a>{/loop}
+	{/if}
+    </dd>
+</dl>
+{/if}
+{/loop}

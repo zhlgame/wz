@@ -1,0 +1,8 @@
+{loop $tags $i $t}
+<dl>
+<dt><a target="_blank" href="{$t[linkurl]}"><img src="{$t[thumb]}"></a></dt>
+<dd><a target="_blank" href="{$t[linkurl]}">{$t[title]}</a></dd>
+<dd>价格：<b class="orange">{if $t[unit] && $t[price]>0}{$t[price]}/{$t[unit]}{else}面议{/if}</b></dd>
+<dd class="gray1">{$t[company]}</dd>
+</dl>
+ {/loop}                  

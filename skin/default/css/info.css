@@ -1,0 +1,20 @@
+/*
+	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	This is NOT a freeware, use is subject to license.txt
+*/
+.info_main {padding:10px 10px 0 10px;}
+.info_main li {padding:8px 0 8px 15px;}
+
+.brand {padding:5px 0 5px 0;}
+.brand img {padding:3px;}
+.brand li {height:22px;line-height:22px;overflow:hidden;}
+
+/* sell && buy && company */
+.category {padding:10px 20px 5px 15px;}
+.category p {padding:5px 0 5px 0;margin:0;}
+.category div {padding:0 20px 0 20px;}
+.list {line-height:180%;margin:0 10px 0 10px;}
+.list div img {border:#CCCCCC 1px solid;}
+.list table {width:100%;border-bottom:#CCCCCC 1px dotted;}
+.list td {padding:10px 0 10px 0;}
+.list h3 {font-size:14px;margin:0px;height:22px;overflow:hidden;}

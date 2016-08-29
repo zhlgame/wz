@@ -1,0 +1,14 @@
+{php $child = get_maincat($catid, 5,1);}
+<ul class="clli">
+{loop $child $i $c}
+{if $i < 10}
+<li {if $i%5==0} class="first"{/if}>
+	<a href="{$MODULE[5][linkurl]}{$c[linkurl]}"><b class="f-14">{set_style($c[catname], $c[style])}</b></a>
+	{if $c[child]}
+	{php $sub = get_maincat($c[catid], 5, 1);}
+	{loop $sub $j $s}{if $j < 5} <a href="{$MODULE[5][linkurl]}{$s[linkurl]}">{set_style($s[catname], $s[style])}</a>{/if}{/loop}
+	{/if}
+</li>
+{/if}
+{/loop}
+</ul>

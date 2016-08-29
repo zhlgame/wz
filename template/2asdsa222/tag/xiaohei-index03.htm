@@ -1,0 +1,26 @@
+<ul class="clearfix">
+    {loop $tags $i $t}
+    {if $i==0}
+    <li class="top">
+        <dl>   
+             <dt class="f-14 te"><a href="{$t[linkurl]}" target="_blank">{$t[company]}</a>
+			 {if $t[vip]}
+            <span style="margin:5px 0"><img src="{DT_SKIN}image/vip_{$t[vip]}.gif" alt="{VIP}" title="{VIP}:{$t[vip]}级" align="absmiddle"/></span>
+            {/if}
+			</dt>
+            <dd class="ddvip" style="margin:5px 0">店铺等级：<span style="margin:5px 0"><img src="{DT_SKIN}image/vip-{$t[vip]}.gif" align="absmiddle"/></span>
+			<a href="{$t[linkurl]}" target="_blank" class="fr red"> 进入店铺</a>
+			</dd>
+            <dd class="te">在线联系：{if $t[username] && $DT[im_web]}{im_web($t[username].'&mid='.$moduleid.'&itemid='.$t[itemid])} {/if}{if $t[qq] && $DT[im_qq]}{im_qq($t[qq])} {/if}
+	{if $t[ali] && $DT[im_ali]}{im_ali($t[ali])} {/if}
+	{if $t[msn] && $DT[im_msn]}{im_msn($t[msn])} {/if}
+	{if $t[skype] && $DT[im_skype]}{im_skype($t[skype])} {/if}  </dd>
+            <dd class="te">经营范围：{$t[business]}</dd>
+            <dd class="te">联系电话：{$t[telephone]}</dd>
+            <dd class="te">通讯地址：{$t[address]}</dd>
+        </dl>    <li><a href="{$t[linkurl]}" target="_blank"><img src="{imgurl($t[thumb])}" width="220" height="86" alt=""/></a></li>
+    </li>
+    {else}
+    {/if}
+    {/loop}
+</ul>

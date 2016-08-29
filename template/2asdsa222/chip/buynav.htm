@@ -1,0 +1,8 @@
+{php $child = get_maincat($catid, 6);}
+<ul class="clearfix">
+    {loop $child $i $c}
+    {if $i < 10}
+    <li><a href="{$MODULE[$mid][linkurl]}{$c[linkurl]}">{$c[catname]}</a></li>
+    {/if}
+    {/loop}
+</ul>

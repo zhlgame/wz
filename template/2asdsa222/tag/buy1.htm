@@ -1,0 +1,5 @@
+<ul class="clearfix">
+{loop $tags $i $t}
+<li>{if $datetype}<span class="fr">&nbsp;【{timetodate($t[addtime], $datetype)}】</span>{/if}<a href="{$t[linkurl]}"{if $target} target="{$target}"{/if} title="{$t[alt]}">{$t[title]}</a></li>
+{/loop}
+</ul>

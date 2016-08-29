@@ -1,0 +1,177 @@
+{template 'header'}
+<link rel="stylesheet" type="text/css" href="{DT_SKIN}css/infonews.css"/>
+<script type="text/javascript">var module_id= {$moduleid},item_id={$itemid},content_id='content',img_max_width={$MOD[max_width]};</script>
+<!--头行-->
+<!--面包屑-->
+    <div class="wrapper">
+        <div class="crumbs mt10">
+            您所在的位置：<a href="{$MODULE[1][linkurl]}">首页</a> » <span class="orange"> <a href="{$MOD[linkurl]}">{$MOD[name]}</a> </span> » <span class="iblue">{cat_pos($CAT, ' » ')}</span> » <span class="orange">{$title}</span>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div class="wrapper mt15">
+        <!--左侧列表-->
+        <div class="inf_content">
+            <div class="title">
+                <h1 id="title">{$title}</h1>
+                <p class="fl">
+                   {if $copyfrom}<span>来源：</span>{if $fromurl}<a href="{$fromurl}" target="_blank">{/if}{$copyfrom}{if $fromurl}</a>{/if}{/if}
+                   {if $author} <span>责任编辑：</span>：{$author}{/if}
+                    有 {$hits} 人浏览 <span>日期：</span>{$adddate}
+                    <span class="f_r"><img src="{DT_SKIN}image/zoomin.gif" width="16" height="16" alt="放大字体" class="c_p" onclick="fontZoom('+', 'article');"/>  <img src="{DT_SKIN}image/zoomout.gif" width="16" height="16"  alt="缩小字体" class="c_p" onclick="fontZoom('-', 'article');"/></span>
+                </p>
+                 <!-- Baidu Button BEGIN -->
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more">分享到：</a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{"bdSize":16},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<!-- Baidu Button END -->
+            </div>
+            <div class="inf_arct">
+       <p class="blue">
+                   {if $introduce && $user_status == 3 && $page == 1} <span class="orange">文章摘要：</span>{$introduce}{/if}</p>
+                   {if $CP}{template 'property', 'chip'}{/if}
+                <div id="content">{template 'content', 'chip'}</div>
+		{if $voteid}<div class="pd20">{loop $voteid $v}
+		{load('vote_'.$v.'.htm')}{/loop}</div>
+		{/if}
+		{if $pages}<div class="pages">{$pages}</div>{/if}
+                <div id="divPage" class="paginator"></div>
+                    <div class="clear">
+                    </div>
+		{if $keytags}
+		<div class="keytags">
+		<strong>关键词：</strong>
+		{loop $keytags $t}
+		<a href="{$MOD[linkurl]}search.php?kw={urlencode($t)}" target="_blank" rel="nofollow">{$t}</a>
+		{/loop}
+		</div>
+		{/if}
+            </div>
+        <div class="clear">
+            </div>
+            {template 'comment', 'chip'}
+            <div class="clear"></div>
+            <div class="state fl">
+                免责声明：<br />
+                本网站部分内容来源于合作媒体、企业机构、网友提供和互联网的公开资料等，仅供参考。本网站对站内所有资讯的内容、观点保持中立，不对内容的准确性、可靠性或完整性提供任何明示或暗示的保证。如果有侵权等问题，请及时联系我们，我们将在收到通知后第一时间妥善处理该部分内容。</div>
+ 
+            <div class="clear">
+            </div>
+            <div class="weixin fl">
+                <p class="weixin-img">
+                    <img alt="微信" src="{DT_SKIN}images/weixin.png" /></p>
+                <div class="weixin1">
+                    关注<b class="red">{$DT[sitename]}</b>官方微信账号：<b class="red">"XXXX"</b>,每日获得互联网最前沿资讯，热点产品深度分析！</div>
+            </div>
+                        <div class="clear">
+            </div>
+            
+            <div style="margin-top: 20px" >
+            <center>
+		[ <a href="{$MOD[linkurl]}search.php" rel="nofollow">{$MOD[name]}搜索</a> ] 
+		[ <a href="javascript:SendFav();">加入收藏</a> ] 
+		[ <a href="javascript:SendPage();">告诉好友</a> ] 
+		[ <a href="javascript:Print();">打印本文</a> ] 
+		[ <a href="javascript:SendReport();">违规举报</a> ] 
+		[ <a href="javascript:window.close()">关闭窗口</a> ]
+		</center>
+                     </div>
+{if $MOD[show_np]}
+            <ul style="margin-top: 40px" class="next">
+<li><span class="gray">上一条:<!--{tag("moduleid=$moduleid&condition=status=3 and addtime>$addtime&areaid=$cityid&pagesize=1&order=addtime asc&template=list-np", -1)}--></span></li>
+<li class="nobor"><span class="gray">下一条：<!--{tag("moduleid=$moduleid&condition=status=3 and addtime<$addtime&areaid=$cityid&pagesize=1&order=addtime desc&template=list-np", -1)}--></span></li>
+            </ul>
+            	{/if}
+            <div class="relat">
+<p class="f14">>> 关于"<span class="iblue">{cat_pos($CAT, ' » ')}</span>"的相关资讯</p>
+<!--{php $tags=tag("moduleid=$moduleid&length=40&condition=status=3&catid=$catid&pagesize=8&order=addtime desc&template=null");}-->
+<ul class="relatlist mt15">
+              {loop $tags $t}
+                            <li><a href="{$t[linkurl]}" target="_blank" title="{$t[alt]}">{$t[title]}</a></li>
+                    {/loop}      
+            
+                </ul>
+            </div>
+        </div>
+        <!--右侧列表-->
+        <div class="inf_htm_right">
+            <!--排行榜-->
+            <div class="seniority">
+                <div class="tab_nav">
+                    <p class="title">排行榜</p>
+                    <ul>
+                        <li class="selected">本月</li>
+                        <li>本周</li>
+                        <div class="clear">
+                        </div>
+                    </ul>
+                    <div class="clear">
+                    </div>
+                </div>
+                <div class="tab_box">
+                    <ul class="tab1">
+                               <!--{php $tags=tag("moduleid=21&length=26&condition=status=3&pagesize=7&areaid=$cityid&order=hits desc&template=null");}-->
+                  {loop $tags $i $t}
+{if  $i<3}
+			<li class='on'><span>0{$i+1}</span><a href="{$t[linkurl]}" target="_blank" title="{$t[alt]}">{$t[title]}</a></li>
+			{else}
+			<li><span>0{$i+1}</span><a href="{$t[linkurl]}" target="_blank" title="{$t[alt]}">{$t[title]}</a>
+</li>
+{/if}
+					{/loop} 
+                    </ul>
+                    <ul class="tab2" style="display: none">
+                               <!--{php $tags=tag("moduleid=21&length=26&condition=status=3&pagesize=7&areaid=$cityid&order=".$MOD[order]."&template=null");}-->
+                  {loop $tags $i $t}
+{if  $i<3}
+			<li class='on'><span>0{$i+1}</span><a href="{$t[linkurl]}" target="_blank" title="{$t[alt]}">{$t[title]}</a></li>
+			{else}
+			<li><span>0{$i+1}</span><a href="{$t[linkurl]}" target="_blank" title="{$t[alt]}">{$t[title]}</a>
+</li>
+{/if}
+					{/loop}      
+                    </ul>
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+ 	    <div class="baidu mt15">
+                <!-- 广告位：资讯右侧1 -->
+               
+            </div>
+            <!--热点聚焦-->
+            <div class="hot mt15">
+                <div class="title">
+                    热点聚焦</div>
+                <ul>
+                          <!--{tag("moduleid=$moduleid&condition=status=3&catid=$catid&areaid=$cityid&order=".$MOD[order]."&pagesize=".$MOD[page_srec])}-->
+                         
+                </ul>
+            </div>
+ 	    <div class="baidu mt15">
+                <!-- 广告位：资讯右侧2 -->
+               
+            </div>
+            <!--图片新闻-->
+            <div class="inf_img mt15">
+                <div class="title">
+                    图片新闻</div>
+                <ul>
+                 <!--{php $tags=tag("moduleid=$moduleid&length=14&condition=status=3 and thumb<>''&areaid=$cityid&pagesize=8&order=addtime desc&template=null");}-->
+                         {loop $tags $i $t}  
+                            <li><a target="_blank" href="{$t[linkurl]}">
+                                <img src="{$t[thumb]}">
+                                <p>{$t[title]}</p>
+                            </a></li>
+                             {/loop}
+                </ul>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+ 
+{if $content}<script type="text/javascript" src="{DT_STATIC}file/script/content.js"></script>{/if}
+{template 'footer'}

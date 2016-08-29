@@ -1,0 +1,71 @@
+/*筛选条件*/
+.category {border: 1px solid #e4e4e4;border-top:2px solid #ff6600;padding: 10px 10px 7px 10px; overflow: hidden;}
+.category dt{width:50px; height: 26px; line-height: 26px; text-align:center; background-color:#ff6600; color: #fff;}
+.category dd{width:1110px;position:relative;}
+.category ul {width: 1050px; line-height: 28px; padding:0 0 5px 5px;overflow:hidden;}
+.category ul li {padding: 0 15px; white-space: nowrap;}
+.category ul li.hide{display:none;}
+.category ul li a{color:#3d5590}
+.category .category-showmorebtn{display:block; width:48px; height:18px;position:absolute;top:3px;right:0;}
+.category .category-showmorebtn em{background: url(images/ico.png) no-repeat -191px -523px; display:block; width:48px; height:18px;line-height:18px;padding-left:18px;}
+.category .category-showmorebtn:hover em{background-position:-240px -523px; text-decoration: none; color:#ff6600;}
+.category .category-showmorebtn .up{background-position:-191px -542px;}
+.category .category-showmorebtn:hover .up{background-position:-240px -542px;}
+
+/*筛选条件*/
+.select {background-color:#f5f5f5;height:40px;border:solid 1px #e8e8e8}
+.select li { float: left; padding: 0 10px; margin: 7px 0 0 10px; }
+.select .txt { width: 95px; height: 22px; line-height: 22px; border: 1px solid #d6d5d5; border-right: 0; }
+.select .select-btn { width: 45px; height: 22px; line-height: 22px; text-align: center; background-color: #eaeaea; border: 1px solid #d6d5d5; display: block; float: left; }
+
+
+/*企业列表产品展示*/
+.leftbox{ width:943px; float:left; overflow:hidden; }
+.leftbox .list { width: 943px; padding: 5px 0 10px 0; border-bottom: 1px dashed #dcdcdc; line-height:26px; overflow: hidden; }
+.leftbox .list:hover{ background-color:#f5f5f5; cursor:pointer; }
+.leftbox .list .inform { float: left; display: inline; margin-left: 10px; margin-right: 26px; width: 440px; }
+.leftbox .list .inform ul { float: left; }
+.leftbox .btn { margin: 12px 0 0 0; _margin: 20px 0 0 10px; height: 22px; line-height: 22px; cursor: pointer; }
+.leftbox .pro { float: right; }
+
+.leftbox .list .inform .round a:link, .leftbox .list .inform .round a:visited { color: #fff; background: #BBBBBB; display: inline-block; position: relative; padding: 0 6px; padding: 2px 6px 0 6px \9; margin: 2px; word-break: keep-all; text-align: center; text-decoration: none; font: normal 12px/16px Arial, sans-serif; border-radius: 5px; -webkit-transition: all 0.15s ease; -moz-transition: all 0.15s ease; -o-transition: all 0.15s ease; -ms-transition: all 0.15s ease; transition: all 0.15s ease; }
+.leftbox .list .inform .round a:hover { text-decoration: none; background: #ff5a00; position: relative; padding: 0 6px; padding: 2px 6px 0 6px \9; margin: 2px; word-break: keep-all; text-align: center; text-decoration: none; font: normal 12px/16px Arial, sans-serif; border-radius: 5px; -webkit-transition: all 0.15s ease; -moz-transition: all 0.15s ease; -o-transition: all 0.15s ease; -ms-transition: all 0.15s ease; transition: all 0.15s ease; }
+
+.leftbox .list .proshow { -width:460px; margin: 10px 0 0 0; }
+.leftbox .list .proshow li { width: 103px; float: left; padding: 5px 5px 10px 5px; }
+.leftbox .list .proshow dt { width: 95px; height: 95px; border: 1px solid #ddd; padding: 3px; overflow: hidden }
+.leftbox .list .proshow dt:hover { width: 95px; height: 95px; border: 1px solid #ff5a00; }
+.leftbox .list .proshow dd { margin-top: 5px;width: 90px;height: 22px; text-align: center;overflow: hidden; }
+
+.leftbox .list .com-code{ height:130px; padding-left:10px; border-left:1px solid #ececec; margin-left:5px; display:inline; }
+.leftbox .list .com-code dt{ margin:8px 0 0 8px; display:inline; }
+.leftbox .list .ac{ width:100px; text-align:center; }
+ 
+ /*列表页左侧内容*/
+.rightboxx { width:242px; float:right; overflow:hidden; }
+.rightboxx .tjhot{ width:240px; border:1px solid #dfdfdf; }
+.rightboxx .tjhot .rtitle{ height:39px; line-height:39px; background-color:#f5f5f5; padding-left:10px; border-bottom:1px solid #dfdfdf; }
+.rightboxx .tjhot .bk{ width:222px; border-top:0; padding:15px 0 0 15px; }
+.rightboxx .tjhot .bk li{ padding:5px 0 15px 0; height:100%; }
+.rightboxx .tjhot .bk li dt{ overflow:hidden; width:180px; height:180px; line-height:178px; *line-height:182px; text-align:center; margin-bottom:5px; }
+.rightboxx .tjhot .bk li dt a{ height:100%; vertical-align:middle\9; _writing-mode: tb-rl; }
+.rightboxx .tjhot .bk li dt img { vertical-align:middle; max-height:180px !important; max-width:180px !important; }
+
+
+.top-reconmmend{width:100%;margin-top:30px;overflow:auto;}
+.top-reconmmend ul{padding:10px;}
+.top-reconmmend dl{padding:10px;}
+.top-reconmmend ul li dt{overflow:hidden; width:160px; height:160px; line-height:158px; *height:162px; border:1px solid #d2d2d2; text-align:center; margin-bottom:5px;}
+.top-reconmmend ul li dt a{height:100%; vertical-align:middle\9; _writing-mode: tb-rl;}
+.top-reconmmend ul li dt a img{vertical-align:middle; max-height:160px !important; max-width:160px !important;}
+.top-reconmmend ul li dd{width:160px; _padding-bottom:15px;}
+.sideBar .recommend ul{padding:5px 12px;}
+.sideBar .recommend li{border-top:1px dotted #dfdfdf;width:100%;height:35px;line-height:35px; overflow:hidden}
+.sideBar .recommend li.first{border:0 none;}
+.sideBar .recommend li span{float:left;width:107px;}
+.sideBar .recommend li a:hover{color:#f30;}
+
+.tool{background-color:#f5f5f5;height:40px;border:solid 1px #e8e8e8}.tool .sort{font-size:14px;line-height:38px}
+.tool .sort li.first{margin-left:0;border-left:none}
+.tool .sort .link{display:block;height:38px;margin-left:-1px;padding:0 19px;border-left:solid 1px #f5f5f5;border-right:solid 1px #f5f5f5;text-decoration:none;color:#6d6d6d}.tool .sort .link:hover,.tool .sort .active{position:relative;z-index:1;background-color:#fff;border-color:#e5e5e5;color:#c00;}.tool .droplist{position:relative}.tool .sort .droplist .link{padding-right:25px;}.tool .droplist .link:hover{color:#6d6d6d;background-color:#f5f5f5;border-color:transparent}.tool .droplist .link .icon{border-top: #ccc 4px solid; border-right: #f5f5f5 5px solid; border-bottom: #f5f5f5 5px solid; border-left:#f5f5f5 5px solid; font-size: 0px; right:10px; width: 0px; line-height: 0; position: absolute; top:18px; height: 0px; -webkit-transition: -webkit-transform .2s ease-in; -moz-transition: -webkit-transform .2s ease-in; -o-transition: -webkit-transform .2s ease-in; transition: -webkit-transform .2s ease-in;}.tool .droplist ul{display:none;padding:5px 0;position:absolute;z-index:2;-top:-1px;left:-1px;border:solid 1px #ccc;background:#fff;-webkit-box-shadow:0 3px 3px rgba(0,0,0,.1);-moz-box-shadow:0 3px 3px rgba(0,0,0,.1);box-shadow:0 3px 3px rgba(0,0,0,.1)}.tool .sort .droplist li{line-height:27px;float:none;white-space:nowrap}.tool .droplist ul li a{border:none;padding:0 20px}.tool .droplist.hover ul{display:block}.tool .prices .inner{float:left;height:38px;width:130px}.tool .prices ul{padding:8px 0 0 10px}.tool .prices .sep{width:10px;text-align:center}.tool .prices .input{width:55px;padding:0 4px;height:21px;border:solid 1px #dfdfdf;line-height:normal;*line-height:21px;color:#999;}.tool .prices .submit{margin-left:10px;display:none}.tool .prices.hover{position:relative;z-index:2}.tool .prices.hover .inner{position:absolute;top:-1px;left:-1px;border:solid 1px #ccc;background:#fff;width:200px;-webkit-box-shadow:0 3px 3px rgba(0,0,0,.1);-moz-box-shadow:0 3px 3px rgba(0,0,0,.1);box-shadow:0 3px 3px rgba(0,0,0,.1)}.tool .prices.hover ul{padding-right:10px}.tool .prices.hover .submit{display:block}.tool .prices .btn{display:block;height:23px;padding:0 10px;background:#ff500b;color:#fff;line-height:23px;cursor:pointer;-webkit-border-radius:2px;-webkit-background-clip:padding-box;-moz-border-radius:2px;-moz-background-clip:padding;border-radius:2px;background-clip:padding-box}.tool .prices .btn:hover{color:#fff;background:#f82800}.tool .styles{margin:10px 12px 0 0;width:200px;font-size:14px;text-align:right;}.tool .filter{color:#6d6d6d;cursor:pointer;float:left;height:38px;line-height:38px;margin-left:12px;}.tool .filter span{float:left;display:inline-block;margin-left:4px;}.tool .filter .icon{background-position:-35px -268px;height:13px;width:13px;font-size:0;margin-top:13px;}.tool .filter .icon.icon-check,.tool .filter:hover .icon{background-position:-56px -268px;}
+

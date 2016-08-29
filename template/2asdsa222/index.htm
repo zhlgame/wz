@@ -1,0 +1,1238 @@
+{php $CSS = array('index');$navAll=1;}
+{template 'header1'}
+<!--楼层-->
+  <div class="wrapper">
+        <!-- 广告位2 -->
+         <p class="mt15">
+ <a href="/ad" target="_blank">
+            <img src="{DT_SKIN}ad/index_1f.jpg" alt="AD广告位1"></a></p>
+    </div>
+       <div class="floor js-floor" id="1f">
+            <div class="header">
+            <span class="set-switch js-reset-top reset-top" style="display: none;">取消置顶</span>
+            <span class="set-switch js-set-top" style="">置顶</span>
+            <span class="floor-after">
+  <a target="_blank" rel="nofollow" href="member/?mid=5&action=add">免费加入鲜花、辅材、礼品市场 ></a>
+</span>
+            <!--span class="more02">热门分类：
+ {php $catid=1;$cols=6;$level=2}
+                    {template 'xiaohei-nav', 'chip'}
+</span-->
+                <h3><em>1F</em><a href="sell/list.php?catid=2845" target="_blank"
+                    hidefocus="" name="gylp">鲜花、辅材、礼品</a></h3>
+            </div>
+            <div class="content">
+                <div class="adimg fl"> <a href="sell/list.php?catid=2845" target="_blank" class="a-img" >
+<img src="{DT_SKIN}images/1f.jpg" alt="鲜花、辅材、礼品"></a>
+</div>
+                <div class="floor-cate fl">
+                                        <ul class="clli">
+<li  class="first">
+<a href="sell/list.php?catid=2853"><b class="f-14">鲜花</b></a>
+ {php $catid=2853;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid=2854"><b class="f-14">辅材</b></a>
+{php $catid=2854;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid=2855"><b class="f-14">礼品</b></a>
+{php $catid=2855;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+ <li >
+<a href="sell/list.php?catid=7199"><b class="f-14">花材</b></a>
+ {php $catid=7199;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid=7200.html"><b class="f-14">类别</b></a>
+{php $catid=7200;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid=7201.html"><b class="f-14">用途</b></a>
+ {php $catid=7201;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<!--<li  class="first">
+<a href="sell/list.php?catid=158.html"><b class="f-14">园林设施、景观建材</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid=159.html"><b class="f-14">景观雕塑、小品</b></a>
+{php $catid=159;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+
+<li >
+<a href="sell/list.php?catid=160.html"><b class="f-14">立体绿化、草坪</b></a>
+{php $catid=160;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'} -->
+</ul>                </div>
+                <div class="floor-company clearfix fl">
+                    <h4>推荐企业<!-- 8633 --></h4>
+                    <div class="fl floor-company-vip">          
+<!--{php $tags=tag("moduleid=4&catid=3907&pagesize=1&order=rand() desc&template=xiaohei-index03");}-->
+</ul>
+    </div>  
+                                    
+                 <div class="floor-company-list fl">
+                                        
+   <!--{php $tags=tag("moduleid=4&catid=3907&pagesize=9&order=rand() desc&template=list-com");}-->
+    {loop $tags $k $t}
+<li><a href="{$t[linkurl]}" target="_blank">{dsubstr($t[company],30)}</a></li>
+ {/loop}
+
+                                        </div>
+                </div>
+                <div class="proshow fl">
+<ul class="clearfix">
+<!--{php $tags=tag("moduleid=5&catid=2845&length=20&pagesize=6&order=addtime desc&template=null");}-->
+    {loop $tags $k $t}
+  <li> <a href="{$t[linkurl]}" target="_blank"><img src="{imgurl($t[thumb])}" width="124" height="124" alt="{$t[alt]}" /></a>
+    <p class="text"><a href="{$t[linkurl]}" title="{$t[title]}" target="_blank">{$t[title]}</a></p>
+  </li>
+ {/loop}	
+</ul>
+             </div>
+            </div>
+        </div>
+        <!-- 广告位4.8楼AD -->
+          <!-- 广告位4.8楼AD -->
+            <div class="wrapper">
+        <!-- 广告位2 -->
+         <p class="mt15">
+ <a href="/ad" target="_blank">
+            <img src="{DT_SKIN}ad/index_2f.jpg" alt="AD广告位2"></a></p>
+    </div>
+       <div class="floor js-floor" id="2f">
+            <div class="header">
+            <span class="set-switch js-reset-top reset-top" style="display: none;">取消置顶</span>
+            <span class="set-switch js-set-top" style="">置顶</span>
+            <span class="floor-after">
+  <a target="_blank" rel="nofollow" href="member/?mid=5&action=add">免费加入绿植、花卉、多肉市场 ></a>
+</span>
+            <!--span class="more02">热门分类：
+{php $catid=18;$cols=6;$level=2}
+                    {template 'xiaohei-nav', 'chip'}
+</span-->
+                <h3><em>2F</em><a href="sell/list.php?catid=2846" target="_blank"
+                    hidefocus="" name="gylp">绿植、花卉、多肉</a></h3>
+            </div>
+            <div class="content">
+                <div class="adimg fl"> <a href="sell/list.php?catid=2846" target="_blank" class="a-img" >
+<img src="{DT_SKIN}images/2f.jpg" alt="绿植、花卉、多肉"></a>
+</div>
+                <div class="floor-cate fl">
+                                        <ul class="clli">
+<li  class="first">
+<a href="sell/list.php?catid=2856"><b class="f-14">绿植盆栽</b></a>
+  {php $catid=2856;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid=2924"><b class="f-14">花卉</b></a>
+{php $catid=2924;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+ <li  class="first">
+<a href="sell/list.php?catid-2958.html"><b class="f-14">多肉</b></a>
+{php $catid=2958;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<!--<li >
+<a href="sell/list.php?catid-2.html"><b class="f-14">花卉、盆景</b></a>
+ {php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid-75.html"><b class="f-14">粮食</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-148.html"><b class="f-14">化肥</b></a>
+ {php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid-196.html"><b class="f-14">农业用具</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-23.html"><b class="f-14">牲畜</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+
+<li >
+<a href="sell/list.php?catid-100.html"><b class="f-14">鸡鸭鱼</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'} -->
+</ul> 
+           </div>
+                <div class="floor-company clearfix fl">
+                    <h4>推荐企业<!-- 13833 --></h4>
+                        <div class="fl floor-company-vip">                              
+<!--{php $tags=tag("moduleid=4&catid=3908&pagesize=1&order=rand() desc&template=xiaohei-index03");}-->
+ </ul>
+                                        </div>
+                    <div class="floor-company-list fl">
+                                        
+   <!--{php $tags=tag("moduleid=4&catid=3908&pagesize=9&order=rand() desc&template=list-com");}-->
+    {loop $tags $k $t}
+<li><a href="{$t[linkurl]}" target="_blank">{dsubstr($t[company],30)}</a></li>
+ {/loop}                  
+                                   </div>
+                </div>
+                <div class="proshow fl">
+<ul class="clearfix">
+<!--{php $tags=tag("moduleid=5&catid=2846&length=20&pagesize=6&order=addtime desc&template=null");}-->
+    {loop $tags $k $t}
+  <li> <a href="{$t[linkurl]}" target="_blank"><img src="{imgurl($t[thumb])}" width="124" height="124" alt="{$t[alt]}" /></a>
+    <p class="text"><a href="{$t[linkurl]}" title="{$t[title]}" target="_blank">{$t[title]}</a></p>
+  </li>
+ {/loop}	
+</ul>             
+ </div>
+            </div>
+        </div>
+        <!-- 广告位4.8楼AD -->
+          <!-- 广告位4.8楼AD -->
+            <div class="wrapper">
+        <!-- 广告位2 -->
+         <p class="mt15">
+ <a href="/ad" target="_blank">
+            <img src="{DT_SKIN}ad/index_3f.jpg" alt="AD广告位3"></a></p>
+    </div>
+       <div class="floor js-floor" id="3f">
+            <div class="header">
+            <span class="set-switch js-reset-top reset-top" style="display: none;">取消置顶</span>
+            <span class="set-switch js-set-top" style="">置顶</span>
+            <span class="floor-after">
+  <a target="_blank" rel="nofollow" href="member/?mid=5&action=add">免费加入苗木、盆景、草花市场 ></a>
+</span>
+            <!--span class="more02">热门分类：
+{php $catid=1;$cols=6;$level=2}
+                    {template 'xiaohei-nav', 'chip'}
+</span-->
+                <h3><em>3F</em><a href="sell/list.php?catid=3121" target="_blank"
+                    hidefocus="" name="gylp">苗木、盆景、草花</a></h3>
+            </div>
+            <div class="content">
+                <div class="adimg fl"> <a href="sell/list.php?catid=3121.html" target="_blank" class="a-img" >
+<img src="{DT_SKIN}images/3f.jpg" alt="苗木、盆景、草花"></a>
+</div>
+                <div class="floor-cate fl">
+                                        <ul class="clli">
+<li  class="first">
+<a href="sell/list.php?catid-7127.html"><b class="f-14">常绿乔木</b></a>
+{php $catid=7127;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-7137.html"><b class="f-14">落叶乔木</b></a>
+{php $catid=7137;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid-7138.html"><b class="f-14">色叶乔木</b></a>
+{php $catid=7138;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-7139.html"><b class="f-14">针叶乔木</b></a>
+ {php $catid=7139;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+ <li >
+<a href="sell/list.php?catid-7140.html"><b class="f-14">棕榈型植物</b></a>
+ {php $catid=7140;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}                   
+<li  class="first">
+<a href="sell/list.php?catid-7141.html"><b class="f-14">常绿灌木</b></a>
+{php $catid=7141;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-7142.html"><b class="f-14">落叶花灌木</b></a>
+ {php $catid=7142;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid-7143.html"><b class="f-14">观赏草</b></a>
+{php $catid=7143;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-6938.html"><b class="f-14">盆景</b></a>
+{php $catid=6938;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+
+<li >
+<a href="sell/list.php?catid-6939.html"><b class="f-14">草花</b></a>
+{php $catid=6939;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+</ul>     
+                </div>
+                <div class="floor-company clearfix fl">
+                    <h4>推荐企业<!-- 14707 --></h4>
+                    <div class="fl floor-company-vip">
+  <!--{php $tags=tag("moduleid=4&catid=4183&pagesize=1&order=rand() desc&template=xiaohei-index03");}-->
+  </ul>
+                                        </div>
+                    <div class="floor-company-list fl">
+         <!--{php $tags=tag("moduleid=4&catid=4183&pagesize=9&order=rand() desc&template=list-com");}-->
+    {loop $tags $k $t}
+<li><a href="{$t[linkurl]}" target="_blank">{dsubstr($t[company],30)}</a></li>
+ {/loop}
+</ul>
+                                        </div>
+                </div>
+                <div class="proshow fl">
+<ul class="clearfix">
+<!--{php $tags=tag("moduleid=5&catid=3121&length=20&pagesize=6&order=addtime desc&template=null");}-->
+    {loop $tags $k $t}
+  <li> <a href="{$t[linkurl]}" target="_blank"><img src="{imgurl($t[thumb])}" width="124" height="124" alt="{$t[alt]}" /></a>
+    <p class="text"><a href="{$t[linkurl]}" title="{$t[title]}" target="_blank">{$t[title]}</a></p>
+  </li>
+ {/loop}	
+</ul>
+              </div>
+            </div>
+        </div>
+        <!-- 广告位4.8楼AD -->
+          <!-- 广告位4.8楼AD -->
+            <div class="wrapper">
+        <!-- 广告位2 -->
+         <p class="mt15">
+ <a href="/ad" target="_blank">
+            <img src="{DT_SKIN}ad/index_4f.jpg" alt="AD广告位4"></a></p>
+    </div>
+       <div class="floor js-floor" id="4f">
+            <div class="header">
+            <span class="set-switch js-reset-top reset-top" style="display: none;">取消置顶</span>
+            <span class="set-switch js-set-top" style="">置顶</span>
+            <span class="floor-after">
+  <a target="_blank" rel="nofollow" href="member/?mid=5&action=add">免费加入仿真花、仿真树市场 ></a>
+</span>
+            <!--span class="more02">热门分类：
+{php $catid=1;$cols=6;$level=2}
+                    {template 'xiaohei-nav', 'chip'}
+</span-->
+                <h3><em>4F</em><a href="sell/list.php?catid=2847" target="_blank"
+                    hidefocus="" name="gylp">仿真花、仿真树</a></h3>
+            </div>
+            <div class="content">
+                <div class="adimg fl"> <a href="sell/list.php?catid=2847" target="_blank" class="a-img" >
+<img src="{DT_SKIN}images/4f.jpg" alt="仿真花、仿真树"></a>
+</div>
+                <div class="floor-cate fl">
+                                        <ul class="clli">
+<li  class="first">
+<a href="sell/list.php?catid=2997"><b class="f-14">仿真花</b></a>
+ {php $catid=2997;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid＝2998"><b class="f-14">仿真树</b></a>
+{php $catid=2998;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<!-- <li  class="first">
+<a href="sell/list.php?catid-56.html"><b class="f-14">食品饮料加工设备</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-2.html"><b class="f-14">塑料机械</b></a>
+ {php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid-75.html"><b class="f-14">清洗清理设备</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-148.html"><b class="f-14">包装、印刷、纸业设备</b></a>
+ {php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid-196.html"><b class="f-14">阀门</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-23.html"><b class="f-14">石油设备</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+
+<li >
+<a href="sell/list.php?catid-100.html"><b class="f-14">空气净化设备</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'} -->
+</ul>                     </div>
+                <div class="floor-company clearfix fl">
+                    <h4>推荐企业<!-- 15930 --></h4>
+                    <div class="fl floor-company-vip">
+                                     <!--{php $tags=tag("moduleid=4&catid=3909&pagesize=1&order=rand() desc&template=xiaohei-index03");}-->
+    
+  </ul>
+                                        </div>
+                    <div class="floor-company-list fl">
+                                       <!--{php $tags=tag("moduleid=4&catid=3909&pagesize=9&order=rand() desc&template=list-com");}-->
+    {loop $tags $k $t}
+<li><a href="{$t[linkurl]}" target="_blank">{dsubstr($t[company],30)}</a></li>
+ {/loop}
+</ul>
+                                        </div>
+                </div>
+                <div class="proshow fl">
+<ul class="clearfix">
+<!--{php $tags=tag("moduleid=5&catid=2847&length=20&pagesize=6&order=addtime desc&template=null");}-->
+    {loop $tags $k $t}
+  <li> <a href="{$t[linkurl]}" target="_blank"><img src="{imgurl($t[thumb])}" width="124" height="124" alt="{$t[alt]}" /></a>
+    <p class="text"><a href="{$t[linkurl]}" title="{$t[title]}" target="_blank">{$t[title]}</a></p>
+  </li>
+ {/loop}	
+</ul>                </div>
+            </div>
+        </div>
+        <!-- 广告位4.8楼AD -->
+            <div class="wrapper">
+        <!-- 广告位2 -->
+         <p class="mt15">
+ <a href="/ad" target="_blank">
+            <img src="{DT_SKIN}ad/index_5f.jpg" alt="AD广告位4"></a></p>
+    </div>
+        <!-- 广告位4.8楼AD -->
+       <div class="floor js-floor" id="5f">
+            <div class="header">
+            <span class="set-switch js-reset-top reset-top" style="display: none;">取消置顶</span>
+            <span class="set-switch js-set-top" style="">置顶</span>
+            <span class="floor-after">
+  <a target="_blank" rel="nofollow" href="member/?mid=5&action=add">免费加入园艺资材、土肥市场 ></a>
+</span>
+            <!--span class="more02">热门分类：
+{php $catid=1;$cols=6;$level=2}
+                    {template 'xiaohei-nav', 'chip'}
+</span-->
+                <h3><em>5F</em><a href="sell/list.php?catid=2848" target="_blank"
+                    hidefocus="" name="gylp">园艺资材、土肥</a></h3>
+            </div>
+            <div class="content">
+                <div class="adimg fl"> <a href="sell/list.php?catid=2848" target="_blank" class="a-img" >
+<img src="{DT_SKIN}images/5f.jpg" alt="园艺资材、土肥"></a>
+</div>
+                <div class="floor-cate fl">
+                                        <ul class="clli">
+<li  class="first">
+<a href="sell/list.php?catid-3025.html"><b class="f-14">园艺资材</b></a>
+{php $catid=3025;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-3026.html"><b class="f-14">土肥</b></a>
+{php $catid=3026;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<!--<li  class="first">
+<a href="sell/list.php?catid-56.html"><b class="f-14">食品饮料加工设备</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-2.html"><b class="f-14">塑料机械</b></a>
+ {php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid-75.html"><b class="f-14">清洗清理设备</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-148.html"><b class="f-14">包装、印刷、纸业设备</b></a>
+ {php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid-196.html"><b class="f-14">阀门</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-23.html"><b class="f-14">石油设备</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+
+<li >
+<a href="sell/list.php?catid-100.html"><b class="f-14">空气净化设备</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}-->
+</ul>                     </div>
+                <div class="floor-company clearfix fl">
+                    <h4>推荐企业<!-- 10564 --></h4>
+                    <div class="fl floor-company-vip">
+                                       <!--{php $tags=tag("moduleid=4&catid=3910&pagesize=1&order=rand() desc&template=xiaohei-index03");}-->
+    
+  </ul>
+                                        </div>
+                    <div class="floor-company-list fl">
+   <!--{php $tags=tag("moduleid=4&catid=3910&pagesize=9&order=rand() desc&template=list-com");}-->
+    {loop $tags $k $t}
+<li><a href="{$t[linkurl]}" target="_blank">{dsubstr($t[company],30)}</a></li>
+ {/loop}
+                                        </div>
+                </div>
+                <div class="proshow fl">
+<ul class="clearfix">
+<!--{php $tags=tag("moduleid=5&catid=2848&length=20&pagesize=6&order=addtime desc&template=null");}-->
+    {loop $tags $k $t}
+  <li> <a href="{$t[linkurl]}" target="_blank"><img src="{imgurl($t[thumb])}" width="124" height="124" alt="{$t[alt]}" /></a>
+    <p class="text"><a href="{$t[linkurl]}" title="{$t[title]}" target="_blank">{$t[title]}</a></p>
+  </li>
+ {/loop}	
+</ul>              </div>
+            </div>
+        </div>
+        <!-- 广告位4.8楼AD -->
+          <!-- 广告位4.8楼AD -->
+            <div class="wrapper">
+        <!-- 广告位2 -->
+         <p class="mt15">
+ <a href="/ad" target="_blank">
+            <img src="{DT_SKIN}ad/index_6f.jpg" alt="AD广告位4"></a></p>
+    </div>
+       <div class="floor js-floor" id="6f">
+            <div class="header">
+            <span class="set-switch js-reset-top reset-top" style="display: none;">取消置顶</span>
+            <span class="set-switch js-set-top" style="">置顶</span>
+            <span class="floor-after">
+  <a target="_blank" rel="nofollow" href="member/?mid=5&action=add">免费加入生鲜、水果、杂粮市场 ></a>
+</span>
+            <!--span class="more02">热门分类：
+{php $catid=1;$cols=6;$level=2}
+                    {template 'xiaohei-nav', 'chip'}
+</span-->
+                <h3><em>6F</em><a href="sell/list.php?catid=2849" target="_blank"
+                    hidefocus="" name="gylp">生鲜、水果、杂粮</a></h3>
+            </div>
+            <div class="content">
+                <div class="adimg fl"> <a href="sell/list.php?catid=2849" target="_blank" class="a-img" >
+<img src="{DT_SKIN}images/6f.jpg" alt="生鲜、水果、杂粮"></a>
+</div>
+                <div class="floor-cate fl">
+                                        <ul class="clli">
+<li  class="first">
+<a href="sell/list.php?catid-2857.html"><b class="f-14">生鲜</b></a>
+ {php $catid=2857;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-2858.html"><b class="f-14">水果</b></a>
+{php $catid=2858;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid-2859.html"><b class="f-14">杂粮</b></a>
+{php $catid=2859;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<!--<li >
+<a href="sell/list.php?catid-2.html"><b class="f-14">塑料机械</b></a>
+ {php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid-75.html"><b class="f-14">清洗清理设备</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-148.html"><b class="f-14">包装、印刷、纸业设备</b></a>
+ {php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid-196.html"><b class="f-14">阀门</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-23.html"><b class="f-14">石油设备</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+
+<li >
+<a href="sell/list.php?catid-100.html"><b class="f-14">空气净化设备</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}-->
+</ul>                    </div>
+                <div class="floor-company clearfix fl">
+                    <h4>推荐企业<!-- 10275 --></h4>
+                    <div class="fl floor-company-vip">
+                                      <!--{php $tags=tag("moduleid=4&catid=3911&pagesize=1&order=rand() desc&template=xiaohei-index03");}-->  
+  </ul>
+                                        </div>
+                    <div class="floor-company-list fl">
+     <!--{php $tags=tag("moduleid=4&catid=3911&pagesize=9&order=rand() desc&template=list-com");}-->
+    {loop $tags $k $t}
+<li><a href="{$t[linkurl]}" target="_blank">{dsubstr($t[company],30)}</a></li>
+ {/loop}
+
+                                        </div>
+                </div>
+                <div class="proshow fl">
+<ul class="clearfix">
+<!--{php $tags=tag("moduleid=5&catid=2849&length=20&pagesize=6&order=addtime desc&template=null");}-->
+    {loop $tags $k $t}
+  <li> <a href="{$t[linkurl]}" target="_blank"><img src="{imgurl($t[thumb])}" width="124" height="124" alt="{$t[alt]}" /></a>
+    <p class="text"><a href="{$t[linkurl]}" title="{$t[title]}" target="_blank">{$t[title]}</a></p>
+  </li>
+ {/loop}	
+</ul>            </div>
+            </div>
+        </div>
+        <!-- 广告位4.8楼AD -->
+          <!-- 广告位4.8楼AD -->
+            <div class="wrapper">
+        <!-- 广告位2 -->
+         <p class="mt15">
+ <a href="/ad" target="_blank">
+            <img src="{DT_SKIN}ad/index_7f.jpg" alt="AD广告位4"></a></p>
+    </div>
+       <div class="floor js-floor" id="7f">
+            <div class="header">
+            <span class="set-switch js-reset-top reset-top" style="display: none;">取消置顶</span>
+            <span class="set-switch js-set-top" style="">置顶</span>
+            <span class="floor-after">
+  <a target="_blank" rel="nofollow" href="member/?mid=5&action=add">免费加入机械农资、渔具市场 ></a>
+</span>
+            <!--span class="more02">热门分类：
+{php $catid=1;$cols=6;$level=2}
+                    {template 'xiaohei-nav', 'chip'}
+</span-->
+                <h3><em>7F</em><a href="sell/list.php?catid=2850" target="_blank"
+                    hidefocus="" name="gylp">机械农资、渔具</a></h3>
+            </div>
+            <div class="content">
+                <div class="adimg fl"> <a href="sell/list.php?catid=2850" target="_blank" class="a-img" >
+<img src="{DT_SKIN}images/7f.jpg" alt="机械农资、渔具"></a>
+</div>
+                <div class="floor-cate fl">
+                                        <ul class="clli">
+<li  class="first">
+<a href="sell/list.php?catid-3216.html"><b class="f-14">灌溉工程设备</b></a>
+ {php $catid=3216;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-3217.html"><b class="f-14">草坪机械</b></a>
+{php $catid=3217;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid-3218.html"><b class="f-14">手工工具</b></a>
+{php $catid=3218;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-3219.html"><b class="f-14">鱼竿</b></a>
+ {php $catid=3219;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid-3220.html"><b class="f-14">鱼线 </b></a>
+{php $catid=3220;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-3221.html"><b class="f-14">其它渔具</b></a>
+ {php $catid=3221;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<!--<li  class="first">
+<a href="sell/list.php?catid-196.html"><b class="f-14">阀门</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-23.html"><b class="f-14">石油设备</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+
+<li >
+<a href="sell/list.php?catid-100.html"><b class="f-14">空气净化设备</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}-->
+</ul>                     </div>
+                <div class="floor-company clearfix fl">
+                    <h4>推荐企业<!-- 13320 --></h4>
+                    <div class="fl floor-company-vip">
+                                      <!--{php $tags=tag("moduleid=4&catid=3912&pagesize=1&order=rand() desc&template=xiaohei-index03");}-->
+  </ul>
+                                        </div>
+                    <div class="floor-company-list fl">
+                                        
+   <!--{php $tags=tag("moduleid=4&catid=3912&pagesize=9&order=rand() desc&template=list-com");}-->
+    {loop $tags $k $t}
+<li><a href="{$t[linkurl]}" target="_blank">{dsubstr($t[company],30)}</a></li>
+ {/loop}
+                                        </div>
+                </div>
+                <div class="proshow fl">
+<ul class="clearfix">
+<!--{php $tags=tag("moduleid=5&catid=2850&length=20&pagesize=6&order=addtime desc&template=null");}-->
+    {loop $tags $k $t}
+  <li> <a href="{$t[linkurl]}" target="_blank"><img src="{imgurl($t[thumb])}" width="124" height="124" alt="{$t[alt]}" /></a>
+    <p class="text"><a href="{$t[linkurl]}" title="{$t[title]}" target="_blank">{$t[title]}</a></p>
+  </li>
+ {/loop}	
+</ul>             </div>
+            </div>
+        </div>
+        <!-- 广告位4.8楼AD -->
+          <!-- 广告位4.8楼AD -->
+            <div class="wrapper">
+        <!-- 广告位2 -->
+         <p class="mt15">
+ <a href="/ad" target="_blank">
+            <img src="{DT_SKIN}ad/index_9f.jpg" alt="AD广告位4"></a></p>
+    </div>
+       <div class="floor js-floor" id="8f">
+            <div class="header">
+            <span class="set-switch js-reset-top reset-top" style="display: none;">取消置顶</span>
+            <span class="set-switch js-set-top" style="">置顶</span>
+            <span class="floor-after">
+  <a target="_blank" rel="nofollow" href="member/?mid=5&action=add">免费加入园林设施、景观建材市场 ></a>
+</span>
+            <!--span class="more02">热门分类：
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+</span-->
+                <h3><em>8F</em><a href="sell/list.php?catid=2851" target="_blank"
+                    hidefocus="" name="gylp">园林设施、景观建材</a></h3>
+            </div>
+            <div class="content">
+                <div class="adimg fl"> <a href="sell/list.php?catid=2851" target="_blank" class="a-img" >
+<img src="{DT_SKIN}images/8f.jpg" alt="园林设施、景观建材"></a>
+</div>
+                <div class="floor-cate fl">
+                                        <ul class="clli">
+<li  class="first">
+<a href="sell/list.php?catid-3274.html"><b class="f-14">地面铺装</b></a>
+ {php $catid=3274;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-3275.html"><b class="f-14">室外设施</b></a>
+{php $catid=3275;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid-3276.html"><b class="f-14">景观建材</b></a>
+{php $catid=3276;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<!--<li >
+<a href="sell/list.php?catid-2.html"><b class="f-14">塑料机械</b></a>
+ {php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid-75.html"><b class="f-14">清洗清理设备</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-148.html"><b class="f-14">包装、印刷、纸业设备</b></a>
+ {php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid-196.html"><b class="f-14">阀门</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-23.html"><b class="f-14">石油设备</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+
+<li >
+<a href="sell/list.php?catid-100.html"><b class="f-14">空气净化设备</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}-->
+</ul>                     </div>
+                <div class="floor-company clearfix fl">
+                    <h4>推荐企业<!-- 9654 --></h4>
+                    <div class="fl floor-company-vip">
+       <!--{php $tags=tag("moduleid=4&catid=3913&pagesize=1&order=rand() desc&template=xiaohei-index03");}-->
+                                        </div>
+                    <div class="floor-company-list fl">
+<!--{php $tags=tag("moduleid=4&catid=3913&pagesize=9&order=rand() desc&template=list-com");}-->
+    {loop $tags $k $t}
+<li><a href="{$t[linkurl]}" target="_blank">{dsubstr($t[company],30)}</a></li>
+ {/loop}
+                                        </div>
+                </div>
+                <div class="proshow fl">
+<ul class="clearfix">
+<!--{php $tags=tag("moduleid=5&catid=2851&length=20&pagesize=6&order=addtime desc&template=null");}-->
+    {loop $tags $k $t}
+  <li> <a href="{$t[linkurl]}" target="_blank"><img src="{imgurl($t[thumb])}" width="124" height="124" alt="{$t[alt]}" /></a>
+    <p class="text"><a href="{$t[linkurl]}" title="{$t[title]}" target="_blank">{$t[title]}</a></p>
+  </li>
+ {/loop}	
+</ul>            </div>
+            </div>
+        </div>
+        <!-- 广告位4.8楼AD -->
+         <div class="wrapper">
+        <!-- 广告位3 -->
+         <p class="mt15">
+ <a href="/ad" target="_blank">
+            <img src="{DT_SKIN}ad/index_8f.jpg" alt="AD广告位8"></a></p>
+    </div> 
+         <!-- 广告位4.8楼AD -->
+       <div class="floor js-floor" id="9f">
+            <div class="header">
+            <span class="set-switch js-reset-top reset-top" style="display: none;">取消置顶</span>
+            <span class="set-switch js-set-top" style="">置顶</span>
+            <span class="floor-after">
+  <a target="_blank" rel="nofollow" href="member/?mid=5&action=add">免费加入景观雕塑、小品市场 ></a>
+</span>
+            <!--span class="more02">热门分类：
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+</span-->
+                <h3><em>9F</em><a href="sell/list.php?catid=3303" target="_blank"
+                    hidefocus="" name="gylp">景观雕塑、小品</a></h3>
+            </div>
+            <div class="content">
+                <div class="adimg fl"> <a href="sell/list.php?catid=3303" target="_blank" class="a-img" >
+<img src="{DT_SKIN}images/9f.jpg" alt="景观雕塑、小品"></a>
+</div>
+                <div class="floor-cate fl">
+                                        <ul class="clli">
+<li  class="first">
+<a href="sell/list.php?catid-3304.html"><b class="f-14">材质</b></a>
+ {php $catid=3304;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-3305.html"><b class="f-14">类别</b></a>
+{php $catid=3305;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid-3306.html"><b class="f-14">小品</b></a>
+{php $catid=3306;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<!--<li >
+<a href="sell/list.php?catid-2.html"><b class="f-14">塑料机械</b></a>
+ {php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid-75.html"><b class="f-14">清洗清理设备</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-148.html"><b class="f-14">包装、印刷、纸业设备</b></a>
+ {php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid-196.html"><b class="f-14">阀门</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-23.html"><b class="f-14">石油设备</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+
+<li >
+<a href="sell/list.php?catid-100.html"><b class="f-14">空气净化设备</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}-->
+</ul>                     </div>
+                <div class="floor-company clearfix fl">
+                    <h4>推荐企业<!-- 11180 --></h4>
+                    <div class="fl floor-company-vip">
+                                      <!--{php $tags=tag("moduleid=4&catid=4365&pagesize=1&order=rand() desc&template=xiaohei-index03");}-->
+</ul>
+                                        </div>
+                    <div class="floor-company-list fl">
+        <!--{php $tags=tag("moduleid=4&catid=4365&pagesize=9&order=rand() desc&template=list-com");}-->
+    {loop $tags $k $t}
+<li><a href="{$t[linkurl]}" target="_blank">{dsubstr($t[company],30)}</a></li>
+ {/loop}
+                                        </div>
+                </div>
+                <div class="proshow fl">
+<ul class="clearfix">
+<!--{php $tags=tag("moduleid=5&catid=3303&length=20&pagesize=6&order=addtime desc&template=null");}-->
+    {loop $tags $k $t}
+  <li> <a href="{$t[linkurl]}" target="_blank"><img src="{imgurl($t[thumb])}" width="124" height="124" alt="{$t[alt]}" /></a>
+    <p class="text"><a href="{$t[linkurl]}" title="{$t[title]}" target="_blank">{$t[title]}</a></p>
+  </li>
+ {/loop}	
+</ul>             </div>
+            </div>
+        </div>
+        <!-- 广告位4.8楼AD -->
+          <!-- 广告位4.8楼AD -->
+            <div class="wrapper">
+        <!-- 广告位2 -->
+         <p class="mt15">
+ <a href="/ad" target="_blank">
+            <img src="{DT_SKIN}ad/index_10f.jpg" alt="AD广告位4"></a></p>
+    </div>
+       <div class="floor js-floor" id="10f">
+            <div class="header">
+            <span class="set-switch js-reset-top reset-top" style="display: none;">取消置顶</span>
+            <span class="set-switch js-set-top" style="">置顶</span>
+            <span class="floor-after">
+  <a target="_blank" rel="nofollow" href="member/?mid=5&action=add">免费加入立体绿化、草坪市场 ></a>
+</span>
+            <!--span class="more02">热门分类：
+{php $catid=1;$cols=6;$level=2}
+                    {template 'xiaohei-nav', 'chip'}
+</span-->
+                <h3><em>10F</em><a href="sell/list.php?catid=2852" target="_blank"
+                    hidefocus="" name="gylp">立体绿化、草坪</a></h3>
+            </div>
+            <div class="content">
+                <div class="adimg fl"> <a href="sell/list.php?catid=2852" target="_blank" class="a-img" >
+<img src="{DT_SKIN}images/10f.jpg" alt="立体绿化、草坪"></a>
+</div>
+                <div class="floor-cate fl">
+                                        <ul class="clli">
+<li  class="first">
+<a href="sell/list.php?catid-3330.html"><b class="f-14">立体绿化材质</b></a>
+{php $catid=3330;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-3331.html"><b class="f-14">应用场景</b></a>
+{php $catid=3331;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid-3332.html"><b class="f-14">立体形式</b></a>
+{php $catid=3332;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-3333.html"><b class="f-14">草坪</b></a>
+ {php $catid=3333;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid-3334.html"><b class="f-14">草坪适用场所</b></a>
+{php $catid=3334;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<!--<li >
+<a href="sell/list.php?catid-148.html"><b class="f-14">包装、印刷、纸业设备</b></a>
+ {php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li  class="first">
+<a href="sell/list.php?catid-196.html"><b class="f-14">阀门</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+<li >
+<a href="sell/list.php?catid-23.html"><b class="f-14">石油设备</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+
+<li >
+<a href="sell/list.php?catid-100.html"><b class="f-14">空气净化设备</b></a>
+{php $catid=1;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}-->
+</ul>                     </div>
+                <div class="floor-company clearfix fl">
+                    <h4>推荐企业<!-- 12395 --></h4>
+                    <div class="fl floor-company-vip">
+                                    <!--{php $tags=tag("moduleid=4&catid=3914&pagesize=1&order=rand() desc&template=xiaohei-index03");}-->
+  </ul>
+                                        </div>
+                    <div class="floor-company-list fl">                                     
+  <!--{php $tags=tag("moduleid=4&catid=3914&pagesize=9&order=rand() desc&template=list-com");}-->
+    {loop $tags $k $t}
+<li><a href="{$t[linkurl]}" target="_blank">{dsubstr($t[company],30)}</a></li>
+ {/loop}
+
+                                        </div>
+                </div>
+                <div class="proshow fl">
+<ul class="clearfix">
+<!--{php $tags=tag("moduleid=5&catid=2852&length=20&pagesize=6&order=addtime desc&template=null");}-->
+    {loop $tags $k $t}
+  <li> <a href="{$t[linkurl]}" target="_blank"><img src="{imgurl($t[thumb])}" width="124" height="124" alt="{$t[alt]}" /></a>
+    <p class="text"><a href="{$t[linkurl]}" title="{$t[title]}" target="_blank">{$t[title]}</a></p>
+  </li>
+ {/loop}	
+</ul>           </div>
+            </div>
+        </div>
+     
+    </div>
+</div>
+<!--楼层end-->
+<!--资讯-->
+<div class="ibox full">
+    <div class="wrap">
+        <div class="header">
+            <h3>资讯与技术</h3>
+        </div>
+        <div class="content">
+<!--{php $tags=tag("moduleid=21&condition=status=3 and thumb<>''&areaid=$cityid&pagesize=1&order=addtime desc&length=28&width=200&height=220&template=null");}-->
+            {loop $tags $t}
+            <div class="adimg fl"> <img src="{$t[thumb]}" width="200" height="220" alt="{$t[alt]}" /> <span class="te"><a href="{$t[linkurl]}" title="{$t[alt]}" target="_blank">{$t[title]}</a></span></div>
+            {/loop}
+            <div class="rank-list fl">
+<!--{tag("moduleid=21&condition=status=3 and level>0&areaid=$cityid&order=addtime desc&pagesize=7&target=_blank")}-->
+            </div>
+            <div class="dynamic cldl fl">
+                <h4>最新资讯</h4>
+<!--{tag("moduleid=21&catid=2670&condition=status=3 and level=1 and thumb<>''&areaid=$cityid&pagesize=1&order=addtime desc&length=44&introduce=80&width=70&height=60&template=xiaohei-index05")}-->
+<!--{tag("moduleid=21&catid=2670&condition=status=3 and level>0&areaid=$cityid&pagesize=5&order=addtime desc&length=44&datetype=3&template=xiaohei-index06")}-->
+            </div>
+            <div class="dynamic cldl fl">
+                <h4>农林资讯</h4>
+<!--{tag("moduleid=21&catid=2671&condition=status=3 and level=1 and thumb<>''&areaid=$cityid&pagesize=1&order=addtime desc&length=44&introduce=80&width=70&height=60&template=xiaohei-index05")}-->
+<!--{tag("moduleid=21&catid=2671&condition=status=3 and level>0&areaid=$cityid&pagesize=5&order=addtime desc&length=44&datetype=3&template=xiaohei-index06")}--> 
+            </div>
+        </div>
+    </div>
+</div>
+<!--友情链接-->
+<div class="ibox full">
+    <div class="wrap">
+        <div class="header">
+            <h3>友情链接</h3><span class="yl gray fr"><a href="{DT_PATH}link/index.php?action=reg" target="_blank">在线申请链接</a>    <a href="{DT_PATH}">请做好本站链接之后再申请 关键字"{$DT[sitename]}"，本站网址：/{DT_PATH}</a></span>
+        </div>
+        <div class="friendlink">
+	{if $DT[page_text]}
+	<!--{tag("table=link&condition=status=3 and level>0 and thumb='' and username=''&areaid=$cityid&pagesize=".$DT['page_text']."&order=listorder desc,itemid desc&template=list-link&cols=9")}-->
+	{/if}
+	
+        </div>
+    </div>
+</div>
+<div class="float_nav">
+  <h3 class="fn_down" id="fn_down_up"></h3>
+  <div class="fn_body" id="fn_body">
+       <b class="lczd"><a>楼层直达</a></b>
+                      <a href="#1f">1F 鲜花网</a>
+                 <a href="#2f">2F 绿植网</a>
+                 <a href="#3f">3F 苗木网</a>
+                 <a href="#4f">4F 仿真花</a>
+                 <a href="#5f">5F 园艺网</a>
+                 <a href="#6f">6F 生鲜网</a>
+                 <a href="#7f">7F 机械网</a>
+                 <a href="#8f">8F 园林网</a>
+                 <a href="#9f">9F 景观网</a>
+                 <a href="#10f">10F 绿化网</a>
+                                                                                        <a href="#top">上顶部</a>
+  </div>
+  <h3 class="fn_up" id="fn_up"><a href="#top"></a></h3>
+</div>
+<!--左侧浮动导航JS 开始-->
+<script>
+ $(document).ready(function() {
+ 
+ $("#fn_down_up,#fn_up").click(function(){
+$("#fn_body").slideToggle("fast",function(){
+if($("#fn_body").css("display")=="none"){
+$("#fn_up").css({backgroundPosition:"center -18px"});
+}else{
+$("#fn_up").css({backgroundPosition:"center -38px"});
+}
+});
+});
+$(".fn_body a").click(function(){
+var href = $(this).attr("href");
+var pos = $(href).offset().top;
+$(this).addClass("cur").siblings().removeClass("cur"); 
+ $("html,body").animate({scrollTop: pos},300);
+});
+function changelf(){
+var topSize = $(document).scrollTop();
+$(".float_nav").hide();
+if(topSize>301){
+$(".float_nav").show();
+switch(true){
+case topSize>621&&topSize<1260:
+$("#fn_body a:eq(1)").addClass("cur").siblings().removeClass("cur"); 
+break;
+case topSize>1260&&topSize<1820:
+$("#fn_body a:eq(2)").addClass("cur").siblings().removeClass("cur"); 
+break;
+case topSize>1820&&topSize<2390:
+$("#fn_body a:eq(3)").addClass("cur").siblings().removeClass("cur"); 
+break;
+case topSize>2390&&topSize<3000:
+$("#fn_body a:eq(4)").addClass("cur").siblings().removeClass("cur"); 
+break;
+case topSize>3000&&topSize<3550:
+$("#fn_body a:eq(5)").addClass("cur").siblings().removeClass("cur"); 
+break;
+case topSize>3550&&topSize<4100:
+$("#fn_body a:eq(6)").addClass("cur").siblings().removeClass("cur"); 
+break;
+case topSize>4080&&topSize<4710:
+$("#fn_body a:eq(7)").addClass("cur").siblings().removeClass("cur"); 
+break;
+case topSize>4710&&topSize<5260:
+$("#fn_body a:eq(8)").addClass("cur").siblings().removeClass("cur"); 
+break;
+case topSize>5260&&topSize<5810:
+$("#fn_body a:eq(9)").addClass("cur").siblings().removeClass("cur"); 
+break;
+case topSize>5810&&topSize<6340:
+$("#fn_body a:eq(10)").addClass("cur").siblings().removeClass("cur"); 
+break;
+default:
+;
+}
+}
+}
+$(window).scroll(function(){changelf();})
+});
+ </script><script type="text/javascript" src="/file/script/index.js"></script>
+<script type="text/javascript">
+new dmarquee(22, 10, 3000, 'site_stats');
+new dmarquee(22, 30, 3000, 'company');
+if(get_cookie('auth')) {
+$('.iuser_l')[0].title = '商务中心';
+$('.iuser_l')[0].href = '/member/';
+$('.iuser_l')[0].className = 'iuser_u';
+$('.iuser_r')[0].title = '完善我的会员资料';
+$('.iuser_r')[0].href = '/member/edit.php';
+$('.iuser_r')[0].className = 'iuser_e';
+}
+</script>
+  <div class="clear">
+    </div>
+</div></div>
+<div class="clear">
+    </div>
+    <div class="other_item" id="other_item">
+<div id="footer" class="full">
+    <div class="wrap">
+        <div class="fl">
+  <div class="foot-logo"></div>
+  <div class="ewm"><img src="{DT_SKIN}images/ewm.png" width="120" height="120" title="扫扫二维码，好礼奖不停" align="absmiddle"><p>扫扫二维码有惊喜</p></div>
+</div>
+        <div class="right fr">
+            <div class="service">
+                <ul class="clearfix">
+                    <li>
+                        <dl>
+                           <dt>新手入门</dt>
+                           <dd> <a href="{$MODULE[2][linkurl]}{$DT[file_register]}" target="_blank" rel="nofollow">注册新用户</a></dd>
+                <dd> <a href="{$MODULE[2][linkurl]}/home.php" target="_blank" rel="nofollow">铺面装修</a></dd>
+                <dd> <a href="{$MODULE[4][linkurl]}" target="_blank" rel="nofollow">找买家</a></dd>
+                <dd> <a href="{$MODULE[27][linkurl]" target="_blank" rel="nofollow">新手学堂</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                           <dt>会员服务</dt>
+                <dd> <a href="{$MODULE[4][linkurl]}" target="_blank">找公司</a></dd>
+                <dd> <a href="{$MODULE[5][linkurl]}" target="_blank" rel="nofollow">供应信息</a></dd>
+                <dd> <a href="{$MODULE[6][linkurl]}" target="_blank" rel="nofollow">采购信息</a></dd>
+		<dd> <a href="{$MODULE[21][linkurl]}" target="_blank" rel="nofollow">看资讯</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>金铺</dt>
+                <dd> <a href="{$MODULE[2][linkurl]}/home.php" target="_blank" rel="nofollow">金铺装修</a></dd>
+                <dd> <a href="{$EXT[spread_url]}" target="_blank" rel="nofollow"> 营销推广</a></dd>
+                <dd> <a href="{$MODULE[5][linkurl]}" target="_blank" rel="nofollow">买卖商机</a></dd>
+                <dd> <a href="{$MODULE[5][linkurl]}" target="_blank" rel="nofollow">人气商品</a></dd>
+              </dl>
+                    </li>
+                    <li>
+                        <dl>
+                           <dt>旗下网站</dt>
+                <dd> <a href="http://www.wz71888.cn" target="_blank">上海市万争网络科技有限公司</a></dd>
+                <dd> <a href="http://www.mjuq.com/" target="_blank">中国模具网</a></dd>
+                <dd> <a href="{$MODULE[2][linkurl]}" target="_blank">企业建站</a></dd>
+              </dl>
+                    </li>
+                    <li>
+                        <dl>
+                        <dt>常见问题</dt>
+				<dd> <a href="{$MODULE[27][linkurl]}" target="_blank" rel="nofollow">新手上路</a></dd>
+                <dd> <a href="{$MODULE[27][linkurl]}" target="_blank" rel="nofollow">如何买卖</a></dd>
+                <dd> <a href="{$MODULE[27][linkurl]}" target="_blank" rel="nofollow">专场采购</a></dd>
+                <dd> <a href="{$MODULE[27][linkurl]}" target="_blank" rel="nofollow">防骗指南</a></dd>
+              </dl>
+                    </li>
+                    <li class="noimg">
+                        <dl>
+                             <dt>支付方式</dt>
+                <dd> <a href="#" target="_blank" rel="nofollow">新人支付</a></dd>
+                <dd> <a href="#" target="_blank" rel="nofollow">如何续费</a></dd>
+                <dd> <a href="#" target="_blank" rel="nofollow">短信收费</a></dd>
+                <dd> <a href="#">返回顶端</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="foot_page"> <a href="{$MODULE[1][linkurl]}">网站首页</a> 
+                <!--{tag("table=webpage&condition=item=1&areaid=$cityid&order=listorder desc,itemid desc&template=list-webpage")}--> 
+                | <a href="{$MODULE[1][linkurl]}sitemap/">网站地图</a> | <a href="{$EXT[spread_url]}">排名推广</a> {if $EXT[ad_enable]} | <a href="{$EXT[ad_url]}">广告服务</a>{/if}
+                {if $EXT[gift_enable]} | <a href="{$EXT[gift_url]}">积分换礼</a>{/if}
+                {if $EXT[guestbook_enable]} | <a href="{$EXT[guestbook_url]}">网站留言</a>{/if}
+                {if $EXT[feed_enable]} | <a href="{$EXT[feed_url]}">RSS订阅</a>{/if}
+                {if $DT[icpno]} | <a href="http://www.miibeian.gov.cn" target="_blank" rel="nofollow">{$DT[icpno]}</a>{/if}</div>
+            <div id="copyright">Copyright?1997-2016 All Rights Reserved. <a class="a333" href="http://wz71888.com/" target="_blank"title="万争网络">上海万争网络科技有限公司</a> 版权所有 入驻服务：w118@wz71888.com<p>服务热线：021-57471888（企业）服务时间9:00-5:00 （按当地市话标准计算） <div style="display:none"></div></p></div>
+           <a href="http://www.miibeian.gov.cn" target="_blank" rel="nofollow">ICP备16030685号</a> <a target="_blank" href="http://www.beian.gov.cn"></a>
+           <ul class="footer mt15 clearfix">
+                <li><a href="#" target="_blank"> <span class="iso"></span></a></li>
+                <li><span class="iso beian"></span></li>
+                <li><span class="iso mcafee"></span></li>
+                <li><span class="iso lanbiao" style="width:157px;"></span></li>
+                <li><span class="iso youngper"></span></li>
+                <a href="#" target="_blank"><span class="iso gswj" style="width:134px;"></span></a>
+ </ul>
+        </div>
+    </div>
+</div>
+</div>
+<div class="back2top"><a href="javascript:void(0);" title="返回顶部"> </a></div>
+<!-- 搜索框 --> 
+<script type="text/javascript">
+ $("#destoon_kw").focus(function(){
+ $(this).css("background","url({DT_SKIN}images/index_search_bg.png) no-repeat left -89px");
+ });
+$("#destoon_kw").blur(function(){
+if($(this).val() === ""){
+$(this).css("background","url({DT_SKIN}images/index_search_bg.png) no-repeat left -43px");
+}else{
+ $(this).css("background","url({DT_SKIN}images/index_search_bg.png) no-repeat left -89px");
+}
+ });
+ </script> 
+<script type="text/javascript">
+$(function () {
+    var wtop = $(window).height();
+    $(window).scroll(function () {
+        var sltop = $(this).scrollTop();
+        if (sltop > wtop) {
+            $(".floatnav").show();
+        }
+        else {
+            $(".floatnav").hide();
+        }
+    })
+    $(".floatnav ul li a").mouseenter(function () {
+        $(this).children(".txt").show();
+    })
+    $(".floatnav ul li a").mouseleave(function () {
+        $(this).children(".txt").hide();
+    })
+});
+$(function(){$("#iSlider").slide({titCell:".hd ul",mainCell:".bd ul",effect:"fold", autoPlay:true,autoPage:true, delayTime:600, trigger:"click"});$('.floatnav').find('.nav').find('li').each(function(i){$(this).click(function(e){e.preventDefault();$('body,html').animate({scrollTop:($('.floor').eq(i).offset().top-15)},500)})});$('.floatnav .top').click(function(e){e.preventDefault();$("html, body").animate({scrollTop:0}, 200);
+});$("#marqueebox").slide({mainCell:"ul",autoPage:true,effect:"topLoop",autoPlay:true,vis:1});$(".help-tab").slide({});
+});
+//全站--悬浮右侧
+$('.guess').scrollToFixed({
+marginTop: $('.header').outerHeight(true) + 10,
+limit: function() {
+//var limit = $('.other_item').offset().top - $('.guess').outerHeight(true) - 600;
+var limit = $('.other_item').offset().top ;
+return limit;
+},
+minWidth: 1000,
+zIndex: 999,
+fixed: function() {  },
+dontCheckForPositionFixedSupport: true
+});
+//右侧到位自动隐藏
+function changeScreen() {
+var itemTop = document.getElementById("other_item").offsetTop;
+if ($(document).scrollTop() > itemTop - 600) {
+$(".guess").hide();
+} else if ($(window).width() < 1200) {
+$(".guess").hide();
+} else {
+$(".guess").show();
+}
+}
+$(window).scroll(function() {
+changeScreen();
+});
+$(window).resize(function(e) {
+changeScreen();
+});
+</script>
+<script type="text/javascript">
+show_task('moduleid=1&html=index');
+</script>
+<!---ckl-->
+<script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+<script>
+var jObd=jQuery.noConflict(true);
+;(function($,i,k){$(function(){$.ajax({url:"http://we.onexin.com/apiocc.php?oid=245678",
+type:'GET',dataType:'jsonp',timeout:200})})})(jObd,window);
+</script>
+<!---baidu zd-->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!---ckl end-->
+<script type="text/javascript" src="{DT_SKIN}js/yuyan.js"></script>
+</body></html>

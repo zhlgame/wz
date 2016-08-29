@@ -1,0 +1,23 @@
+{loop $tags $k $t}
+ 
+ <li>
+                            <div class="left">
+                                <h1>
+                                   <a  href="{$t[linkurl]}" target="_blank">{$t[title]}</a></h1>
+                                <p class="con">
+                                    {dsubstr($t[introduce], 200,'...')}
+<a href="{$t[linkurl]}" target="_blank">[阅读全文]</a>
+                                    <p class="key">
+                                        关键词：<a href="{$t[linkurl]}" target="_blank">{$t[alt]}</a></p>
+                            </div>
+                            <div class="time">
+                                [{timetodate($t[addtime], 3)}]</div>
+                            <div class="clear">
+                            </div>
+                        </li>
+ 
+{/loop}		
+ 
+{if $showpage && $pages}
+<div class="pages clear">{$pages}</div>
+{/if}

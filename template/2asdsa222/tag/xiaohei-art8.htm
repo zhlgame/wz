@@ -1,0 +1,9 @@
+{loop $tags $i $t} 
+ 
+<li><a href="{$t[linkurl]}">
+                                <img src="{$t[thumb]}" style="height:100px;width:100px;">
+                                <p>
+                                 {dsubstr($t[title], 16)}</p>
+                            </a></li>
+ 
+{/loop}

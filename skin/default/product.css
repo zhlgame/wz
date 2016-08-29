@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*轮播图*/
+.center{width:728px;margin:15px 0 0 15px;float:left;}
+.center .focus{width:728px;height:285px;overflow:hidden;position:relative;}
+.center .focus .slider img{width:728px;height:285px;display:block;}
+.center .focus .slider{width:25000px;position:absolute;}
+.center .focus .slider li{float:left;}
+.center .focus .num{position:absolute;right:5px;bottom:7px;}
+.center .focus .num li{float:left;width:12px;height:12px;font-family:Arial;cursor:pointer;overflow:hidden;margin:3px 5px;border:1px solid #fff;}
+.center .focus .num li.on{width:14px;height:14px;margin:2px 1px;border:0;background-color:#ff7300;}
+
+.center .special{width:726px;height:143px;border:1px solid #dfdfdf;border-top:0;padding-top:15px;}
+.center .special li{padding-left:11px;float:left;}
+
+/*右侧登陆*/
+.rightbar{width:242px;float:right;overflow:hidden;}
+.rightbar .operation{height:46px;font:14px/1.5 "Microsoft YaHei","宋体b8b\4f53",sans-serif;line-height:46px;background-color:#f5f5f5;border:1px solid #dfdfdf;}
+.rightbar .operation .login-btn{width:120px;background:url("../images/ico.png")/*tpa=http://www.c-jc.com/skin/images/ico.png*/ no-repeat 20px 14px;text-align:center;border-right:1px solid #dfdfdf;}
+.rightbar .operation .regist-btn{width:119px;background:url("../images/ico.png")/*tpa=http://www.c-jc.com/skin/images/ico.png*/ no-repeat 15px -18px;text-align:center;}
+
+.rightbar .pro-news{width:220px;height:210px;border:1px solid #dfdfdf;border-top:0;padding:10px; overflow:hidden;}
+.rightbar .pro-news dt{margin:10px 0;}
+.rightbar .pro-news dd{width:220px;height:30px;line-height:30px;overflow:hidden;}
+
+.rightbar .tnum{height:53px;line-height:53px;border:1px solid #dfdfdf;border-top:0;padding-left:10px;}
+.rightbar .tnum b{background-color:#f3f3f3;color:#ff6600;font-family:Arial, Helvetica, sans-serif;padding:0 2px;}
+
+/*按照地区查找*/
+.rightbar .area{width:228px;height:95px;border:1px solid #dfdfdf;border-top:0;padding:15px 0 0 12px;}
+.rightbar .area dt{margin-bottom:10px;}
+.rightbar .area dd{width:35px;line-height:24px;float:left;word-wrap:break-word;word-break:break-all;}
+
+/*分类左侧*/
+.leftbox{width:943px;float:left;}
+.leftbox .cate-title{height:36px;line-height:36px;border-bottom:1px solid #dfdfdf;}
+.leftbox .org-br{border-top:2px solid #db2242;}
+.leftbox .green-br{border-top:2px solid #006600;}
+.leftbox .blue-br{border-top:2px solid #3d5590;}
+.leftbox .yellow-br{border-top:2px solid #996600;}
+.leftbox .red-br{border-top:2px solid #ea1e00;}
+.leftbox .purple-br{border-top:2px solid #1c0060;}
+.leftbox .green1-br{border-top:2px solid #336666;}
+.leftbox .orange1-br{border-top:2px solid #cc6600;}
+
+.key-word{width:200px;float:left;}
+.key-word .hot{width:198px;height:290px;border:1px solid #dfdfdf;}
+.key-word .hot ul{width:198px;}
+.key-word .hot li{width:80px;height:33px;line-height:33px;padding-left:10px;overflow:hidden;float:left;}
+.key-word .hot .hot-seach{width:176px;height:22px;border:1px solid #dfdfdf;margin:15px 0 0 10px;}
+.key-word .hot .hot-seach .input1{width:153px;*width:143px;height:22px;line-height:22px;background:#fff;border:0;margin:0;}
+.key-word .hot .hot-seach .search{width:23px;height:22px;background:url("../images/ico.png")/*tpa=http://www.c-jc.com/skin/images/ico.png*/ no-repeat -236px -342px;display:block;border:none;}
+
+.picshow{width:728px;height:508px;border:1px solid #dfdfdf;border-right:0;float:left;margin-left:14px;}
+.picshow .product{width:728px;border-bottom:1px solid #dfdfdf;float:left;}
+.picshow .product dl{width:160px;height:280px;float:left;padding:10px 10px 0 11px;border-right:1px solid #dfdfdf;}
+.picshow .product dl .text{width:160px;height:24px;overflow:hidden;}
+
+.picshow .pronews{width:707px;height:197px;padding:10px 10px 10px 10px;border-right:1px solid #dfdfdf;float:left;overflow:hidden;}
+.picshow .pronews li{width:330px;height:34px;line-height:34px;margin-left:10px;margin-right:10px;border-bottom:1px solid #f6f6f6;float:left;overflow:hidden;}
+.picshow .pronews li span{margin-right:5px;}
+
+/*优质供应商*/
+.rightbox{width:240px;height:562px;border:1px solid #dfdfdf;float:right;overflow:hidden;}
+.rightbox .rtit{height:38px;font:bold 14px/38px "宋体";padding-left:15px;border-bottom:1px solid #e7e7e7;background-color:#f5f5f5;}
+.rightbox .rcompany{ height:524px; overflow:hidden; }
+.rightbox .rcompany li{width:220px;border-bottom:1px dashed #f6f6f6;padding:6px 0 10px 0;margin:6px 0 0 10px;float:left;}
+.rightbox .rcompany .gray_bg a{background:#aaa;border-radius:10px;padding:2px 5px;color:#fff;}
+.rightbox .rcompany .gray_bg a:hover{background:#ff5a00;color:#fff;text-decoration:none;}
+
+.rightbox .rcompany .open dl{width:90px;margin:7px 15px 0 5px;float:left;_margin:7px 10px 0 1px;}
+.rightbox .rcompany .open .img {overflow:hidden;width:90px;height:90px;line-height:88px;*height:92px;border:1px solid #dfdfdf;text-align:center;}
+.rightbox .rcompany .open .img a {height:100%;vertical-align:middle\9;_writing-mode:tb-rl;}
+.rightbox .rcompany .open .img img {vertical-align:middle;max-height:90px !important;max-width:90px !important;}
+.rightbox .rcompany .open dl dd{width:80px;height:14px;line-height:14px;margin-top:3px;text-align:center;overflow:hidden;}
+
+/*友情链接*/
+.friendlink li{padding:8px 10px 0 10px;word-break:keep-all;float:left;}
+.friendlink .ftitle{height:40px;border-bottom:2px solid #dfdfdf;font:18px/2.5 "Microsoft YaHei";}
+

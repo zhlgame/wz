@@ -1,0 +1,13 @@
+<ul class="clearfix">
+    {loop $tags $i $t}
+    <li>
+        <dl>
+            <dt><a class="a-img" href="{$t[linkurl]}"{if $target} target="{$target}"{/if}><img src="{if $t[thumb]}{str_replace('thumb', 'middle', $t[thumb])}{else}{DT_SKIN}image/nopic.gif{/if}" width="{$width}" height="{$height}" alt="{$t[alt]}"/></a></dt>
+            <dd class="te">采购内容：<a href="{$t[linkurl]}" title="{$t[alt]}"{if $target} target="{$target}"{/if}>{$t[title]}</a></dd>
+            <dd> 采购数量：{$t[amount]}</dd>
+            <dd> 采购地址：{area_pos($t[areaid], '')}</dd>
+            <dd> 截止时间：{timetodate($t[totime], $datetype)}</dd>
+        </dl>
+    </li>
+    {/loop}
+</ul>

@@ -1,0 +1,25 @@
+{loop $tags $k $t}
+<dl id="item_{$t[itemid]}">
+    <dt class="vertical-img"><a class="box-img" href="{$t[linkurl]}" target="_blank">
+<img src="{if $t[thumb]}{str_replace('thumb', 'middle', $t[thumb])}{else}{DT_SKIN}image/nopic200.gif{/if}"  width="220" height="220" alt="{$t[alt]}"/></a></dt>
+    <dd class="small">
+        <ul class="clearfix">
+ 
+             <li><img src="{if $t[thumb]}{$t[thumb]}{else}{DT_SKIN}image/nopic60.gif{/if}" width="32" height="32" /></li>
+           {if $t[thumb1]} <li><img src="{if $t[thumb1]}{$t[thumb1]}{else}{DT_SKIN}image/nopic60.gif{/if}" width="32" height="32" /></li>{/if}
+ 
+        </ul>
+    </dd>
+    <dd class="te"><a href="{$t[linkurl]}" target="_blank" title="{$t[alt]}">{$t[title]}</a></dd>
+    <dd class="price"> {if $t[unit] && $t[price]>0} <span class="f_red"><strong class="px14">{$t[price]}</strong>/{$t[unit]}</span><br/>
+        {else} <span class="f_gray">面议</span><br/>
+        {/if} </dd>
+    <dd class="te"><a title="{$t[company]}" class="gray" href="{userurl($t[username])}" target="_blank">{$t[company]}</a></dd>
+    <dd> {if $t[username] && $DT[im_web]}{im_web($t[username].'&mid='.$moduleid.'&itemid='.$t[itemid])} {/if}
+        {if $t[qq] && $DT[im_qq]}{im_qq($t[qq])} {/if}
+        {if $t[ali] && $DT[im_ali]}{im_ali($t[ali])} {/if}</span> {if $t[vip]}<img src="{DT_SKIN}image/vip_{$t[vip]}.gif" alt="{VIP}" title="{VIP}:{$t[vip]}级" align="absmiddle"/> {/if} </dd>
+</dl>
+{/loop}		
+{if $showpage && $pages}
+<div class="pages clear">{$pages}</div>
+{/if}

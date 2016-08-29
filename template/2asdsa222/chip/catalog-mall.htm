@@ -1,0 +1,39 @@
+      <!--商城导航分类-->
+      {if $DT[page_catalog]}
+   <div class="nav-sub" id="nav">                                    
+        	<ul class="mt5">
+ {php $mid = 16;} 
+            {php $child = get_maincat(0, $mid, 1);}
+             {loop $child $i $c}
+              {if $i<10 && $c[child]}
+             {php $sub = get_maincat($c[catid], $mid, 1);}
+                  <li class="mod_cate">
+            	<h2 class="icon {if $i == 0}icon1{elseif $i == 1}icon2{elseif $i == 2}icon3{elseif $i == 3}icon4{elseif $i == 4}icon5
+                    {elseif $i == 5}icon6{elseif $i == 6}icon7{elseif $i == 7}icon8{elseif $i == 8}icon9{elseif $i == 9}icon10{/if}"><a href="{$MODULE[$mid][linkurl]}{$c[linkurl]}" target="_blank">{set_style($c[catname], $c[style])}</a></h2>
+                <div class="mod_subcate">
+                 <div class="mod_subcate_main fl">
+                  {loop $sub $j $s}
+                	{if $j<7}<dl>
+	                 <dt><a href="{$MODULE[$mid][linkurl]}{$s[linkurl]}" target="_blank">{set_style($s[catname], $s[style])}</a></dt>
+                        <dd>
+                        {php $sub = get_maincat($s[catid], $CATEGORY, 1);}     
+     {loop $sub $k $l}
+	 {if $k<12}<a href="{$MODULE[$mid][linkurl]}{$l[linkurl]}" target="_blank">{set_style($l[catname], $l[style])}</a>{/if}
+                         {/loop}
+                        </dd>
+                      
+                    </dl>
+                     {/if}
+{/loop}
+             
+                </div>
+<div class="mod_subcate_side fl">
+                    <div class="mod_subcate_side_hd">热门品牌</div>
+<ul class="clearfix">
+    <li><a href="/" target="_blank"><img src="{DT_SKIN}ad/fl4.jpg" width="100" height="40" alt="ad1"/></a><a href="/" target="_blank"><img src="{DT_SKIN}ad/fl2.jpg" width="100" height="40" alt="ad3"/></a></li>
+<li><a href="/" target="_blank"><img src="{DT_SKIN}ad/fl2.jpg" width="100" height="40" alt="ad1"/></a><a href="/" target="_blank"><img src="{DT_SKIN}ad/fl3.jpg" width="100" height="40" alt="ad3"/></a></li>
+<li><a href="/" target="_blank"><img src="{DT_SKIN}ad/fl4.jpg" width="100" height="40" alt="ad1"/></a><a href="/" target="_blank"><img src="{DT_SKIN}ad/fl1.jpg" width="100" height="40" alt="ad3"/></a></li>
+<li><a href="/" target="_blank"><img src="{DT_SKIN}ad/fl1.jpg" width="100" height="40" alt="ad1"/></a><a href="/" target="_blank"><img src="{DT_SKIN}ad/fl3.jpg" width="100" height="40" alt="ad3"/></a></li>
+    </ul>
+                    </div>
+                    <a href="{$MODULE[$mid][linkurl]}{$c[linkurl]}" class="mod_subcate_ad" target="

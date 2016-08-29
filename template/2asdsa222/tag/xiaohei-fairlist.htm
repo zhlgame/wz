@@ -1,0 +1,15 @@
+{loop $tags $k $t}
+<dl class="list-part">
+                            <dt class="f-14 blue"><a target="_blank" href="{$t[linkurl]}">{$t[title]}</a></dt>
+                            <dd class="black mt5">
+                                <a target="_blank" href="{$t[linkurl]}" >{dsubstr($t[introduce], 200 , '...')}</a>
+                            </dd>
+                            <dd class="mt5 f141">
+                                所属行业：<span class="orange">：{if $typeid!=99}<a href="{$MOD[linkurl]}{rewrite('index.php?typeid='.$typeid)}">{$TYPE[$typeid]}</a>{/if}{if $catid}{cat_pos($CAT, ' &raquo; ')}{/if}</span></dd>
+                            <dd class="f141">
+                                举办时间：<b class="orange">
+                                    {timetodate($t[fromtime], 3)} 到 {timetodate($t[totime], 3)}</b></dd>
+                            <dd class="f141">
+                                举办地址：<span class="orange">{$t[address]}</span></dd>
+                        </dl>
+{/loop}		

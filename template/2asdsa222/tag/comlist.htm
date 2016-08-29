@@ -1,0 +1,47 @@
+{loop $tags $k $t}
+<ul class="list mt10">
+                        <li class="inform">
+                            <ul>
+                                <li>
+                                    <h2 class="f14 blue">
+                                        <a href="{$t[linkurl]}" target="_blank">{$t[company]}</a>{if $t[vip]}&nbsp;&nbsp;<img src="{DT_SKIN}image/vip_{$t[vip]}.gif" alt="{VIP}" title="{VIP}:{$t[vip]}级" align="absmiddle"/>{/if}
+                                    </h2>
+                                    <p class="mt10">
+                                        <b>公司介绍：</b>{dsubstr($t[introduce],100,'...')}</p>
+                                    <p class="round">
+                                        <b>主营项目：</b><span><a href="{$t[linkurl]}" target="_blank">{dsubstr($t[business],40,'...')}</a></span></p>
+                                        <p>
+                                        <b>公司认证：</b>{if $t[validated]}该企业<span class="f_green">[已通过企业认证核实]</span>{else}该企业[<span class="red">未通过企业认证核实</span>]{/if}</p>
+                                    <p>
+                                        <b>所在地：</b>{$t[address]}</p>
+                                    <p>
+                                        <span class="red"><a href="{$t[linkurl]}" target="_blank">查看该企业发布的产品信息</a></span></p>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li class="pro">
+                    
+                       <ul class="proshow">
+                        <!--{php $tags=tag("moduleid=5&length=20&condition=status=3 and thumb<>''and username='".$t[username]."'&areaid=$cityid&pagesize=4&order=edittime desc&template=null");}-->
+                            
+                        {loop $tags $k $t}        
+                        <li>
+                        <dl>
+                            <dt><a href="{$t[linkurl]}" target="_blank"><img src="{$t[thumb]}" alt="{$t[alt]}" width="95" /></a></dt>
+                            <dd><a href="{$t[linkurl]}" title="{$t[alt]}" target="_blank">{$t[title]}</a></dd>
+                        </dl>
+                        </li>
+                        
+{/loop}
+ 
+                    </ul>
+                           
+                    </li>
+                    </ul>
+                    
+{/loop}	
+	
+ 
+ 
+{if $showpage && $pages}<div class="pages">{$pages}</div>{/if}

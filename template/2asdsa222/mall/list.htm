@@ -1,0 +1,108 @@
+{template 'header'}
+<script type="text/javascript">var sh = '{$MOD[linkurl]}search.php?catid={$catid}';</script>
+<div id="main" class="full">
+    <div class="wrap">
+        <div class="crumbs"> <span class="fr mr-10">共找到 <b class="red">{$items}</b> 条<strong class="red"> {$CAT[catname]} </strong> 产品信息</span> 
+ 
+ 
+当前位置: <a href="{$MODULE[1][linkurl]}">首页</a> » <a href="{$MOD[linkurl]}">{$MOD[name]}</a> » {cat_pos($CAT, ' » ')}</div>
+        <!--分类-->
+        <div class="category cldl mt-10">
+            <dl>
+                <dt>类 目</dt>
+                <dd>
+                  <ul id="mainCat" class="clearfix">
+                {loop $maincat $k $v}
+                <li {if $k>$MOD[page_subcat]} class="hide"{/if}><a {if $v[catid]==$catnow} class="active"{/if} href="{$MOD[linkurl]}{$v[linkurl]}">{$v[catname]}</a></li>
+                {/loop}
+            </ul>
+            {if $k > $MOD[page_subcat]}<a href="JavaScript:" class="category-showmorebtn"><em>展开</em></a>{/if}  
+                </dd>
+            </dl>
+             <dl>
+                <dt>地 区</dt>
+                <dd>
+                  <ul id="mainCat" class="clearfix">
+                  {php $mainarea = get_mainarea(0)}
+			{loop $mainarea $k $v}
+			<li><a href="{$MOD[linkurl]}search.php?areaid={$v[areaid]}&catid={$catid}">{$v[areaname]}</a></li>
+			{/loop}
+            </ul>
+                </dd>
+            </dl>
+        </div>
+        <div class="tool mt-10">
+            <form action="{$MOD[linkurl]}search.php" id="fsearch">
+                <div class="sort-inner clearfix">
+                    <div class="styles fr">
+ 
+                    </div>
+                    <div class="sort fl">
+                        <input type="hidden" name="order" value="" id="order">
+                        <ul class="clearfix">
+                            <li class="first"> <a href="javascript:;" onclick="Dd('order').value='0';Dd('fsearch').submit();" title="综合排序" class="link active">综合排序</a> </li>
+ {loop $TYPE $k $v}
+		<li><a href="javascript:Go('{$MOD[linkurl]}{rewrite('search.php?typeid='.$k.'&catid='.$catid)}');" title="{$v}" class="link">{$v}</a></li>
+		{/loop}
+                            <li class="droplist hoverSelf"><a class="link" title="价格从低到高">价格<span class="icon"></span> </a>
+                                <ul>
+                                    <li><a href="javascript:;" onclick="Dd('order').value='3';Dd('fsearch').submit();">价格从低到高</a> </li>
+                                    <li><a href="javascript:;" onclick="Dd('order').value='2';Dd('fsearch').submit();">价格从高到低</a> </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="prices hoverSelf fl">
+                        <div class="inner">
+                            <ul class="clearfix">
+                                <li class="item">
+                                    <input class="input" type="text" name="minprice" value="" placeholder="¥">
+                                </li>
+                                <li class="sep">-</li>
+                                <li class="item">
+                                    <input class="input" type="text" name="maxprice" value="" placeholder="¥">
+                                </li>
+                                <li class="submit"><span class="btn" onclick="Dd('fsearch').submit();">确定</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container fl">
+            <div class="sellWindow">
+            {if $page == 1}{ad($moduleid,$catid,$kw,6)}{/if}
+            {if $tags}{template '1314', 'tag'}{/if}
+            </div>
+            <div class="box01 top-reconmmend">
+                <div class="header"> <a class="more" target="_blank" href="#"> 我也要出现在这里</a>
+                    <h3>热门推荐</h3>
+                </div>
+<!--{tag("moduleid=$moduleid&length=20&condition=status=3 and thumb<>''&pagesize=5&order=edittime desc&width=160&height=160&cols=8&template=xyun555")}--> 
+            </div>
+        </div>
+        <div class="sideBar fr">
+            <!--相关热词推荐-->
+            <div class="recommend box01 mt-15">
+                <div class="header"><h3>相关热词推荐</h3></div>
+                <!--{tag("moduleid=$searchid&table=keyword&condition=moduleid=$searchid and status=3&pagesize=10&order=total_search desc&template=xiaoyun5555")}-->
+            </div>
+            <div class="mt-15">
+                {ad(68)}
+            </div>
+        </div>
+    </div>
+</div>
+<script> 
+$('.sellWindow').find('.small').find('li').each(function(){
+	$(this).on("mouseenter", function(e) {
+		var a = $(this),b=a.find('img').attr('src').replace('.thumb.','.middle.'),c=a.parents('dl').find("dt img"),t;
+		e.preventDefault();
+		
+		clearTimeout(t);
+		t = setTimeout(function() {c.attr("src", b)},2e2)
+	})
+})
+</script>
+<script type="text/javascript" src="{DT_STATIC}file/script/album.js"></script> 
+{template 'footer'}

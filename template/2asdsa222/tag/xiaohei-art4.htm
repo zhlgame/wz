@@ -1,0 +1,5 @@
+{loop $tags $i $t}    
+<li {if $i<3}class="on"{/if}><span>
+                                    <?php echo $i+1 ;?></span> <a href="{$t[linkurl]}">
+                                      {dsubstr($t[title], 26)}</a> </li>
+{/loop}

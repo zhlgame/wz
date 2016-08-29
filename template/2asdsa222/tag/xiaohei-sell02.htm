@@ -1,0 +1,17 @@
+<ul class="clearfix">
+{loop $tags $i $t}
+    <li><dl>
+        <dt class="vertical-img"><a class="box-img" href="{$t[linkurl]}" target="_blank"><img src="{str_replace('thumb', 'middle', $t[thumb])}" width="{$width}" height="{$height}" alt="{$t[alt]}"/></a></dt>
+        <dd class="mt-10 f-14"><a href="{$t[linkurl]}" target="_blank">{$t[title]}</a></dd>
+        <dd class="mt-10">
+        {if $t[price]>0}
+			<span class="orange f-14">{$DT[money_sign]}{$t[price]}{$DT[money_unit]}/{$t[unit]}</span>
+		{else}
+		<span class="gray">面议</span>
+		{/if} 
+        </dd>
+        <dd class="gray">关键词:{$t[tag]}</dd>
+        <dd class="text"><a href="{userurl($t[username])}" target="_blank">{$t[company]}</a></dd>
+    </dl></li>
+{/loop}		
+</ul>

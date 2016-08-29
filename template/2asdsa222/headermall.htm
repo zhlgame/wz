@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset={DT_CHARSET}"/>
+<title>{if $seo_title}{$seo_title}{else}{if $head_title}{$head_title}{$DT[seo_delimiter]}{/if}{if $city_sitename}{$city_sitename}{else}{$DT[sitename]}{/if}{/if}</title>
+{if $head_keywords}
+<meta name="keywords" content="{$head_keywords}"/>
+{/if}
+{if $head_description}
+<meta name="description" content="{$head_description}"/>
+{/if}
+{if $head_mobile}
+<meta http-equiv="mobile-agent" content="format=xhtml; url={$head_mobile}"> 
+<meta http-equiv="mobile-agent" content="format=html5; url={$head_mobile}">
+{/if}
+<meta name="generator" content="DESTOON B2B - www.destoon.com"/>
+<link rel="shortcut icon" type="image/x-icon" href="{DT_STATIC}favicon.ico"/>
+<link rel="bookmark" type="image/x-icon" href="{DT_STATIC}favicon.ico"/>
+{if $head_canonical}
+<link rel="canonical" href="{$head_canonical}"/>
+{/if}
+{if $EXT[archiver_enable]}
+<link rel="archives" title="{$DT[sitename]}" href="{$EXT[archiver_url]}"/>
+{/if}
+<link rel="stylesheet" type="text/css" href="{DT_SKIN}css/common.css"/>
+{if $moduleid>4}<link rel="stylesheet" type="text/css" href="{DT_SKIN}css/{$module}.css"/>{/if}
+<link rel="stylesheet" type="text/css" href="{DT_SKIN}style.css"/>
+{if $CSS}
+{loop $CSS $css}
+<link rel="stylesheet" type="text/css" href="{DT_SKIN}css/{$css}.css"/>
+{/loop}
+{/if}
+{if $CSS}
+{loop $CSS $css}
+<link rel="stylesheet" type="text/css" href="{DT_SKIN}{$css}.css"/>
+{/loop}
+{/if}
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" href="{DT_SKIN}ie6.css"/>
+<![endif]-->
+{if !DT_DEBUG}<script type="text/javascript">window.onerror=function(){return true;}</script>{/if}
+<script type="text/javascript" src="{DT_STATIC}lang/{DT_LANG}/lang.js"></script>
+<script type="text/javascript" src="{DT_STATIC}file/script/config.js"></script>
+<script type="text/javascript" src="{DT_STATIC}file/script/jquery.js"></script>
+<script type="text/javascript" src="{DT_STATIC}file/script/tab.js"></script>
+<script type="text/javascript" src="{DT_SKIN}js/jquery.js"></script>
+<script type="text/javascript" src="{DT_SKIN}js/plugins.js"></script>
+<script type="text/javascript" src="{DT_SKIN}js/common.js"></script>
+<script type="text/javascript" src="{DT_STATIC}file/script/page.js"></script>
+<script type="text/javascript" src="{DT_STATIC}file/script/jquery.lazyload.js"></script>
+<script src="{DT_SKIN}js/tab.js" type="text/javascript"></script>
+{if $lazy}<script type="text/javascript" src="{DT_STATIC}file/script/jquery.lazyload.js"></script>{/if}
+{if $JS}
+{loop $JS $js}
+<script type="text/javascript" src="{DT_STATIC}file/script/{$js}.js"></script>
+{/loop}
+{/if}
+{php $searchid = ($moduleid > 3 && $MODULE[$moduleid]['ismenu'] && !$MODULE[$moduleid]['islink']) ? $moduleid : 5;}
+{php $searchids = array(5,16,6,4,21,22);}
+{if !in_array($searchid, $searchids)}
+	{php $searchids[] = $searchid;}
+{/if}
+<script type="text/javascript"> 
+{if $head_mobile && $EXT[mobile_goto]}
+GoMobile('{$head_mobile}');
+{/if}
+var searchid = {$searchid};
+{if $itemid && $DT[anticopy]}
+document.oncontextmenu=function(e){return false;};
+document.onselectstart=function(e){return false;};
+{/if}
+</script>
+<!--[以上为系统关键代码，除非您明确其含义，否则请勿修改或删除，否则会导致系统错误]-->
+<!--[模板中所有带id的元素，请勿修改或删除，否则会导致部分JS代码无法运行]-->
+<!--[以上类似的注释，在编译模板时，系统会自动移除，不会显示在实际的页面中]-->
+<script type="text/javascript"> 
+function removeElement(id)
+{
+document.getElementById(id).style.display="none";
+}
+</script>
+</head>
+<body>
+{template 'top-mini'}
+<div class="Top_float clearfix" id="J_Search" style="position: fixed;">
+            <!--搜索漂浮-->
+           <div class="screen-hd" style="display: none;">
+                <div class="screen-hd-wrap">
+                    <div class="s-logo">
+                        <a href="/" target="_self" title="企业网">
+                            <img src="{DT_SKIN}images/s_logo.png" width="300" height="38"></a>
+                    </div>
+                    <div class="searchcont">
+                        <div class="search">
+    <form action="/sell/search.php">
+    <input name="kw" class="txt" placeholder="请输入搜索产品信息的关键字!" x-webkit-speech="" speech="" type="text"> 
+    <input value="招一下" class="btn" type="submit">
+  
+                              </form>
+                        </div>
+                    </div>
+                    <div class="T-publish">
+                        <a href="http://hznx.net/member/login.php" rel="nofollow" target="_blank">免费发布优质产品信息</a>
+                    </div>
+                </div>
+            </div>
+            <!--搜索漂浮结束-->
+        </div><div class="year">
+<div class="yearBox">
+<div id="header" class="full">
+    <div class="wrap">
+        <div class="logo f-hide fl"><img src="http://www.wz71888.com/skin/default/images/logo5.gif" width="400" height="120"></a></div>
+        <div class="searchBar fl">
+            <div id="searchMod">
+                <ul class="clearfix fl">
+                {loop $searchids $s}
+                {if isset($MODULE[$s])}
+                <li selectid="{$s}" {if $searchid == $s} class="active"{/if}>{$MODULE[$s][name]}</li>
+                {/if}
+                {/loop}
+                </ul>
+                <span class="fr mt-5">客服电话：<b class="green">{$DT[telephone]}</b></span>
+            </div>
+            <div class="searstyle clearfix">
+                <form id="xiaohei-search" action="{$MODULE[$searchid][linkurl]}search.php" onsubmit="return Dsearch(1);">
+                <input type="hidden" name="spread" value="0" id="xiaohei-spread"/>
+                <input type="hidden" name="moduleid" value="{$searchid}" id="xiaohei-moduleid"/>
+                <span class="searchBox fl"><input name="kw" id="xiaohei_kw" type="text" class="input1 fl" value="" placeholder="请输入关键词" {if $DT[search_tips]} onkeyup="STip(this.value);" autocomplete="off"{/if} x-webkit-speech speech/></span><span class="sbtn fl"><button type="submit"> 搜索 </button></span>
+                </form>
+            </div>
+            <div id="xiaohei_word"><!--{tag("moduleid=$searchid&table=keyword&condition=moduleid=$searchid and status=3&pagesize=8&order=total_search desc&template=kw123")}--></div>
+        </div>
+        <div class="xiaohei-code fr"> 扫一扫有惊喜 <i class="codeimg"></i> </div>
+  </div>
+</div>
+<div id="destoon_qrcode" style="display:none;"></div>
+<div id="destoon_space"></div>
+<div class="wrap">
+  <div id="search_tips" style="display:none;"></div>
+</div>
+<div class="navBar full">
+
+    <div class="wrap">
+        <dl class="fl navAll"{if !$navAll} id="navAll"{/if}>
+            <dt class="hd f-15"><i class="ico"></i>所有分类</dt>
+            <dd class="bd">
+            <ul id="menu" class="mt-5">
+        	<li class="mod_cate">
+            	<span class="icon icon1"><a href="{cat_url(2845)}" >鲜花、辅材、礼品</a></span>
+                <div class="mod_subcate clearfix">
+                    <div class="mod_subcate_main fl">
+                    {php $catid=2845;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+                    </div>
+                    <div class="mod_subcate_side fl">
+                        <div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="clearfix">
+							<li><a href="" target="_blank"><img src="{DT_SKIN}bd/11.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/12.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/13.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/14.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/15.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/16.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/17.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/18.jpg"></a></li>
+</ul>
+                    </div>
+                    <a href="#" class="mod_subcate_ad" target="_blank"><img src="{DT_SKIN}ad/f01.jpg" width="180" height="200"></a>
+                </div>
+            </li>
+            <li class="mod_cate">
+            	<span class="icon icon2"><a href="{cat_url(2846)}" >绿植、花卉、多肉</a></span>
+            	<div class="mod_subcate clearfix">
+                    <div class="mod_subcate_main fl">
+                        {php $catid=2846;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+                    </div>
+                    <div class="mod_subcate_side fl">
+                        <div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="clearfix">
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/11.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/12.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/13.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/14.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/15.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/16.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/17.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/18.jpg"></a></li>
+</ul>
+                    </div>
+                    <a href="#" class="mod_subcate_ad" target="_blank"><img src="{DT_SKIN}ad/f02.jpg" width="180" height="200"></a>
+                </div>
+            </li>
+            <li class="mod_cate">
+            	<span class="icon icon3"><a href="{cat_url(3121)}" >苗木、盆景、草花</a></span>
+                <div class="mod_subcate clearfix">
+                    <div class="mod_subcate_main fl">
+                        {php $catid=3121;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+                    </div>
+                    <div class="mod_subcate_side fl">
+                        <div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="clearfix">
+							<li><a href="" target="_blank"><img src="{DT_SKIN}bd/11.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/12.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/13.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/14.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/15.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/16.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/17.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/18.jpg"></a></li>
+</ul>
+                    </div>
+                    <a href="#" class="mod_subcate_ad" target="_blank"><img src="{DT_SKIN}ad/f03.jpg" width="180" height="200"></a>
+                </div>
+            </li>
+            <li class="mod_cate">
+            	<span class="icon icon4"><a href="{cat_url(2847)}" >仿真花、仿真树</a></span>
+                <div class="mod_subcate clearfix">
+                    <div class="mod_subcate_main fl">
+                        {php $catid=2847;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+                    </div>
+                    <div class="mod_subcate_side fl">
+                        <div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="clearfix">
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/11.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/12.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/13.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/14.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/15.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/16.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/17.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/18.jpg"></a></li>
+</ul>
+                    </div>
+                    <a href="#" class="mod_subcate_ad" target="_blank"><img src="{DT_SKIN}ad/f04.jpg" width="180" height="200"></a>
+                </div>
+            </li>
+            <li class="mod_cate">
+            	<span class="icon icon5"><a href="{cat_url(2848)}" >园艺资材、土肥</a></span>
+                <div class="mod_subcate clearfix">
+                    <div class="mod_subcate_main fl">
+                        {php $catid=2848;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+                    </div>
+                    <div class="mod_subcate_side fl">
+                        <div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="clearfix">
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/11.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/12.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/13.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/14.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/15.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/16.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/17.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/18.jpg"></a></li>
+</ul>
+                    </div>
+                    <a href="#" class="mod_subcate_ad" target="_blank"><img src="{DT_SKIN}ad/f05.jpg" width="180" height="200"></a>
+                </div>
+            </li>
+            <li class="mod_cate">
+            	<span class="icon icon6"><a href="{cat_url(2849)}" >生鲜、水果、杂粮</a></span>
+                <div class="mod_subcate clearfix">
+                    <div class="mod_subcate_main fl">
+                        {php $catid=2849;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+                    </div>
+                    <div class="mod_subcate_side fl">
+                        <div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="clearfix">
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/11.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/12.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/13.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/14.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/15.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/16.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/17.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/18.jpg"></a></li>
+</ul>
+                    </div>
+                    <a href="#" class="mod_subcate_ad" target="_blank"><img src="{DT_SKIN}ad/f06.jpg" width="180" height="200"></a>
+                </div>
+            </li>
+            <li class="mod_cate">
+            	<span class="icon icon7"><a href="{cat_url(2850)}" >机械农资、渔具</a></span>
+                <div class="mod_subcate clearfix">
+                    <div class="mod_subcate_main fl">
+                        {php $catid=2850;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+                    </div>
+                    <div class="mod_subcate_side fl">
+                        <div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="clearfix">
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/11.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/12.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/13.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/14.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/15.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/16.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/17.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/18.jpg"></a></li>
+</ul>
+                    </div>
+                    <a href="#" class="mod_subcate_ad" target="_blank"><img src="{DT_SKIN}ad/f07.jpg" width="180" height="200"></a>
+                </div>
+            </li>
+			<li class="mod_cate">
+            	<span class="icon icon8"><a href="{cat_url(2851)}" >园林设施、景观建材</a></span>
+                <div class="mod_subcate clearfix">
+                    <div class="mod_subcate_main fl">
+                        {php $catid=2851;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+                    </div>
+                    <div class="mod_subcate_side fl">
+                        <div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="clearfix">
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/11.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/12.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/13.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/14.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/15.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/16.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/17.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/18.jpg"></a></li>
+</ul>
+                    </div>
+                    <a href="#" class="mod_subcate_ad" target="_blank"><img src="{DT_SKIN}ad/f08.jpg" width="180" height="200"></a>
+                </div>
+            </li>
+            <li class="mod_cate">
+            	<span class="icon icon9"><a href="{cat_url(3303)}" >景观雕塑、小品</a></span>
+                <div class="mod_subcate clearfix">
+                    <div class="mod_subcate_main fl">
+                        {php $catid=3303;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+                    </div>
+                    <div class="mod_subcate_side fl">
+                        <div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="clearfix">
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/11.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/12.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/13.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/14.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/15.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/16.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/17.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/18.jpg"></a></li>
+</ul>
+                    </div>
+                    <a href="#" class="mod_subcate_ad" target="_blank"><img src="{DT_SKIN}ad/f09.jpg" width="180" height="200"></a>
+                </div>
+            </li>
+            <li class="mod_cate">
+            	<span class="icon icon10"><a href="{cat_url(2852)}" >立体绿化、草坪</a></span>
+                <div class="mod_subcate clearfix">
+                    <div class="mod_subcate_main fl">
+                        {php $catid=2852;$cols=6;$level=1}
+                    {template 'xiaohei-nav', 'chip'}
+                    </div>
+                    <div class="mod_subcate_side fl">
+                        <div class="mod_subcate_side_hd">热门品牌</div>
+                        <ul class="clearfix">
+							<li><a href="" target="_blank"><img src="{DT_SKIN}bd/11.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/12.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/13.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/14.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/15.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/16.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/17.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="{DT_SKIN}bd/18.jpg"></a></li>
+</ul>
+                    </div>
+                    <a href="#" class="mod_subcate_ad" target="_blank"><img src="{DT_SKIN}ad/f010.jpg" width="180" height="200"></a>
+                </div>
+            </li>
+        </ul>
+            </dd>
+        </dl>
+        <div id="nav" class="fl">
+            <ul id="mainNav" class="clearfix f-15 fl">
+                <li{if $moduleid<4} class="active"{/if}><a href="{$MODULE[1][linkurl]}">首页</a></li>
+                {loop $MODULE $m}{if $m[ismenu]}
+                <li {if $m[moduleid]==$moduleid}class="active"{/if}><a href="{$m[linkurl]}"{if $m[isblank]} target="_blank"{/if}>{$m[name]}</a></li>
+                {/if}{/loop}
+            </ul>
+            <ul id="subNav" class="clearfix fl">
+                <li><a href="{$MODULE[1][linkurl]}spread/" target="_blank" >竞价排名</a></li>
+                <li><a href="/ad" target="_blank" >广告预定</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+  <div class="clear">
+    </div>

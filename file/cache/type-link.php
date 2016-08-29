@@ -1,0 +1,1 @@
+<?php defined('IN_DESTOON') or exit('Access Denied'); return array (4 => array ('typeid' => '4','parentid' => '0','typename' => '万争网','style' => '#000000',),); ?>

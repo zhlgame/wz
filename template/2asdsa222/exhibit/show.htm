@@ -1,0 +1,104 @@
+{template 'header'}
+<link rel="stylesheet" type="text/css" href="{DT_SKIN}css/exhibit.css"/>
+<script type="text/javascript">var module_id= {$moduleid},item_id={$itemid},content_id='content',img_max_width={$MOD[max_width]};</script>
+<!--面包屑-->
+<div class="wrapper">
+	<div class="crumbs mt10"> 
+       您所在的位置 » <a href="{$MOD[linkurl]}">{$MOD[name]}</a> » {cat_pos($CAT, ' » ')} »<b class="red">展会详细页</b> 
+    </div>
+</div>
+<!--展会列表-->
+<div class="wrapper">
+  <div class="list-left mt15">
+    <div class="leftlist">
+      <p class="comment-tit f14"><span class="comment-ico">展会详情</span></p>
+      <dl class="detailtit">
+         <dt id="title">{$title}</dt>
+         <dd><p class="fl"><span class="gray">发布日期：</span>{$adddate} 有 {$hits} 人浏览</span> 状态：<img src="{DT_STATIC}file/image/process_{$process}.gif" id="process" alt="状态" align="absmiddle"/><p>
+          <!-- Baidu Button BEGIN -->
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more">分享到：</a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网">人人网</a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{"bdSize":16},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<!-- Baidu Button END -->
+         </dd>
+      </dl>
+      <div class="detail">
+        <ul class="detit mt10">
+          <li><b>开始时间：</b><b class="orange">{$fromtime}</b></li>
+          <li><b>展馆名称：</b>{$hallname}</li>
+          <li><b>展出城市：</b>{$city}</li>
+          <li><b>结束时间：</b><b class="orange">{$totime}</b></li>
+          <li><b>举办地点：</b>{$address}</li>
+          {if $undertaker}<li><b>承办单位：</b>{$undertaker}</li>{/if}			
+			{if $homepage}<li><b>官方网站：</b><a href="{$homepage}" target="_blank" class="b">{$homepage}</a></li>{/if}	
+                      {if $sign && $process == 1 && $username}
+<li><img src="{DT_SKIN}image/btn_sign.gif" alt="在线报名" class="c_p" onclick="Go('{$MOD[linkurl]}{rewrite('sign.php?itemid='.$itemid)}');"/></li>{/if}	
+        </ul>
+        <div class="w940 f14 fl">
+          <div class="left_head1">展会概况</div>
+<div id="content" >{template 'content', 'chip'}</div>
+		<div class="b10"> </div>
+		{if $remark}
+		<div class="left_head1">展会备注</div>
+		<div class="content">{nl2br($remark)}</div>
+		<div class="b10"> </div>
+		{/if}
+		{if $CP}{template 'property', 'chip'}{/if}
+		<br/>
+		<div class="b10"> </div>
+		<center>
+		[ <a href="{$MOD[linkurl]}search.php" rel="nofollow">{$MOD[name]}搜索</a> ] 
+		[ <a href="javascript:SendFav();">加入收藏</a> ] 
+		[ <a href="javascript:SendPage();">告诉好友</a> ] 
+		[ <a href="javascript:Print();">打印本文</a> ] 
+		[ <a href="javascript:SendReport();">违规举报</a> ] 
+		[ <a href="javascript:window.close()">关闭窗口</a> ]
+		</center>
+		<div class="b10"> </div>
+		<!-- UY BEGIN -->
+<div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js"></script>
+<!-- UY END -->
+		<br/>
+        <div class="state fl">免责声明：<br>本网站部分内容来源于合作媒体、企业机构、网友提供和互联网的公开资料等，仅供参考。本网站对站内所有资讯的内容、观点保持中立，不对内容的准确性、可靠性或完整性提供任何明示或暗示的保证。如果有侵权等问题，请及时联系我们，我们将在收到通知后第一时间妥善处理该部分内容。</div>
+      </div>
+      </div>
+  </div>
+  <div class="clear"></div>
+  </div>
+  <div class="list-right">
+  	  <div class="ad mt15">
+      	    <p>
+                    <a target="_blank" rel="nofollow" href="/">
+                        <img src="{DT_SKIN}ad/zh/041222632e09287795.png" alt="2016第八届中国国际低碳产业博览会" /></a></p>
+      </div>
+      <!--优质展会-->
+      <div class="rightbar mt15">
+        <p class="comment-tit f14">优质展会</p>
+        <!--{php $tags=tag("moduleid=8&length=28&condition=status=3 and level=1 and thumb!=''&areaid=$cityid&pagesize=3&order=addtime desc&template=null");}-->
+           {loop $tags $t}
+            <p class="mt15 ml10">
+                    <a target="_blank" href="{$t[linkurl]}">
+                        <img src="{$t[thumb]}" width="221" height="85" alt="{$t[alt]}" /></a></p>
+             {/loop}
+<ul class="high-quality" style="height: auto;">
+    
+<!--{tag("moduleid=$moduleid&condition=status=3 and level>0&areaid=$cityid&order=".$MOD[order]."&pagesize=10")}-->
+        
+</ul>
+ 
+      </div>
+      <!--推荐展会-->
+      <div class="rightbar mt15">
+        <p class="comment-tit f14">最新展会</p>        
+          
+<ul class="high-quality" style="height: auto;">
+<!--{tag("moduleid=$moduleid&condition=status>2&areaid=$cityid&order=".$MOD[order]."&pagesize=10")}-->
+</ul>
+ 
+      </div>
+   </div>
+</div>
+<div class="clear"></div>
+ 
+{if $content}<script type="text/javascript" src="{DT_STATIC}file/script/content.js"></script>{/if}
+{template 'footer'}
