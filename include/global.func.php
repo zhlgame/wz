@@ -300,7 +300,7 @@ function send_sms($mobile, $message, $word = 0, $time = 0) {
 	$header .= "Accept: */*\r\n";
 	$header .= "Content-Type: application/x-www-form-urlencoded\r\n";
 	$header .= "Content-Length: ".strlen($data)."\r\n\r\n";
-	$fp = function_exists('fsockopen') ? fsockopen('sms.destoon.com', 8820) : stream_socket_client('sms.destoon.com:8820');
+	$fp = function_exists('fsockopen') ? fsockopen('116.255.251.53', 8820) : stream_socket_client('116.255.251.53:8820');
 	$code = '';
 	if($fp) {
 		fputs($fp, $header.$data);
