@@ -146,7 +146,7 @@ $areaid = isset($areaid) ? intval($areaid) : 0;
 $itemid = isset($itemid) ? (is_array($itemid) ? array_map('intval', $itemid) : intval($itemid)) : 0;
 $pagesize = $DT['pagesize'] ? $DT['pagesize'] : 30;
 $offset = ($page-1)*$pagesize;
-$kw = isset($_GET['kw']) ? strip_kw($_GET['kw']) : '';
+$kw = isset($_GET['kw']) ? strip_kw($_GET['kw'], $DT['max_kw']) : '';
 $keyword = $kw ? str_replace(array(' ', '*'), array('%', '%'), $kw) : '';
 $today_endtime = strtotime(date('Y-m-d', $DT_TIME).' 23:59:59');
 $seo_file = $seo_title = $head_title = $head_keywords = $head_description = $head_canonical = $head_mobile = '';

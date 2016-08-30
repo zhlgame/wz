@@ -40,6 +40,8 @@ if(isset($_POST['ok'])) {
 		$tmp = $OAUTH['wechat'];
 		unset($OAUTH['wechat']);
 		$OAUTH = array_merge(array('wechat'=>$tmp), $OAUTH);
+	} else {
+		$OAUTH['wechat']['enable'] = 0;	
 	}
 	$oa = 0;
 	foreach($OAUTH as $v) {

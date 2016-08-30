@@ -21,7 +21,7 @@ $mobile_modules = array('member', 'sell', 'buy', 'quote', 'company', 'exhibit', 
 $pages = '';
 $areaid = isset($areaid) ? intval($areaid) : 0;
 $site_name = $head_title = $EXT['mobile_sitename'] ? $EXT['mobile_sitename'] : $DT['sitename'].$L['mobile_version'];
-$kw = $kw ? strip_kw(decrypt($kw, DT_KEY.'KW')) : '';
+$kw = $kw ? strip_kw(decrypt($kw, DT_KEY.'KW'), $DT['max_kw']) : '';
 if(strlen($kw) < $DT['min_kw'] || strlen($kw) > $DT['max_kw']) $kw = '';
 $keyword = $kw ? str_replace(array(' ', '*'), array('%', '%'), $kw) : '';
 $MURL = $MODULE[2]['linkurl'];

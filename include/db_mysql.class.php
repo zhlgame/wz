@@ -10,8 +10,6 @@ class db_mysql {
 	var $querynum = 0;
 	var $ttl;
 	var $cursor = 0;
-	var $cache_id = '';
-	var $cache_ttl = '';
 	var $halt = 0;
 	var $linked = 1;
 	var $result = array();
@@ -54,12 +52,9 @@ class db_mysql {
 		$select = strtoupper(substr($sql, 0, 7)) == 'SELECT ' ? 1 : 0;
 		if($this->ttl > 0 && $type == 'CACHE' && $select) {
 			$this->cursor = 0;
-			$this->cache_id = md5($sql);
 			$this->result = array();
-			$this->cache_ttl = ($ttl ? $ttl : $this->ttl) + mt_rand(-10, 30);
-			return $this->_query($sql);
+			return $this->_query($sql, $ttl ? $ttl : $this->ttl);
 		}
-		$this->cache_id = '';
 		$func = $type == 'UNBUFFERED' ? 'mysql_unbuffered_query' : 'mysql_query';
 		if(!($query = $func($sql, $this->connid))) $this->halt('MySQL Query Error', $sql);
 		$this->querynum++;
@@ -76,8 +71,7 @@ class db_mysql {
 	}
 	
 	function count($table, $condition = '', $ttl = 0) {
-		global $DT_TIME;
-		$sql = 'SELECT COUNT(*) as amount FROM '.$table;
+		$sql = 'SELECT COUNT(*) AS amount FROM '.$table;
 		if($condition) $sql .= ' WHERE '.$condition;
 		$r = $this->get_one($sql, $ttl ? 'CACHE' : '', $ttl);
 		return $r ? $r['amount'] : 0;
@@ -138,18 +132,19 @@ class db_mysql {
 		if($this->halt) message('MySQL Query:'.str_replace($this->pre, '[pre]', $sql).' <br/> MySQL Error:'.str_replace($this->pre, '[pre]', $this->error()).' MySQL Errno:'.$this->errno().' <br/>Message:'.$message);
 	}
 
-	function _query($sql) {
+	function _query($sql, $ttl) {
 		global $dc;
-		$this->result = $dc->get($this->cache_id);
+		$cid = md5($sql);
+		$this->result = $dc->get($cid);
 		if(!is_array($this->result)) {
 			$tmp = array(); 
-			$result = $this->query($sql, '', '', true);
+			$result = $this->query($sql, '', '');
 			while($r = mysql_fetch_array($result, MYSQL_ASSOC)) {
 				$tmp[] = $r; 
 			}
 			$this->result = $tmp;
 			$this->free_result($result);
-			$dc->set($this->cache_id, $tmp, $this->cache_ttl);
+			$dc->set($cid, $tmp, $ttl);
 		}
 		return $this->result;
 	}
@@ -160,7 +155,6 @@ class db_mysql {
 			return $this->result[$this->cursor++];
 		} else {
 			$this->cursor = 0;
-			$this->cache_id = '';
 			return array();
 		}
 	}

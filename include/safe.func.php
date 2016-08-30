@@ -71,11 +71,13 @@ function strip_uri($uri) {
 	}
 }
 
-function strip_kw($kw) {
+function strip_kw($kw, $max = 0) {
 	$kw = dhtmlspecialchars(trim(urldecode($kw)));
 	if($kw) {
 		if(strpos($kw, '%') !== false) return '';
-		$kw = str_replace("'", '', $kw);
+		$kw = str_replace(array("'", '&'), array('', ''), $kw);
+		$max = intval($max);
+		if($max > 0 && strlen($kw) > $max) $kw = dsubstr($kw, $max);
 	}
 	return $kw;
 }

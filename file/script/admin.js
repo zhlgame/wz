@@ -125,7 +125,7 @@ function Dwidget(u, t, w, h, s) {
 }
 function getAlbum(v, i) {Dd('thumb'+i).value = v; Dd('showthumb'+i).src = v;}
 function delAlbum(i, s) {Dd('thumb'+i).value = ''; Dd('showthumb'+i).src = SKPath+'image/'+s+'pic.gif';}
-function selAlbum(i) {Dwidget(AJPath+'?action=select&from=album&fid='+i, L['choose_img'], 730, 300)}
+function selAlbum(i) {Dwidget(AJPath+'?action=choose&from=album&fid='+i, L['choose_img'], 730, 300)}
 function ReLo(r, i) {
 	if(r) {
 		Dd(i).value = '';Ds('remote_url');Dh('local_url');
@@ -213,7 +213,7 @@ function RandStr() {
     }
     return str;
 }
-function select_item(m, f) {f = f ? f : '';Dwidget(AJPath+'?action=select&mid='+m+'&job=item&from='+f, L['choose_item'], 755, 300);}
+function select_item(m, f) {f = f ? f : '';Dwidget(AJPath+'?action=choose&mid='+m+'&job=item&from='+f, L['choose_item'], 755, 300);}
 function Menuon(i) {try{Dd('Tab'+i).className='tab_on';}catch(e){}}
 function type_reload() {
 	if(Dd('Dtop') == null) {

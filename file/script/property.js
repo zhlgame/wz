@@ -1,5 +1,5 @@
 /*
-	[Destoon B2B System] Copyright (c) 2008-2015 www.destoon.com
+	[Destoon B2B System] Copyright (c) 2008-2016 www.destoon.com
 	This is NOT a freeware, use is subject to license.txt
 */
 var property_Interval = setInterval('ppt_attach_catid()', 500);
@@ -14,7 +14,8 @@ function load_property() {
 		if(data) {
 			$('#load_property').html(data);
 			$('#load_property').show();
-		} else {			
+		} else {
+			$('#load_property').html('<tr><td></td><td></td></tr>');
 			$('#load_property').hide();
 		}
 	});

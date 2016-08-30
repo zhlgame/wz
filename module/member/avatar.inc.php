@@ -58,6 +58,16 @@ switch($action) {
 			file_copy($file, $img[3]);
 			file_copy($file, $img[6]);
 			file_del($file);
+			if($DT['ftp_remote'] && $DT['remote_url']) {
+				require DT_ROOT.'/include/ftp.class.php';
+				$ftp = new dftp($DT['ftp_host'], $DT['ftp_user'], $DT['ftp_pass'], $DT['ftp_port'], $DT['ftp_path'], $DT['ftp_pasv'], $DT['ftp_ssl']);
+				if($ftp->connected) {
+					foreach($img as $i) {
+						$t = explode("/file/", $i);
+						$ftp->dftp_put('file/'.$t[1], $t[1]);
+					}
+				}
+			}
 			dheader('?itemid='.$DT_TIME);
 		} else {
 			message($upload->errmsg);

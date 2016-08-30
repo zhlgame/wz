@@ -84,8 +84,12 @@ show_menu($menus);
 <td>&nbsp;<a href="http://bbs.destoon.com/?tracert=AdminMain" target="_blank">http://bbs.destoon.com</a></td>
 </tr>
 <tr>
-<td class="tl">使用帮助</td>
-<td>&nbsp;<a href="http://help.destoon.com/?tracert=AdminMain" target="_blank">http://help.destoon.com</a></td>
+<td class="tl">帮助文档</td>
+<td>&nbsp;<a href="http://www.destoon.com/doc/?tracert=AdminMain" target="_blank">http://www.destoon.com/doc/</a></td>
+</tr>
+<tr>
+<td class="tl">专用主机</td>
+<td>&nbsp;<a href="http://www.destoon.com/host/?tracert=AdminMain" target="_blank">http://www.destoon.com/host/</a></td>
 </tr>
 <tr>
 <td class="tl">服务器时间</td>
@@ -103,10 +107,6 @@ show_menu($menus);
 <td class="tl">站点路径</td>
 <td>&nbsp;<?php echo DT_ROOT;?></td>
 </tr>
-<tr>
-<td class="tl">上次备份</td>
-<td>&nbsp;<a href="?file=database" title="点击备份数据库"><?php echo $backtime;?><?php if($backdays > 5) { ?> (<span class="f_red"><?php echo $backdays;?></span>天以前)<?php } ?></a></td>
-</tr>
 </table>
 <div class="tt">使用协议</div>
 <table cellpadding="2" cellspacing="1" class="tb">
@@ -116,16 +116,18 @@ show_menu($menus);
 </table>
 <script type="text/javascript" src="<?php echo $notice_url;?>"></script>
 <script type="text/javascript">
-var destoon_release = <?php echo DT_RELEASE;?>;
-var destoon_version = <?php echo DT_VERSION;?>;
-if(typeof destoon_lastrelease != 'undefined') {
-	var lastrelease = parseInt(destoon_lastrelease.replace('-', '').replace('-', ''));
-	if(destoon_lastversion == destoon_version && destoon_release < lastrelease) {
-		$('#last_v').html(destoon_lastversion);
-		$('#last_r').html(destoon_lastrelease);
-		$('#tips_update').show('slow');
+$(function(){
+	var destoon_release = <?php echo DT_RELEASE;?>;
+	var destoon_version = <?php echo DT_VERSION;?>;
+	if(typeof destoon_lastrelease != 'undefined') {
+		var lastrelease = parseInt(destoon_lastrelease.replace('-', '').replace('-', ''));
+		if(destoon_lastversion == destoon_version && destoon_release < lastrelease) {
+			$('#last_v').html(destoon_lastversion);
+			$('#last_r').html(destoon_lastrelease);
+			$('#tips_update').slideDown(600);
+		}
 	}
-}
+});
 </script>
 <?php } ?>
 <script type="text/javascript">Menuon(0);</script>

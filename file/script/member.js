@@ -11,7 +11,7 @@ function c(i) {
 	for(var j = 0; j < 4; j++) {
 		if(j == i) {
 			Dd('menu_'+j).className = 'menu_1';
-			Ds('sub_'+j);
+			$('#sub_'+j).slideDown(300);
 		} else {
 			Dd('menu_'+j).className = 'menu_2';
 			Dh('sub_'+j);

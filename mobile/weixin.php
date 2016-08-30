@@ -46,7 +46,7 @@ if($action == 'login') {
 				$itemid = $r['itemid'];
 				if($r['nickname']) $arr['access_token'] = '';
 			} else {
-				$db->query("INSERT INTO {$DT_PRE}weixin_user (openid,subscribe,addtime,edittime) VALUES ('$openid','2','$DT_TIME',,'$DT_TIME')");
+				$db->query("INSERT INTO {$DT_PRE}weixin_user (openid,subscribe,addtime,edittime) VALUES ('$openid','2','$DT_TIME','$DT_TIME')");
 				$itemid = $db->insert_id();
 			}
 			if($arr['access_token']) {

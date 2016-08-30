@@ -66,11 +66,9 @@ $edition = edition(1);
 		</form>
 		</div>
 	</div>
-	<?php if(strpos(get_env('self'), '/admin.php') !== false || is_file(DT_ROOT.'/admin.php')) { ?>
-	<div style="margin:10px 40px 0 40px;border:#FF8D21 1px solid;background:#FFFFDD;padding:8px;"><img src="admin/image/notice.gif" align="absmiddle"/> 提示：为了系统安全，请立即修改后台文件名 <a href="http://help.destoon.com/use/34.html" target="_blank" style="color:#006699;">帮助&#187;</a></div>
-	<script type="text/javascript">
-	try{Dd('username').disabled=true;Dd('password').disabled=true;Dd('submit').disabled=true;$('.c_p').hide();<?php if($DT['captcha_admin']) { ?>Dd('captcha').disabled=true;<?php } ?>}catch(e){}
-	</script>
+	<?php if(strpos(get_env('self'), '/admin.php') !== false) { ?>
+	<div style="margin:10px 40px 0 40px;border:#FF8D21 1px solid;background:#FFFFDD;padding:8px;display:none;" id="tips"><img src="admin/image/notice.gif" align="absmiddle"/> 提示：为了系统安全，请尽快修改后台地址 &nbsp;<a href="http://www.destoon.com/doc/use/34.html" target="_blank" style="color:#006699;">帮助&#187;</a></div>
+	<script type="text/javascript">$(function(){$('#tips').slideDown(300);});</script>
 	<?php } ?>
 </td>
 </tr>

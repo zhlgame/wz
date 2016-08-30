@@ -93,7 +93,7 @@ if($rewrite) {
 	$page = isset($page) ? max(intval($page), 1) : 1;
 	$catid = isset($catid) ? intval($catid) : 0;
 	$itemid = isset($itemid) ? (is_array($itemid) ? $itemid : intval($itemid)) : 0;
-	$kw = isset($kw) ? strip_kw($kw) : '';
+	$kw = isset($kw) ? strip_kw($kw, $DT['max_kw']) : '';
 	if(strlen($kw) < $DT['min_kw'] || strlen($kw) > $DT['max_kw']) $kw = '';
 	$keyword = $kw ? str_replace(array(' ', '*'), array('%', '%'), $kw) : '';
 }

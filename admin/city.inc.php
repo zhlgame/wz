@@ -17,7 +17,8 @@ switch($action) {
 		if($submit) {
 			if(!$post['areaid']) msg('请选择所在地区');
 			if(!$post['name']) msg('分站名不能为空');
-			$city['cityname'] = trim($city['cityname']);
+			$post['name'] = trim($post['name']);
+			$post['domain'] = fix_domain($post['domain']);
 			$do->edit($post);
 			dmsg('更新成功', $forward);
 		} else {
@@ -92,6 +93,8 @@ class city {
 		$areaid = $post['areaid'];
 		if(!$areaid) return false;
 		$post['letter'] or $post['letter'] = $this->letter($post['name']);
+		$post['name'] = trim($post['name']);
+		$post['domain'] = fix_domain($post['domain']);
 		$sql = '';
 		foreach($post as $k=>$v) {
 			$sql .= ",$k='$v'";

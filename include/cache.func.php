@@ -10,7 +10,6 @@ function cache_all() {
 	cache_category();
 	cache_fields();
 	cache_group();
-	cache_pay();
 	cache_oauth();
 	cache_type();
 	cache_keylink();

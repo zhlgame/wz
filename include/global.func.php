@@ -296,24 +296,10 @@ function send_sms($mobile, $message, $word = 0, $time = 0) {
 	$word or $word = word_count($message);
 	$sms_message = convert($message, DT_CHARSET, 'UTF-8');
 	$data = 'sms_uid='.DT_CLOUD_UID.'&sms_key='.md5(DT_CLOUD_KEY.'|'.$mobile.'|'.md5($sms_message)).'&sms_charset='.DT_CHARSET.'&sms_mobile='.$mobile.'&sms_message='.rawurlencode($sms_message).'&sms_time='.$time;
-	$header = "POST /send.php HTTP/1.0\r\n";
-	$header .= "Accept: */*\r\n";
-	$header .= "Content-Type: application/x-www-form-urlencoded\r\n";
-	$header .= "Content-Length: ".strlen($data)."\r\n\r\n";
-	$fp = function_exists('fsockopen') ? fsockopen('116.255.251.53', 8820) : stream_socket_client('116.255.251.53:8820');
-	$code = '';
-	if($fp) {
-		fputs($fp, $header.$data);
-		while(!feof($fp)) {
-			$code .= fgets($fp, 1024);
-		}
-		fclose($fp);
-		if($code && strpos($code, 'destoon_sms_code=') !== false) {
-			$code = explode('destoon_sms_code=', $code);
-			$code = $code[1];
-		} else {
-			$code = 'Can Not Connect SMS Server';
-		}
+	$code = dcurl('http://116.255.251.53:8820/send.php', $data);
+	if($code && strpos($code, 'destoon_sms_code=') !== false) {
+		$code = explode('destoon_sms_code=', $code);
+		$code = $code[1];
 	} else {
 		$code = 'Can Not Connect SMS Server';
 	}
@@ -1194,7 +1180,7 @@ function is_md5($password) {
 }
 
 function is_openid($openid) {
-	return preg_match("/^[0-9a-zA-Z_]{10,}$/", $openid);
+	return preg_match("/^[0-9a-zA-Z\-_]{10,}$/", $openid);
 }
 
 function is_touch() {
