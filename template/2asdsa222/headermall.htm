@@ -115,7 +115,7 @@ document.getElementById(id).style.display="none";
                 <ul class="clearfix fl">
                 {loop $searchids $s}
                 {if isset($MODULE[$s])}
-                <li selectid="{$s}" {if $searchid == $s} class="active"{/if}>{$MODULE[$s][name]}</li>
+                <li id="{$s}" {if $searchid == $s} class="active"{/if}>{$MODULE[$s][name]}</li>
                 {/if}
                 {/loop}
                 </ul>
