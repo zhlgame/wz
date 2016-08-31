@@ -929,6 +929,15 @@ a:hover
 	width:20px;
 	height:40px;
 	position:absolute;
+	top:95px;
+	z-index:20;
+	background:url("images/mall/left.png")/*tpa=/images/mall/left.png*/ no-repeat;
+}
+.left_btnf
+{
+	width:20px;
+	height:40px;
+	position:absolute;
 	top:50px;
 	z-index:20;
 	background:url("images/mall/left.png")/*tpa=/images/mall/left.png*/ no-repeat;
@@ -1082,7 +1091,7 @@ a:hover
 	width:20px;
 	height:40px;
 	position:absolute;
-	top:65px;
+	top:95px;
 	z-index:20;
 	background:url("images/mall/left.png")/*tpa=/images/mall/left.png*/ no-repeat;
 }
