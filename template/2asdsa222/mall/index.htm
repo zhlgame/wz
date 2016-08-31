@@ -240,7 +240,7 @@
         </div>
         <div class="wadver adver3 fl">
                 <ul>
-                 <!--{php $tags=tag("moduleid=$moduleid&length=34&condition=status=3 and thumb<>'' and level>0&areaid=$cityid&pagesize=4&order=".$MOD[order]."&template=null");}-->
+                 <!--{php $tags=tag("moduleid=$moduleid&length=34&condition=status=3 and thumb<>'' and level=4&areaid=$cityid&pagesize=4&order=".$MOD[order]."&template=null");}-->
                          {loop $tags $i $t}  
                 <a target="_blank" href="{$t[linkurl]}">
                 <li {if $i == 1}class="b1 b2"{elseif $i == 2}class="b1"{elseif $i == 3}class="b2"{elseif $i == 4}{/if}>
