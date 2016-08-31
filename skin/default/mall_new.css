@@ -942,6 +942,15 @@ a:hover
 	z-index:20;
 	background:url("images/mall/left.png")/*tpa=/images/mall/left.png*/ no-repeat;
 }
+.left_btnf2
+{
+	width:20px;
+	height:40px;
+	position:absolute;
+	top:200px;
+	z-index:20;
+	background:url("images/mall/left.png")/*tpa=/images/mall/left.png*/ no-repeat;
+}
 .btn1
 {
 	left:10px;
@@ -1001,7 +1010,7 @@ a:hover
 .adver_btn2
 {
 	right:10px;
-	background-position:-45px 0px;
+	background-position:-25px 0px;
 }
 .adver7
 {
