@@ -163,7 +163,7 @@
             <div class="hot_title"><strong class="fl">爆款热卖</strong><a href="javascript:void(0)" class="refresh fr hot-swiper-button-next next">换一批</a></div>
             <div class="hot_cont swiper-wrapper hot_superslide">
                         <ul class="swiper-slide clone">
-                                <!--{php $tags=tag("moduleid=$moduleid&length=34&condition=status=3 and thumb<>'' and level>0&areaid=$cityid&pagesize=4&order=".$MOD[order]."&template=null");}-->
+                                <!--{php $tags=tag("moduleid=$moduleid&length=34&condition=status=3 and thumb<>'' and level=1&areaid=$cityid&pagesize=4&order=".$MOD[order]."&template=null");}-->
                          {loop $tags $k $t}       
                     	<li {if $k<1}class="hot1"{else}{/if}>
                              <a href="{$t[linkurl]}" target="_blank">
@@ -223,7 +223,7 @@
     </script>
     <div class="warp">
     	<div class="adver2 pink fl">
-        <!--{php $tags=tag("moduleid=$moduleid&length=34&condition=status=3 and thumb<>'' and level>0&areaid=$cityid&pagesize=1&order=".$MOD[order]."&template=null");}-->
+        <!--{php $tags=tag("moduleid=$moduleid&length=34&condition=status=3 and thumb<>'' and level=2&areaid=$cityid&pagesize=1&order=".$MOD[order]."&template=null");}-->
                          {loop $tags $i $t} 
             <a target="_blank" href="{$t[linkurl]}">
         	<div class="adver_text">
@@ -258,7 +258,7 @@
             </ul>
         </div>
         <div class="adver2 blue fl">
-        <!--{php $tags=tag("moduleid=$moduleid&length=34&condition=status=3 and thumb<>'' and level>0&areaid=$cityid&pagesize=1&order=".$MOD[order]."&template=null");}-->
+        <!--{php $tags=tag("moduleid=$moduleid&length=34&condition=status=3 and thumb<>'' and level=3&areaid=$cityid&pagesize=1&order=".$MOD[order]."&template=null");}-->
                          {loop $tags $i $t} 
             <a target="_blank" href="{$t[linkurl]}">
                 <div class="clock"><div class="clock_pic fl"><img src="{DT_SKIN}images/mall/clock.png" /></div><span class="new-time-remain" count_down="20836753"><em time_id="d"></em><em time_id="h"></em><em time_id="m"></em><em time_id="s"></em></span></div>
