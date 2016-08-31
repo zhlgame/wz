@@ -101,7 +101,7 @@
             <h3><em>{$i}F</em> <a href="{$MODULE[$mid][linkurl]}{$c[linkurl]}" target="_blank">{$c[catname]}</a></h3>
             </div>
             <dl class="comad fl">
-             <!--{php $tags=tag("moduleid=4&catid=".$c[catid]."&condition=level=0 and thumb<>''&areaid=$cityid&pagesize=1&order=".$MOD[order]."&template=null");}-->
+             <!--{php $tags=tag("moduleid=4&catid=".$c[catid]."&condition=level=1 and thumb<>''&areaid=$cityid&pagesize=1&order=".$MOD[order]."&template=null");}-->
              {loop $tags $k $t}
                 <dt><a class="a-img" href="{$t[linkurl]}" target="_blank"><img src="{imgurl($t[thumb])}" width="216" height="131"></a></dt>
                 <dd>
