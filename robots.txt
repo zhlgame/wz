@@ -7,3 +7,4 @@ Disallow: /skin/
 Disallow: /template/
 Disallow: /upgrade/
 Disallow: /*search*
+Sitemap:http://www.wz71888.com/sitemaps.xml
