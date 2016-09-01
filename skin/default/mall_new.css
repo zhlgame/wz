@@ -819,7 +819,7 @@ a:hover
 }
 .classif_bg1
 {
-	background:#f45990;
+	background:#54c271;
 }
 .classif_bg2
 {
@@ -875,7 +875,7 @@ a:hover
 	padding-left:25px;
 	line-height:30px;
 	font-size:14px;
-	color:#f45990;
+	color:#54c271;
 	overflow:hidden;
 	float:left;
 }
@@ -969,6 +969,8 @@ a:hover
 	background:#fafafa;
 	overflow:hidden;
 }
+.title1 a{color:#54c271;
+	}
 .title1 a:hover
 {
 	color:#e4393c !important;
@@ -979,7 +981,7 @@ a:hover
 	width:70px;
 	padding-left:15px;
 	line-height:25px;
-	color:#333;
+	color:#54c271;
 	font-size:12px;
 	float:left;
 	overflow:hidden;
