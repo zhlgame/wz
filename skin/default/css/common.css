@@ -221,7 +221,7 @@ border-bottom-color:#fff;border-top-color:#ccc;TOP:5px;border-right-color:#fff;-
 
 #header{ background-color:#f6f6f6;   padding: 10px 0;}
 #header .logo{width:505px;}
-#header .logo a{width:228px;height:109px;background:url("../images/logo.png")/*tpa=/images/logo.png*//*tpa=/images/logo.png*/;margin:10px 0 0 6px;} 
+#header .logo a{width:228px;height:109px;background:url("../images/logo.png")/*tpa=/images/logo.png*//*tpa=/images/logo.png*/;margin:10px 0 0 6px;text-indent:-2500px;} 
 #header .logo .alogo1{display:block;background:url("../images/logo-font.jpg")/*tpa=/images/logo-font.jpg*//*tpa=/images/logo-font.jpg*/ no-repeat -1px 0;margin:13px 10px 0 0;width:244px;height:109px;}
 #header .logo .alogo{display:block;background:url("../images/logo_m.png")/*tpa=/images/logo_m.png*//*tpa=/images/logo_m.png*/ no-repeat -1px 0;margin:13px 10px 0 0;width:244px;height:109px;}
 #header .logo .qlogo{display:block;background:url("../images/logo-font-club.jpg")/*tpa=/images/logo-font-club.jpg*//*tpa=/images/logo-font-club.jpg*/ no-repeat -1px 3px;margin:13px 10px 0 0;width:244px;height:109px;} 
