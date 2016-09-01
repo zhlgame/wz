@@ -118,7 +118,7 @@
 <td class="tr"><input type="text" size="30" name="account" value="{$member[account]}" id="account"/> <span id="daccount" class="f_red"></span></td>
 </tr>
 <tr>
-<td class="tl"><span class="f_red">*</span> 支付密码</td>
+<td class="tl"><span class="f_red">*</span> 登陆密码</td>
 <td class="tr">{template 'password', 'chip'} <span id="dpassword" class="f_red"></span></td>
 </tr>
 <tr>
@@ -150,7 +150,7 @@ function check() {
 	f = 'password';
 	l = Dd(f).value.length;
 	if(l < 6) {
-		Dmsg('请填写支付密码', f);
+		Dmsg('请填写登陆密码', f);
 		return false;
 	}
 	return true;
@@ -207,7 +207,7 @@ function check() {
 	f = 'password';
 	l = Dd(f).value.length;
 	if(l < 6) {
-		Dmsg('请填写支付密码', f);
+		Dmsg('请填写登陆密码', f);
 		return false;
 	}
 	return true;
