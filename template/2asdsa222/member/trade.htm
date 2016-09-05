@@ -503,6 +503,13 @@
 			total > {$_money} ? Dh('payword') : Ds('payword');
 		}, 
 	500);
+	var ref=document.referrer;
+    var substr = "www.wz71888.com/mobile/purchase.php?moduleid=";
+	function isContains(ref, substr) {
+	    return ref.indexOf(substr) >= 0;
+	}
+	if(isContains(ref, substr))
+	{Go('charge.php?action=pay&reason=trade|{$itemid}&amount='+(total-{$_money}));}
 	</script>
 	<script type="text/javascript">s('trade');m('action_order');</script>
 	{elseif $step == 'send_goods'}
