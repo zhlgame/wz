@@ -506,10 +506,11 @@
 	// 以下代码判断来源网址，并自动跳转到支付页
 	var ref=document.referrer;
     var substr = "www.wz71888.com/mobile/purchase.php?moduleid=";
+    var substr2 = "&itemid=";
 	function isContains(ref, substr) {
 	    return ref.indexOf(substr) >= 0;
 	}
-	if(isContains(ref, substr))
+	if(isContains(ref, substr)&&isContains(ref, substr2))
 	{Go('charge.php?action=pay&reason=trade|{$itemid}&amount='+(total-{$_money}));}
 	// 以上代码判断来源网址，并自动跳转到支付页
 	</script>
