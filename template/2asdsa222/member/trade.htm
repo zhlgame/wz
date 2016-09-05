@@ -468,7 +468,7 @@
 	<td class="tr f_blue">{$DT[money_sign]}{$_money}</td>
 	</tr>
 	<tr id="payword" style="display:none;">
-	<td class="tl"><span class="f_red">*</span> 支付密码</td>
+	<td class="tl"><span class="f_red">*</span> 登陆密码</td>
 	<td class="tr">{template 'password', 'chip'}&nbsp;<span id="dpassword" class="f_red"></span></td>
 	</tr>
 	{if $DT[sms]}
@@ -493,7 +493,7 @@
 			return false;
 		}
 		if(Dd('password').value.length < 6) {
-			Dmsg('请填写支付密码', 'password');
+			Dmsg('请填写登陆密码', 'password');
 			return false;
 		}
 		return confirm('您确认此订单，并立即支付吗？');
